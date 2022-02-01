@@ -1,0 +1,27 @@
+{
+  "id": "urn:ngsi-ld:Dataset:dsd1",
+  "type": "Dataset",
+  "title": [
+    "dsd1"
+  ],
+  "language": [
+    "en",
+    "fr"
+  ],
+  "description": {
+    "en": "Population by sex, age and local administrative unit",
+    "fr": "Population par sexe, âge et unité administrative locale"
+  },
+  "dimension": [
+    "urn:ngsi-ld:DimensionProperty:dim-age",
+    "urn:ngsi-ld:DimensionProperty:dim-sex",
+    "urn:ngsi-ld:DimensionProperty:dim-lau"
+  ],
+  "attribute": [
+    "urn:ngsi-ld:AttributeProperty:unitMeasure",
+    "urn:ngsi-ld:AttributeProperty:att-nuts3"
+  ],
+  "unitMeasurement": [
+    "urn:ngsi-ld:Measure:obsValue"
+  ]
+}

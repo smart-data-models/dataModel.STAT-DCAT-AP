@@ -1,0 +1,56 @@
+{
+    "id": "urn:ngsi-ld:Dataset:dsd1",
+    "type": "Dataset",
+    "title": {
+        "type": "Property",
+        "value": ["dsd1"]
+    },
+    "language": {
+        "type": "Property",
+        "value": [
+            "en",
+            "fr"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": {
+            "en": "Population by sex, age and local administrative unit",
+            "fr": "Population par sexe, âge et unité administrative locale"
+        }
+    },
+    "@context": {
+        "sdmp": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+        "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+        "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+        "isc": "http://id.cef-interstat.eu/sc/"
+    },
+    "dimension": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DimensionProperty:dim-age",
+            "urn:ngsi-ld:DimensionProperty:dim-sex",
+            "urn:ngsi-ld:DimensionProperty:dim-lau"
+        ]
+    },
+    "attribute": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:AttributeProperty:unitMeasure",
+            "urn:ngsi-ld:AttributeProperty:att-nuts3"
+        ]
+    },
+    "unitMeasurement": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Measure:obsValue"
+        ]
+    }
+}
