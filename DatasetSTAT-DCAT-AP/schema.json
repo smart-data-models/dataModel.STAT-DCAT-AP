@@ -2,13 +2,13 @@
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
   "modelTags": "",
-  "$id": "https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Dataset/schema.json",
-  "title": "Dataset STAT-DCAT-AP 2.0 schema",
+  "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/DatasetSTAT-DCAT-AP/schema.json",
+  "title": "Dataset STAT-DCAT-AP schema",
   "description": "Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification",
   "type": "object",
   "properties": {
     "id": {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id/"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
     },
     "type": {
       "type": "string",
