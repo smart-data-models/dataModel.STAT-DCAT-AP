@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# dataModel.STAT-DCAT-AP
+These data models are mapped from version 1.0.1 of the STAT-DCAT-AP standard. [Link](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)
 
-You can use the [editor on GitHub](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### List of data models
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The following entity types are available:
+- [DatasetSTAT-DCAT-AP](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/DatasetSTAT-DCAT-AP/README.md). Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+No public contributors currently.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Contribution
+You can raise an [issue](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/pulls) on existing data models
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
