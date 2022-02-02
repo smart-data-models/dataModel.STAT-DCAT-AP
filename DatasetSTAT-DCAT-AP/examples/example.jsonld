@@ -1,38 +1,36 @@
 {
   "id": "urn:ngsi-ld:Dataset:dsd1",
   "type": "Dataset",
-  "title": ["dsd1"],
-  "language": [
+  "dct:title": [
+    "dsd1"
+  ],
+  "dct:language": [
     "en",
     "fr"
   ],
-  "description": {
+  "dct:description": {
     "en": "Population by sex, age and local administrative unit",
     "fr": "Population par sexe, âge et unité administrative locale"
   },
-  "dimension": [
+  "stat:dimension": [
     "urn:ngsi-ld:DimensionProperty:dim-age",
     "urn:ngsi-ld:DimensionProperty:dim-sex",
     "urn:ngsi-ld:DimensionProperty:dim-lau"
   ],
-  "attribute": [
+  "stat:attribute": [
     "urn:ngsi-ld:AttributeProperty:unitMeasure",
     "urn:ngsi-ld:AttributeProperty:att-nuts3"
   ],
-  "unitMeasurement": [
+  "stat:statUnitMeasure": [
     "urn:ngsi-ld:Measure:obsValue"
   ],
   "@context": {
-    "sdmp": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdmp": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "qb": "http://purl.org/linked-data/cube#",
-    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
-    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-    "isc": "http://id.cef-interstat.eu/sc/"
+    "adms": "http://www.w3.org/ns/adms#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "stat": "http://data.europa.eu/(xyz)/statdcat-ap/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
   }
 }

@@ -1,25 +1,25 @@
 {
   "id": "urn:ngsi-ld:Dataset:dsd1",
   "type": "Dataset",
-  "title": {
+  "dct:title": {
     "type": "Text",
     "value": ["dsd1"]
   },
-  "language": {
+  "dct:language": {
     "type": "array",
     "value": [
       "en",
       "fr"
     ]
   },
-  "description": {
+  "dct:description": {
     "type": "StructuredValue",
     "value": {
       "en": "Population by sex, age and local administrative unit",
       "fr": "Population par sexe, âge et unité administrative locale"
     }
   },
-  "dimension": {
+  "stat:dimension": {
     "type": "array",
     "value": [
       "urn:ngsi-ld:DimensionProperty:dim-age",
@@ -27,14 +27,14 @@
       "urn:ngsi-ld:DimensionProperty:dim-lau"
     ]
   },
-  "attribute": {
+  "stat:attribute": {
     "type": "array",
     "value": [
       "urn:ngsi-ld:AttributeProperty:unitMeasure",
       "urn:ngsi-ld:AttributeProperty:att-nuts3"
     ]
   },
-  "unitMeasurement": {
+  "stat:statUnitMeasure": {
     "type": "array",
     "value": [
       "urn:ngsi-ld:Measure:obsValue"
