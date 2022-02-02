@@ -7,7 +7,9 @@ The following entity types are available:
 - [DatasetSTAT-DCAT-AP](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/DatasetSTAT-DCAT-AP/README.md). Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification
 
 
-No public contributors currently.
+
+### Contributors
+[Link](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/CONTRIBUTORS.yaml) to the 2 current contributors of the data models of this Subject.
 
 
 ### Contribution
