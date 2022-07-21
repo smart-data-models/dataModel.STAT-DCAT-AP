@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.1.0",
   "modelTags": "",
-  "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/DatasetSTAT-DCAT-AP/schema.json",
+  "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/Dataset/schema.json",
   "title": "Dataset STAT-DCAT-AP schema",
   "description": "Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification",
   "type": "object",

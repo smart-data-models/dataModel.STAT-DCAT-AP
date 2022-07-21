@@ -6,11 +6,11 @@
 components:
   schemas: 
     DatasetSTAT-DCAT-AP: 
-      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/DatasetSTAT-DCAT-AP/model.yaml#/DatasetSTAT-DCAT-AP"
+      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Dataset/model.yaml#/Dataset"
 info:
   description:  |
     Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification
-  title: DatasetSTAT-DCAT-AP
+  title: Dataset
   version: "0.0.1"
 openapi: "3.0.0"
 
@@ -25,7 +25,7 @@ paths:
           required: true
           schema: 
             enum: 
-              - DatasetSTAT-DCAT-AP
+              - Dataset
             type: string
       responses: 
         ? "200"
@@ -37,12 +37,12 @@ paths:
                   summary: "Key-Values Pairs"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/DatasetSTAT-DCAT-AP/examples/example.json"
+                      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Dataset/examples/example.json"
                 normalized: 
                   summary: "Normalized NGSI-LD"
                   value: 
                     - 
-                      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/DatasetSTAT-DCAT-AP/examples/example-normalized.jsonld"
+                      $ref: "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Dataset/examples/example-normalized.jsonld"
           description: OK
       tags: 
         - ngsi-ld
