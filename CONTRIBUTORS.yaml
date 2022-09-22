@@ -1,16 +1,16 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
- name: Alberto
- surname: Abella
- mail: alberto.abella@fiware.org
- organization: FIWARE Foundation
- project: 
- comments: 
--
- name: Fernando
- surname: López
- mail: fernando.lopez@fiware.org
- organization: FIWARE Foundation
- project:
- comments:
+- name: Alberto
+  surname: Abella
+  mail: alberto.abella@fiware.org
+  organization: FIWARE Foundation
+  project: 
+  comments: 
+  year: 2022
+- name: Fernando
+  surname: "L\xF3pez"
+  mail: fernando.lopez@fiware.org
+  organization: FIWARE Foundation
+  project: 
+  comments: 
+  year: 2022
