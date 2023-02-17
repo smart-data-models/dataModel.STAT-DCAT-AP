@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ConceptScheme of the subject dataModel.STAT-DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ConceptScheme_type AS ENUM ('ConceptScheme');
+CREATE TABLE ConceptScheme (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasTopConcept json, id text, language json, location json, name text, owner json, prefLabel json, seeAlso json, source text, type ConceptScheme_type);
