@@ -7,16 +7,18 @@
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバルな記述。**SKOS概念スキームは、1つまたは複数のSKOS概念の集合体として見ることができる。これらの概念間の意味的関係（リンク）もまた、概念スキームの一部と見なすことができる。しかし、この定義は制限的というよりは示唆的であることを意図しており、以下に述べる正式なデータモデルにはいくらかの柔軟性がある**。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasTopConcept[array]`: skos:hasTopConcept プロパティは、慣習により、概念スキームをそのスキームの階層的関係で最上位にある SKOS 概念にリンクするために使用されます。しかし、この規約を強制する整合性条件は存在しない。したがって、以下のグラフは、skos:hasTopConcept の使用規則に厳密に従っているわけではありませんが、SKOS データモデルと整合しています。  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `id[*]`: エンティティの一意な識別子  - `language[array]`: このプロパティは、コンセプトスキーマの言語を参照する。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `prefLabel[object]`: 好ましいラベルは、英語や日本語（ここではひらがなで書かれている）などの与えられた自然言語の'lomantic love'や'れんあい'などのUNICODE文字の文字列である。単純知識組織システムでは、語彙ラベルをあらゆるタイプのリソースに関連付けるための基本的な語彙をいくつか提供しています。好ましいラベルは、知識組織システムの人間が読める表現を生成または作成するときに便利です。これらのラベルは、SKOS概念の意味に関して最も強い手がかりを提供する。形式的には、優先ラベルはRDFプレーンリテラル[RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]である。RDFプレーンリテラルは、UNICODE文字列である字句形式と、[BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]で定義された構文に準拠した文字列であるオプションの言語タグから構成されます。  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティタイプ。ConceptSchemaでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- 必要なプロパティはありません  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 SKOSの概念スキームは、1つまたは複数のSKOS概念の集合体として見ることができる。これらの概念間の意味的関係（リンク）もまた、概念スキームの一部と見なすことができる。しかし、この定義は制限的というよりは示唆的であることを意図しており、以下に述べる正式なデータモデルにはある程度の柔軟性がある。  
 概念スキームの概念は、未知のソースからのデータを扱うときや、2つ以上の異なる知識体系を記述するデータを扱うときに有用である。  
