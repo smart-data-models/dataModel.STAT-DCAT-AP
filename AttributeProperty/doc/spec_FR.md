@@ -7,16 +7,18 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Classe de propriétés de composants qui représentent les attributs des observations dans le cube, par exemple l'unité de mesure**.  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `concept[string]`: Donne le concept qui est mesuré ou indiqué par la propriété de l'attribut.  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: Date de création de la propriété de cet attribut. Une instance de chaîne de caractères est valide par rapport à cet attribut s'il s'agit d'une représentation valide selon la règle ABNF 'date-time'. Les noms des formats de date et d'heure sont dérivés de la RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `identifier[string]`: Une référence non ambiguë à la ressource dans un contexte donné.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label est une instance de rdf:Property qui peut être utilisée pour fournir une version lisible par l'homme du nom d'une ressource.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: Cette propriété fait référence à une langue de la propriété Attribut.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `modified[string]`: Date à laquelle la ressource a été modifiée. Une instance de chaîne de caractères est valable par rapport à cet attribut si elle est une représentation valide selon la règle ABNF "date-time". Les noms des formats de date et d'heure sont dérivés de la RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `range[string]`: Range est une instance de rdf:Property qui est utilisée pour indiquer que les valeurs d'une propriété sont des instances d'une ou plusieurs classes.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'un concept.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 Le vocabulaire Data Cube représente les dimensions, les attributs et les mesures comme des propriétés RDF. Chacune est une instance de la classe abstraite qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1), qui possède à son tour des sous-classes qb:DimensionProperty, qb:AttributeProperty et qb:MeasureProperty. Une propriété de composant encapsule plusieurs informations : - le concept représenté (par exemple le temps ou la zone géographique), - la nature du composant (dimension, attribut ou mesure) représentée par le type de la propriété de composant, - le type ou la liste de codes utilisés pour représenter la valeur.  
 La propriété Attribut représente les attributs des observations dans le cube, par exemple l'unité de mesure.  
@@ -386,8 +388,71 @@ AttributeProperty:
 ## Exemples de charges utiles  
 #### AttributeProperty Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple d'une AttributeProperty au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:AttributeProperty:a3003",  
+  "type": "AttributeProperty",  
+  "language": [  
+    "en",  
+    "fr"  
+  ],  
+  "label": {  
+    "en": "SDMX attribute COMMENT_OBS",  
+    "fr": "Attribut SDMX "  
+  },  
+  "concept": "urn:ngsi-ld:Concept:c4303",  
+  "created": "2022-01-15T07:00:00+00:00",  
+  "identifier": "a3003",  
+  "modified": "2022-01-15T07:30:00+00:00",  
+  "range": "xsd:string"  
+}  
+```  
+</details>  
 #### AttributPropriété NGSI-v2 normalisée Exemple  
 Voici un exemple d'un AttributeProperty au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:AttributeProperty:a3003",  
+    "type": "AttributeProperty",  
+    "language": {  
+        "type": "array",  
+        "value": [  
+            "en",  
+            "fr"  
+        ]  
+    },  
+    "label": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "en": "SDMX attribute COMMENT_OBS",  
+            "fr": "Attribut SDMX "  
+        }  
+    },  
+    "concept": {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:Concept:c4303"  
+    },  
+    "created": {  
+        "type": "Date-Time",  
+        "value": "2022-01-15T07:00:00+00:00"  
+    },  
+    "identifier": {  
+        "type": "Text",  
+        "value": "a3003"  
+    },  
+    "modified": {  
+        "type": "Date-Time",  
+        "value": "2022-01-15T07:30:00+00:00"  
+    },  
+    "range": {  
+        "type": "Text",  
+        "value": "xsd:string"  
+    }  
+}  
+```  
+</details>  
 #### AttributeProperty Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'une AttributeProperty au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
