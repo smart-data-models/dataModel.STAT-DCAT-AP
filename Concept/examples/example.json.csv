@@ -1,0 +1,2 @@
+"id_", "type_", "language__0_", "language__1_", "inScheme_", "prefLabel__en_", "prefLabel__fr_", "notation_"
+"urn:ngsi-ld:Concept:N", "Concept", "en", "fr", "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier", "Neither seasonally adjusted nor calendar adjusted data", "Non ajustée", "N"
