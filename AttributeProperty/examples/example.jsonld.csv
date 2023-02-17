@@ -1,0 +1,2 @@
+"id_", "type_", "language__0_", "language__1_", "label__en_", "label__fr_", "concept_", "created_", "identifier_", "modified_", "range_", "@context__0_", "@context__1_"
+"urn:ngsi-ld:AttributeProperty:a3003", "AttributeProperty", "en", "fr", "SDMX attribute COMMENT_OBS", "Attribut SDMX ", "urn:ngsi-ld:Concept:c4303", "2022-01-15T07:00:00+00:00", "a3003", "2022-01-15T07:30:00+00:00", "xsd:string", "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
