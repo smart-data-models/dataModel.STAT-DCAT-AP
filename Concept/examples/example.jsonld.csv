@@ -1,0 +1,2 @@
+"id_", "type_", "language__0_", "language__1_", "inScheme_", "prefLabel__en_", "prefLabel__fr_", "notation_", "@context__0_", "@context__1_"
+"urn:ngsi-ld:Concept:N", "Concept", "en", "fr", "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier", "Neither seasonally adjusted nor calendar adjusted data", "Non ajustée", "N", "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
