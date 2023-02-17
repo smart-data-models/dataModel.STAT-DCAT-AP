@@ -1,0 +1,26 @@
+{
+    "id": "urn:ngsi-ld:Concept:N",
+    "type": "Concept",
+    "language": {
+        "type": "array",
+        "value": [
+            "en",
+            "fr"
+        ]
+    },
+    "inScheme": {
+        "type": "URL",
+        "value": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"
+    },
+    "prefLabel": {
+        "type": "StructuredValue",
+        "value": {
+            "en": "Neither seasonally adjusted nor calendar adjusted data",
+            "fr": "Non ajustée"
+        }
+    },
+    "notation": {
+        "type": "Text",
+        "value": "N"
+    }
+}
