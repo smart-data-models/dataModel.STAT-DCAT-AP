@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.1",
   "$id": "https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/tree/master/AttributePropertySTAT-DCAT-AP/schema.json",
   "title": "Smart Data models - Attribute Property schema (Cube)",
   "modelTags": "INTERSTAT",
