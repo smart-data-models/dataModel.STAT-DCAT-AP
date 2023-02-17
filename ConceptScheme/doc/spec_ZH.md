@@ -1,22 +1,24 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。概念主题  
-=======<!-- /10-Header -->  
+实体。概念主题（ConceptScheme  
+=====================<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/ConceptScheme/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+全局描述。**一个SKOS概念方案可以被看作是一个或多个SKOS概念的聚合。这些概念之间的语义关系（链接）也可以被看作是概念方案的一部分。然而，这个定义是提示性的，而不是限制性的，下面所说的正式数据模型有一定的灵活性**。  
+版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `hasTopConcept[array]`: 按照惯例，属性skos:hasTopConcept用于将一个概念方案链接到SKOS概念，该概念在该方案的层次关系中处于最顶端。然而，没有任何完整性条件来强制执行这一惯例。因此，下面的图虽然没有严格遵守skos:hasTopConcept的使用惯例，但还是与SKOS数据模型一致。  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `id[*]`: 实体的唯一标识符  - `language[array]`: 这个属性指的是概念模式的一种语言。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `prefLabel[object]`: 首选标签是一串UNICODE字符，如 "浪漫的爱 "或 "れんあい"，用给定的自然语言，如英语或日语（这里用平假名书写）。简单知识组织系统提供了一些基本词汇，用于将词汇标签与任何类型的资源联系起来。在生成或创建知识组织系统的人类可读表征时，首选的标签很有用。这些标签为一个SKOS概念的含义提供了最有力的线索。从形式上看，首选标签是一个RDF普通字面[RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]。RDF纯文本由词汇表和语言标签组成，前者是一串UNICODE字符，后者是一串符合[BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]定义的语法的字符。  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI实体类型。它必须是ConceptSchema。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
-- 没有要求的属性  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 一个SKOS概念方案可以被看作是一个或多个SKOS概念的聚合。这些概念之间的语义关系（链接）也可以被看作是概念方案的一部分。然而，这个定义是提示性的，而不是限制性的，在下面所说的正式数据模型中还有一些灵活性。  
 当处理来自未知来源的数据时，以及处理描述两个或多个不同知识组织系统的数据时，概念方案的概念很有用。  
