@@ -1,0 +1,17 @@
+{
+  "id": "urn:ngsi-ld:AttributeProperty:a3003",
+  "type": "AttributeProperty",
+  "language": [
+    "en",
+    "fr"
+  ],
+  "label": {
+    "en": "SDMX attribute COMMENT_OBS",
+    "fr": "Attribut SDMX "
+  },
+  "concept": "urn:ngsi-ld:Concept:c4303",
+  "created": "2022-01-15T07:00:00+00:00",
+  "identifier": "a3003",
+  "modified": "2022-01-15T07:30:00+00:00",
+  "range": "xsd:string"
+}
