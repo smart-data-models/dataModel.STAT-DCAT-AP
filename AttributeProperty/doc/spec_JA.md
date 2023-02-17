@@ -7,16 +7,18 @@
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバルな説明。**キューブ内の観測値の属性 (測定単位など) を表す、コンポーネント・プロパティのクラス。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `concept[string]`: 属性プロパティで測定または表示される概念を示す。  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: この属性プロパティの作成日。文字列インスタンスは、'date-time' ABNF規則に従って有効な表現である場合、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339 のセクション 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339] に由来しています。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `identifier[string]`: 与えられたコンテキスト内のリソースへの曖昧でない参照。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label は rdf:Property のインスタンスで、リソースの名前を人間が読みやすい形で提供するために使用されることがあります。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: このプロパティは、Attribute Property の言語を参照する。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modified[string]`: リソースが変更された日付。文字列インスタンスは、'date-time' ABNF 規則に従った有効な表現であれば、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339 のセクション 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339] に由来します。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range[string]`: Rangeは、プロパティの値が1つ以上のクラスのインスタンスであることを示すために使用されるrdf:Propertyのインスタンスである。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entityタイプ。概念でなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- 必要なプロパティはありません  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 データ・キューブ・ボキャブラリは、ディメンジョン、属性、およびメジャーを RDF プロパティとして表現します。それぞれは抽象的な qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1) クラスのインスタンスで、このクラスには qb:DimensionProperty、qb:AttributeProperty、および qb:MeasureProperty というサブクラスがあります。コンポーネント・プロパティは、いくつかの情報をカプセル化します。 - 表現される概念 (時間または地理的領域など)、 - コンポーネント・プロパティのタイプで表されるコンポーネントの性質 (ディメン ション、属性、メジャー)、 - 値を表すために使用するタイプまたはコード・リストです。  
 属性プロパティは、キューブ内のオブザベーションの属性 (測定単位など) を表します。  
@@ -386,8 +388,71 @@ AttributeProperty:
 ## ペイロードの例  
 #### AttributeProperty NGSI-v2 key-value の例  
 以下は、AttributePropertyをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:AttributeProperty:a3003",  
+  "type": "AttributeProperty",  
+  "language": [  
+    "en",  
+    "fr"  
+  ],  
+  "label": {  
+    "en": "SDMX attribute COMMENT_OBS",  
+    "fr": "Attribut SDMX "  
+  },  
+  "concept": "urn:ngsi-ld:Concept:c4303",  
+  "created": "2022-01-15T07:00:00+00:00",  
+  "identifier": "a3003",  
+  "modified": "2022-01-15T07:30:00+00:00",  
+  "range": "xsd:string"  
+}  
+```  
+</details>  
 #### AttributeProperty NGSI-v2 正規化例  
 以下は、AttributePropertyをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:AttributeProperty:a3003",  
+    "type": "AttributeProperty",  
+    "language": {  
+        "type": "array",  
+        "value": [  
+            "en",  
+            "fr"  
+        ]  
+    },  
+    "label": {  
+        "type": "StructuredValue",  
+        "value": {  
+            "en": "SDMX attribute COMMENT_OBS",  
+            "fr": "Attribut SDMX "  
+        }  
+    },  
+    "concept": {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:Concept:c4303"  
+    },  
+    "created": {  
+        "type": "Date-Time",  
+        "value": "2022-01-15T07:00:00+00:00"  
+    },  
+    "identifier": {  
+        "type": "Text",  
+        "value": "a3003"  
+    },  
+    "modified": {  
+        "type": "Date-Time",  
+        "value": "2022-01-15T07:30:00+00:00"  
+    },  
+    "range": {  
+        "type": "Text",  
+        "value": "xsd:string"  
+    }  
+}  
+```  
+</details>  
 #### AttributeProperty NGSI-LD key-value の例  
 ここでは、AttributePropertyをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
