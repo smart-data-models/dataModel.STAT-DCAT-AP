@@ -7,16 +7,18 @@
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバルな記述です。**キューブの寸法を表すコンポーネントプロパティのクラスです。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `codeList[string]`: Dimensionプロパティで測定または表示しているConcept Schemaへのリンクです。  . Model: [Relationship, http://purl.org/linked-data/cube#codeList](Relationship, http://purl.org/linked-data/cube#codeList)- `concept[string]`: 属性プロパティで測定または表示される概念を示す。  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: この属性プロパティの作成日。文字列インスタンスは、'date-time' ABNF規則に従って有効な表現である場合、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339のセクション5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]に由来しています。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `identifier[string]`: 与えられたコンテキスト内のリソースへの曖昧でない参照。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label は rdf:Property のインスタンスで、リソースの名前を人間が読みやすい形で提供するために使用されることがあります。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: このプロパティは、データセットの言語を参照する。データセットに複数の言語がある場合、このプロパティを繰り返すことができる。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modified[string]`: リソースが変更された日付。文字列インスタンスは、'date-time' ABNF 規則に従った有効な表現であれば、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339 のセクション 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339] に由来します。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range[string]`: Rangeは、プロパティの値が1つ以上のクラスのインスタンスであることを示すために使用されるrdf:Propertyのインスタンスである。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティタイプ。DimensionProperty である必要があります。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- 必要なプロパティはありません  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 データ・キューブ・ボキャブラリは、ディメンジョン、属性、およびメジャーを RDF プロパティとして表現します。それぞれは抽象的な qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1) クラスのインスタンスで、このクラスには qb:DimensionProperty、qb:AttributeProperty、および qb:MeasureProperty というサブクラスがあります。コンポーネント・プロパティは、いくつかの情報をカプセル化します。 - 表現される概念 (時間または地理的領域など)、 - コンポーネント・プロパティのタイプで表されるコンポーネントの性質 (ディメン ション、属性、メジャー)、 - 値を表すために使用するタイプまたはコード・リストです。  
 Dimension プロパティは、キューブのディメンジョンを表します。  
@@ -391,8 +393,76 @@ DimensionProperty:
 ## ペイロードの例  
 #### DimensionProperty NGSI-v2 key-value の例。  
 DimensionPropertyをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DimensionProperty:d3002",  
+  "type": "DimensionProperty",  
+  "language": [  
+    "en",  
+    "fr"  
+  ],  
+  "label": {  
+    "en": "SDMX dimension ADJUSTMENT",  
+    "fr": "Dimension SDMX ADJUSTMENT"  
+  },  
+  "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",  
+  "concept": "urn:ngsi-ld:Concept:adjustment",  
+  "created": "2022-01-15T07:00:00+00:00",  
+  "identifier": "d3002",  
+  "modified": "2022-01-15T07:30:00+00:00",  
+  "range": "http://bauhaus/codes/AjustementSaisonnier",  
+}  
+```  
+</details>  
 #### DimensionProperty NGSI-v2 正規化例  
 以下は、DimensionProperty を JSON-LD 形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DimensionProperty:d3002",  
+  "type": "DimensionProperty",  
+  "language": {  
+    "type": "array",  
+    "value": [  
+      "en",  
+      "fr"  
+    ]  
+  },  
+  "label": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "en": "SDMX dimension ADJUSTMENT",  
+      "fr": "Dimension SDMX ADJUSTMENT"  
+    }  
+  },  
+  "codeList": {  
+    "type": "URI",  
+    "object": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"  
+  },  
+  "concept": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:Concept:adjustment"  
+  },  
+  "created": {  
+    "type": "Date-Time",  
+    "value": "2022-01-15T07:00:00+00:00"  
+  },  
+  "identifier": {  
+    "type": "Text",  
+    "value": "d3002"  
+  },  
+  "modified": {  
+    "type": "Date-Time",  
+    "value": "2022-01-15T07:30:00+00:00"  
+  },  
+  "range": {  
+    "type": "Text",  
+    "value": "http://bauhaus/codes/AjustementSaisonnier"  
+  }  
+}  
+```  
+</details>  
 #### DimensionProperty NGSI-LD キー値例  
 DimensionPropertyをJSON-LD形式でkey-valuesとした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -400,20 +470,20 @@ DimensionProperty:
 {  
   "id": "urn:ngsi-ld:DimensionProperty:d3002",  
   "type": "DimensionProperty",  
-  "dct:language": [  
+  "language": [  
     "en",  
     "fr"  
   ],  
-  "rdfs:label": {  
+  "label": {  
     "en": "SDMX dimension ADJUSTMENT",  
     "fr": "Dimension SDMX ADJUSTMENT"  
   },  
-  "qb:codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",  
-  "qb:concept": "urn:ngsi-ld:Concept:adjustment",  
-  "dct:created": "2022-01-15T07:00:00+00:00",  
-  "dct:identifier": "d3002",  
-  "dct:modified": "2022-01-15T07:30:00+00:00",  
-  "rdfs:range": "http://bauhaus/codes/AjustementSaisonnier",  
+  "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",  
+  "concept": "urn:ngsi-ld:Concept:adjustment",  
+  "created": "2022-01-15T07:00:00+00:00",  
+  "identifier": "d3002",  
+  "modified": "2022-01-15T07:30:00+00:00",  
+  "range": "http://bauhaus/codes/AjustementSaisonnier",  
   "@context": [  
     "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
@@ -426,50 +496,50 @@ DimensionProperty:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:DimensionProperty:d3002",  
-    "type": "DimensionProperty",  
-    "dct:language": {  
-        "type": "Property",  
-        "value": [  
-            "en",  
-            "fr"  
-        ]  
-    },  
-    "rdfs:label": {  
-        "type": "Property",  
-        "value": {  
-            "en": "SDMX dimension ADJUSTMENT",  
-            "fr": "Dimension SDMX ADJUSTMENT"  
-        }  
-    },  
-    "qb:codeList": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"  
-    },  
-    "qb:concept": {  
-        "type": "Relationship",  
-        "value": "urn:ngsi-ld:Concept:adjustment"  
-    },  
-    "dct:created": {  
-        "type": "Property",  
-        "value": "2022-01-15T07:00:00+00:00"  
-    },  
-    "dct:identifier": {  
-        "type": "Property",  
-        "value": "d3002"  
-    },  
-    "dct:modified": {  
-        "type": "Property",  
-        "value": "2022-01-15T07:30:00+00:00"  
-    },  
-    "rdfs:range": {  
-        "type": "Property",  
-        "value": "http://bauhaus/codes/AjustementSaisonnier"  
-    },  
-    "@context": [  
-        "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  "id": "urn:ngsi-ld:DimensionProperty:d3002",  
+  "type": "DimensionProperty",  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      "en",  
+      "fr"  
     ]  
+  },  
+  "label": {  
+    "type": "Property",  
+    "value": {  
+      "en": "SDMX dimension ADJUSTMENT",  
+      "fr": "Dimension SDMX ADJUSTMENT"  
+    }  
+  },  
+  "codeList": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"  
+  },  
+  "concept": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:Concept:adjustment"  
+  },  
+  "created": {  
+    "type": "Property",  
+    "value": "2022-01-15T07:00:00+00:00"  
+  },  
+  "identifier": {  
+    "type": "Property",  
+    "value": "d3002"  
+  },  
+  "modified": {  
+    "type": "Property",  
+    "value": "2022-01-15T07:30:00+00:00"  
+  },  
+  "range": {  
+    "type": "Property",  
+    "value": "http://bauhaus/codes/AjustementSaisonnier"  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
