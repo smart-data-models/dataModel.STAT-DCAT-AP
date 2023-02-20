@@ -12,6 +12,8 @@ The following entity types are available:
 
 - [Dataset](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification
 
+- [DimensionProperty](https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/DimensionProperty/README.md). The class of component properties which represent the dimensions of the cube.
+
 
 
 ### Contributors
