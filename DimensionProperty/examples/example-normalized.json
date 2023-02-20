@@ -2,45 +2,41 @@
   "id": "urn:ngsi-ld:DimensionProperty:d3002",
   "type": "DimensionProperty",
   "language": {
-    "type": "Property",
+    "type": "array",
     "value": [
       "en",
       "fr"
     ]
   },
   "label": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "en": "SDMX dimension ADJUSTMENT",
       "fr": "Dimension SDMX ADJUSTMENT"
     }
   },
   "codeList": {
-    "type": "Relationship",
+    "type": "URI",
     "object": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"
   },
   "concept": {
-    "type": "Relationship",
+    "type": "URI",
     "value": "urn:ngsi-ld:Concept:adjustment"
   },
   "created": {
-    "type": "Property",
+    "type": "Date-Time",
     "value": "2022-01-15T07:00:00+00:00"
   },
   "identifier": {
-    "type": "Property",
+    "type": "Text",
     "value": "d3002"
   },
   "modified": {
-    "type": "Property",
+    "type": "Date-Time",
     "value": "2022-01-15T07:30:00+00:00"
   },
   "range": {
-    "type": "Property",
+    "type": "Text",
     "value": "http://bauhaus/codes/AjustementSaisonnier"
-  },
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+  }
 }

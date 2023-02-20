@@ -15,8 +15,5 @@
   "identifier": "d3002",
   "modified": "2022-01-15T07:30:00+00:00",
   "range": "http://bauhaus/codes/AjustementSaisonnier",
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+
 }
