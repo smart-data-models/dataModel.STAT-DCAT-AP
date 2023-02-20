@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "codelist": "http://purl.org/linked-data/cube#codelist",
+    "concept": "http://purl.org/linked-data/cube#concept",
+    "created": "http://purl.org/dc/terms/created",
+    "description": "http://purl.org/dc/terms/description",
+    "identifier": "http://purl.org/dc/terms/identifier",
+    "label": "https://www.w3.org/TR/rdf-schema/#ch_label",
+    "modified": "http://purl.org/dc/terms/modified",
+    "range": "https://www.w3.org/TR/rdf-schema/#ch_range"
+  }
+}
