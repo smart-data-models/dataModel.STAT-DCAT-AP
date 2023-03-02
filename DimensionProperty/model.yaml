@@ -142,7 +142,7 @@ DimensionProperty:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: Geoproperty. Geojson reference to the item. Point
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -163,7 +163,7 @@ DimensionProperty:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: Geoproperty. Geojson reference to the item. LineString
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -187,7 +187,7 @@ DimensionProperty:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. Polygon
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -213,7 +213,7 @@ DimensionProperty:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiPoint
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -236,7 +236,7 @@ DimensionProperty:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -262,7 +262,7 @@ DimensionProperty:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -291,7 +291,7 @@ DimensionProperty:
           title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     modified:
       description: "Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."
       format: date-time
