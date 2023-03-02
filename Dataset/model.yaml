@@ -238,11 +238,11 @@ Dataset:
         model: dct:source
         type: Property
     spatial:
-      description: This property refers to a geographic region that is covered by the Dataset
+      description: Geoproperty. This property refers to a geographic region that is covered by the Dataset
       items:
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
         oneOf:
-          - description: Geoproperty. Geojson reference to the item. Point
+          - description: GeoProperty. Geojson reference to the item. Point
             properties:
               bbox:
                 items:
@@ -263,7 +263,7 @@ Dataset:
               - coordinates
             title: GeoJSON Point
             type: object
-          - description: Geoproperty. Geojson reference to the item. LineString
+          - description: GeoProperty. Geojson reference to the item. LineString
             properties:
               bbox:
                 items:
@@ -287,7 +287,7 @@ Dataset:
               - coordinates
             title: GeoJSON LineString
             type: object
-          - description: Geoproperty. Geojson reference to the item. Polygon
+          - description: GeoProperty. Geojson reference to the item. Polygon
             properties:
               bbox:
                 items:
@@ -313,7 +313,7 @@ Dataset:
               - coordinates
             title: GeoJSON Polygon
             type: object
-          - description: Geoproperty. Geojson reference to the item. MultiPoint
+          - description: GeoProperty. Geojson reference to the item. MultiPoint
             properties:
               bbox:
                 items:
@@ -336,7 +336,7 @@ Dataset:
               - coordinates
             title: GeoJSON MultiPoint
             type: object
-          - description: Geoproperty. Geojson reference to the item. MultiLineString
+          - description: GeoProperty. Geojson reference to the item. MultiLineString
             properties:
               bbox:
                 items:
@@ -362,7 +362,7 @@ Dataset:
               - coordinates
             title: GeoJSON MultiLineString
             type: object
-          - description: Geoproperty. Geojson reference to the item. MultiLineString
+          - description: GeoProperty. Geojson reference to the item. MultiLineString
             properties:
               bbox:
                 items:
@@ -393,7 +393,6 @@ Dataset:
       type: array
       x-ngsi:
         model: dct:Location
-        type: Geoproperty
     statUnitMeasure:
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'
       items:
