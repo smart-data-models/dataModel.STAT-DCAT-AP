@@ -263,7 +263,7 @@
       "description": "Property. Model:'stat:dimension'. This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.",
       "items": {
         "type": "string",
-        "description": "Property. Each one of th dimensions related to the item"
+        "description": "Property. Each one of the dimensions related to the item"
       }
     },
     "statUnitMeasure": {
