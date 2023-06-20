@@ -7,18 +7,20 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Globale Beschreibung: **Datensatzschema gemäß der Spezifikation STAT-DCAT-AP 1.0.1**  
+Version: 1.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `accessRights[string]`: Diese Eigenschaft bezieht sich auf Informationen, die angeben, ob es sich bei dem Datensatz um offene Daten handelt, ob der Zugang eingeschränkt oder nicht öffentlich ist. Ein kontrolliertes Vokabular mit drei Mitgliedern (:public, :restricted, :non-public) wird vom Amt für Veröffentlichungen der EU erstellt und gepflegt. Enum:'public, restricted, non-public' (öffentlich, eingeschränkt, nicht öffentlich)  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: Diese Eigenschaft bezieht sich auf die Häufigkeit, mit der das Dataset aktualisiert wird.  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: Diese Eigenschaft bezieht sich auf einen sekundären Identifikator des Datensatzes, wie MAST/ADS, DataCite, DOI, EZID oder W3ID.  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: Diese Eigenschaft verweist auf eine Komponente, die zur Qualifizierung und Interpretation der beobachteten Werte verwendet wird, z. B. Maßeinheiten, etwaige Skalierungsfaktoren und Metadaten wie der Status der Beobachtung (z. B. geschätzt, vorläufig). Das Attribut ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: Diese Eigenschaft bezieht sich auf eine Durchführungsvorschrift oder eine andere Spezifikation.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Sie entspricht der obligatorischen Eigenschaft "Kontaktstelle" von STAT-DCAT-AP 1.0.1. Diese Eigenschaft enthält Kontaktinformationen, die für die Übermittlung von Kommentaren über den Datensatz verwendet werden können. Die Verwendung von vCard wird empfohlen  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: Diese Eigenschaft enthält eine Freitextbeschreibung des Datasets. Sie entspricht der obligatorischen Eigenschaft "description" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  - `dimension[array]`: Diese Eigenschaft verweist auf eine Komponente, die Beobachtungen identifiziert, z. B. die Zeit, für die die Beobachtung gilt, oder eine geografische Region, die die Beobachtung abdeckt. Dimension ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. für den Fall, dass ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: Diese Eigenschaft verknüpft das Dataset mit einer verfügbaren Verteilung. Sie entspricht der obligatorischen Eigenschaft "Dataset Distribution" von STAT-DCAT-AP 1.0.1  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, der eine Version, Ausgabe oder Anpassung des beschriebenen Datensatzes ist.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `identifier[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `issued[string]`: Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Datensatzes.  . Model: [dct:issued](dct:issued)- `keyword[array]`: Diese Eigenschaft enthält ein Schlüsselwort oder Tag, das den Datensatz beschreibt  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Diese Eigenschaft verweist auf eine Webseite, die Zugang zu dem Datensatz, seinen Verteilungen und/oder zusätzlichen Informationen bietet. Sie soll auf eine Landing Page beim ursprünglichen Datenanbieter verweisen, nicht auf eine Seite auf einer Website eines Dritten, z. B. eines Aggregators.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache des Datasets. Diese Eigenschaft kann wiederholt werden, wenn mehrere Sprachen im Dataset vorhanden sind.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: Diese Eigenschaft enthält das jüngste Datum, an dem der Datensatz geändert oder modifiziert wurde.  . Model: [dct:modified](dct:modified)- `page[array]`: Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diesen Datensatz  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: Diese Eigenschaft enthält eine Aussage über die Abstammung eines Datasets.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Datensatzes verantwortlich ist  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: Diese Eigenschaft verweist auf eine verwandte Ressource  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: Diese Eigenschaft bezieht sich auf eine Stichprobenverteilung des Datensatzes  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: Diese Eigenschaft verweist auf einen verwandten Datensatz, von dem der beschriebene Datensatz abgeleitet ist  . Model: [dct:source](dct:source)- `spatial[array]`: Diese Eigenschaft bezieht sich auf eine geografische Region, die durch den Datensatz abgedeckt wird  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: Diese Eigenschaft verweist auf eine Maßeinheit für die Beobachtungen, z. B. Euro, Quadratkilometer, Kaufkraftstandard (KKS), Vollzeitäquivalent, Prozentsatz. Die Maßeinheit ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: Diese Eigenschaft bezieht sich auf einen Zeitraum, den der Datensatz abdeckt  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: Diese Eigenschaft bezieht sich auf eine Kategorie des Datasets. Ein Dataset kann mit mehreren Themen verbunden sein  . Model: [dcat:theme](dcat:theme)- `title[array]`: Diese Eigenschaft enthält einen Namen für den Datensatz. Sie entspricht der obligatorischen Eigenschaft "Titel" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden.  - `type[string]`: NGSI-Entitätstyp. Es muss Dataset sein  - `versionInfo[string]`: Diese Eigenschaft enthält eine Versionsnummer oder eine andere Versionsbezeichnung des Datasets  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  <!-- /35-RequiredProperties -->  
+- `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Angepasst von [STAT-DCAT-AP Version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). Den Begriffen wird die Ontologie vorangestellt, aber dieses Präfix wird in der Datei notes_context.jsonld beschrieben. http://data.europa.eu/(xyz)/statdcat-ap/ Die Zeichenkette (xyz) wird vom URI-Ausschuss zugewiesen, der für die Verwaltung der dauerhaften URIs der EU-Organe und -Einrichtungen zuständig ist; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) wurde auf alternateidentifier abgebildet, aber der ursprüngliche IRI bleibt in der Datei notes_context.jsonld erhalten.  
+Angepasst von [STAT-DCAT-AP Version 1.0.1] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). Den Begriffen wird die Ontologie vorangestellt, aber dieses Präfix wird in der Datei notes_context.jsonld beschrieben. http://data.europa.eu/(xyz)/statdcat-ap/ Die Zeichenkette (xyz) wird vom URI-Ausschuss zugewiesen, der für die Verwaltung der dauerhaften URIs der EU-Organe und -Einrichtungen zuständig ist; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) wurde auf alternateidentifier abgebildet, aber der ursprüngliche IRI bleibt in der Datei notes_context.jsonld erhalten.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -112,7 +114,7 @@ Dataset:
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of th dimensions related to the item    
+        description: Property. Each one of the dimensions related to the item    
         type: string    
       type: array    
       x-ngsi:    
@@ -269,9 +271,9 @@ Dataset:
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: Geoproperty. Geojson reference to the item. Point    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -292,7 +294,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Point    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. LineString    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -316,7 +318,7 @@ Dataset:
               - coordinates    
             title: GeoJSON LineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. Polygon    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -342,7 +344,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Polygon    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -365,7 +367,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiPoint    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -391,7 +393,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiLineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +424,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    
