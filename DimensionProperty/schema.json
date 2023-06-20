@@ -72,7 +72,7 @@
         },
         "codeList": {
           "type": "string",
-          "description": "Relationship, Model:'http://purl.org/linked-data/cube#codeList'. Links to the Concept Schema which is being measured or indicated by the Dimension Property."
+          "description": "Relationship. Model:'http://purl.org/linked-data/cube#codeList'. Links to the Concept Schema which is being measured or indicated by the Dimension Property."
         },
         "concept": {
           "type": "string",
