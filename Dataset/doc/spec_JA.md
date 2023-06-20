@@ -4,25 +4,27 @@
 ============<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+グローバルな記述です：**STAT-DCAT-AP 1.0.1 仕様を満たすデータセットスキーマ**。  
+バージョン：1.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `accessRights[string]`: このプロパティは、データセットがオープンデータであるか、アクセス制限があるか、非公開であるかを示す情報である。3つのメンバー（:public, :restricted, :non-public）を持つ統制語彙が、EUの出版局によって作成・維持される予定です。列挙：'public, restricted, non-public'  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: このプロパティは、データセットが更新される頻度について言及する。  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: このプロパティは、MAST/ADS、DataCite、DOI、EZID、W3IDなど、データセットの二次識別子を指します。  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: このプロパティは、観測値を修飾し解釈するために使用されるコンポーネントへのリンクである。例えば、測定単位、スケーリング係数、および観測の状態（推定、暫定など）などのメタデータである。例えば、あるデータセットが SDMX と Data Cube の両方で提供される場合などである。  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: このプロパティは、実装ルールやその他の仕様を参照するものである。  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: STAT-DCAT-AP 1.0.1の「contact point」必須プロパティに対応する。このプロパティには、データセットに関するコメントを送信するために使用できる連絡先情報が含まれる。vCardの使用が推奨されます。  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: このプロパティには、データセットのフリーテキストによる説明が含まれる。DCAT-AP 2.0.1の'description'必須プロパティに対応する。このプロパティは、説明文の並行言語版のために繰り返すことができる。  - `dimension[array]`: このプロパティは、オブザベーションを識別するコンポーネント（例えば、オブザベーションが適用される時間や、オブザベーションがカバーする地理的な地域）にリンクしています。Dimension は、SDMX と Data Cube の両方でデータセットが提供される場合など、すべての配布形式に適用される概念的なエンティティです。  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: このプロパティは、データセットと利用可能なディストリビューションを結びつけるものである。STAT-DCAT-AP 1.0.1の「dataset distribution」必須プロパティに対応する。  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: このプロパティは、説明されているデータセットのバージョン、エディション、または適応である関連データセットを指します。  - `id[*]`: エンティティの一意な識別子  - `identifier[array]`: このプロパティには、データセットの主な識別子（例：URI、またはカタログのコンテキストにおける他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: このプロパティには、データセットの主な識別子（例：URI、またはカタログのコンテキストにおける他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)- `issued[string]`: このプロパティは、データセットが正式に発行（発行など）された日付を含む。  . Model: [dct:issued](dct:issued)- `keyword[array]`: このプロパティには、データセットを説明するキーワードやタグが含まれます。  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: このプロパティは、データセット、その配布物、および追加情報へのアクセスを提供するウェブページを指します。このプロパティは、アグリゲーターなどの第三者のサイト上のページではなく、元のデータ提供者のランディングページを指すことを意図しています。  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: このプロパティは、データセットの言語を参照する。データセットに複数の言語がある場合は、このプロパティを繰り返すことができる。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: このプロパティには、データセットが変更または修正された最新の日付が含まれる。  . Model: [dct:modified](dct:modified)- `page[array]`: このプロパティは、このデータセットに関するページまたはドキュメントを参照します。  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: このプロパティは、Dataset の系統に関する記述を含む。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: このプロパティは、データセットを利用可能にする責任を負うエンティティ（組織）を指す。  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: このプロパティは、関連するリソースを参照する  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: このプロパティは、データセットのサンプル分布を参照します。  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: このプロパティは、記述されたデータセットが由来する関連データセットを指す。  . Model: [dct:source](dct:source)- `spatial[array]`: このプロパティは、Dataset がカバーする地理的な領域を指す。  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: このプロパティは、観測値の測定単位（例えば、ユーロ、平方キロメートル、購買力基準（PPS）、フルタイム換算、パーセンテージ）にリンクしています。測定単位は、データセットが SDMX と Data Cube の両方で提供される場合など、すべての配信形式に適用される概念的なエンティティです。  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: このプロパティは、Dataset がカバーする時間的な期間を示すものである。  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: このプロパティは、Dataset のカテゴリを指す。データセットは、複数のテーマと関連付けることができる。  . Model: [dcat:theme](dcat:theme)- `title[array]`: このプロパティには、データセットに付けられた名前が含まれる。DCAT-AP 2.0.1の「Title」必須プロパティに対応する。このプロパティは、並行言語版の名称のために繰り返すことができる。  - `type[string]`: NGSIのエンティティタイプ。データセットでなければならない  - `versionInfo[string]`: このプロパティは、データセットのバージョン番号またはその他のバージョン指定を含む。  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: このプロパティには、このバージョンとデータセットの以前のバージョンとの相違点の説明が含まれる。このプロパティは、バージョンノートの並行言語バージョンに対して繰り返すことができます。  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
-- 必要なプロパティはありません  <!-- /35-RequiredProperties -->  
+必須プロパティ  
+- `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)から引用した。用語の前にはオントロジーが付きますが、この接頭辞はnotes_context.jsonldファイルに記述されています。 http://data.europa.eu/(xyz)/statdcat-ap/ EU機関・団体の持続的URIの管理を担当するURI委員会により文字列（xyz）が割り当てられます; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) は alternateidentifier へマップされていますが、オリジナルのIRIは notes_context.jsonld で保持されています。  
+STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)から引用した。用語の前にはオントロジーが付きますが、この接頭辞はnotes_context.jsonldファイルに記述されています。 http://data.europa.eu/(xyz)/statdcat-ap/ 文字列（xyz）は、EU機関・団体の永続URIの管理を担当するURI委員会によって割り当てられます。 foaf, http://xmlns.com/foaf/0.1/. ID (adms:identifier) は alternateidentifier にマッピングされていますが、オリジナルのIRIは notes_context.jsonld に保持されています。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -112,7 +114,7 @@ Dataset:
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of th dimensions related to the item    
+        description: Property. Each one of the dimensions related to the item    
         type: string    
       type: array    
       x-ngsi:    
@@ -269,9 +271,9 @@ Dataset:
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: Geoproperty. Geojson reference to the item. Point    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -292,7 +294,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Point    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. LineString    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -316,7 +318,7 @@ Dataset:
               - coordinates    
             title: GeoJSON LineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. Polygon    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -342,7 +344,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Polygon    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -365,7 +367,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiPoint    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -391,7 +393,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiLineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +424,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    
@@ -500,8 +502,8 @@ Dataset:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### データセット NGSI-v2 key-value 例  
-ここでは、DatasetをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### データセット NGSI-v2 キー値 例  
+ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -534,7 +536,7 @@ Dataset:
 ```  
 </details>  
 #### データセット NGSI-v2 正規化例  
-以下は、JSON-LD 形式の Dataset を正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のDatasetを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -589,8 +591,8 @@ Dataset:
 }  
 ```  
 </details>  
-#### データセット NGSI-LD Key-value 例  
-ここでは、DatasetをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+#### データセット NGSI-LD キー値 例  
+ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -627,7 +629,7 @@ Dataset:
 ```  
 </details>  
 #### データセット NGSI-LD 正規化例  
-以下は、JSON-LD 形式の Dataset を正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、JSON-LD形式のDatasetを正規化した例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  

@@ -7,16 +7,18 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Descripción global: **Esquema del conjunto de datos que cumple la especificación STAT-DCAT-AP 1.0.1**.  
+versión: 1.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `accessRights[string]`: Esta propiedad se refiere a la información que indica si el conjunto de datos es de libre acceso, tiene restricciones de acceso o no es público. La Oficina de Publicaciones de la UE creará y mantendrá un vocabulario controlado con tres miembros (:public, :restricted, :non-public). Enum:'público, restringido, no público'  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: Esta propiedad se refiere a la frecuencia con la que se actualiza el conjunto de datos.  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: Esta propiedad se refiere a un identificador secundario del conjunto de datos, como MAST/ADS, DataCite, DOI, EZID o W3ID.  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: Esta propiedad enlaza con un componente utilizado para calificar e interpretar los valores observados, por ejemplo, las unidades de medida, cualquier factor de escala y metadatos como el estado de la observación (por ejemplo, estimado, provisional). El atributo es una entidad conceptual que se aplica a todos los formatos de distribución, por ejemplo, en caso de que un conjunto de datos se proporcione tanto en SDMX como en Data Cube.  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: Esta propiedad hace referencia a una norma de aplicación u otra especificación.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Se corresponde con la propiedad obligatoria "punto de contacto" de STAT-DCAT-AP 1.0.1. Esta propiedad contiene información de contacto que puede utilizarse para enviar comentarios sobre el conjunto de datos. Se recomienda el uso de vCard  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: Esta propiedad contiene una descripción de texto libre del conjunto de datos. Se corresponde con la propiedad obligatoria "description" de DCAT-AP 2.0.1. Esta propiedad puede repetirse para versiones lingüísticas paralelas de la descripción.  - `dimension[array]`: Esta propiedad enlaza con un componente que identifica las observaciones, por ejemplo, el tiempo al que se aplica la observación, o una región geográfica que cubre la observación. La dimensión es una entidad conceptual que se aplica a todos los formatos de distribución, por ejemplo, en caso de que un conjunto de datos se proporcione tanto en SDMX como en Data Cube.  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: Esta propiedad vincula el conjunto de datos a una distribución disponible. Se corresponde con la propiedad obligatoria 'dataset distribution' de STAT-DCAT-AP 1.0.1  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: Esta propiedad se refiere a un conjunto de datos relacionado que es una versión, edición o adaptación del conjunto de datos descrito.  - `id[*]`: Identificador único de la entidad  - `identifier[array]`: Esta propiedad contiene el identificador principal del conjunto de datos, por ejemplo, el URI u otro identificador único en el contexto del catálogo.  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: Esta propiedad contiene el identificador principal del conjunto de datos, por ejemplo, el URI u otro identificador único en el contexto del catálogo.  . Model: [dct:identifier](dct:identifier)- `issued[string]`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del conjunto de datos.  . Model: [dct:issued](dct:issued)- `keyword[array]`: Esta propiedad contiene una palabra clave o etiqueta que describe el conjunto de datos  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Esta propiedad hace referencia a una página web que proporciona acceso al conjunto de datos, sus distribuciones y/o información adicional. Se pretende que apunte a una página de destino en el proveedor de datos original, no a una página en un sitio de un tercero, como un agregador.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Esta propiedad se refiere a un idioma del Conjunto de Datos. Esta propiedad puede repetirse si hay varios idiomas en el conjunto de datos.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: Esta propiedad contiene la fecha más reciente en la que se cambió o modificó el conjunto de datos.  . Model: [dct:modified](dct:modified)- `page[array]`: Esta propiedad hace referencia a una página o documento sobre este conjunto de datos  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: Esta propiedad contiene una declaración sobre el linaje de un conjunto de datos.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Conjunto de Datos  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: Esta propiedad hace referencia a un recurso relacionado  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: Esta propiedad se refiere a una distribución muestral del conjunto de datos  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: Esta propiedad hace referencia a un conjunto de datos relacionado del que se deriva el conjunto de datos descrito.  . Model: [dct:source](dct:source)- `spatial[array]`: Esta propiedad se refiere a una región geográfica cubierta por el conjunto de datos  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: Esta propiedad enlaza con una unidad de medida de las observaciones, por ejemplo, euro, kilómetro cuadrado, estándar de poder adquisitivo (EPA), equivalente a tiempo completo, porcentaje. La unidad de medida es una entidad conceptual que se aplica a todos los formatos de distribución , por ejemplo, en el caso de que un conjunto de datos se proporcione tanto en SDMX como en Data Cube.  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: Esta propiedad se refiere a un periodo temporal que cubre el conjunto de datos  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: Esta propiedad se refiere a una categoría del Conjunto de Datos. Un conjunto de datos puede estar asociado a varios temas  . Model: [dcat:theme](dcat:theme)- `title[array]`: Esta propiedad contiene un nombre dado al conjunto de datos. Se corresponde con la propiedad obligatoria "Título" de DCAT-AP 2.0.1. Esta propiedad puede repetirse para versiones lingüísticas paralelas del nombre.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Dataset  - `versionInfo[string]`: Esta propiedad contiene un número de versión u otra designación de versión del conjunto de datos  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Esta propiedad contiene una descripción de las diferencias entre esta versión y una versión anterior del conjunto de datos. Esta propiedad puede repetirse para versiones en idiomas paralelos de las notas de versión.  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- No se requieren propiedades  <!-- /35-RequiredProperties -->  
+- `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 Adaptado de [STAT-DCAT-AP versión 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). Los términos van precedidos de la ontología pero este prefijo se describe en el archivo notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La cadena (xyz) será asignada por el Comité URI responsable de la gestión de los URI persistentes de las instituciones y organismos de la UE; foaf, http://xmlns.com/foaf/0.1/. identificador (adms:identificador) se ha mapeado a alternateidentifier pero el IRI original se mantiene en el archivo notes_context.jsonld.  
 <!-- /40-RequiredProperties -->  
@@ -112,7 +114,7 @@ Dataset:
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of th dimensions related to the item    
+        description: Property. Each one of the dimensions related to the item    
         type: string    
       type: array    
       x-ngsi:    
@@ -269,9 +271,9 @@ Dataset:
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: Geoproperty. Geojson reference to the item. Point    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -292,7 +294,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Point    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. LineString    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -316,7 +318,7 @@ Dataset:
               - coordinates    
             title: GeoJSON LineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. Polygon    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -342,7 +344,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Polygon    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -365,7 +367,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiPoint    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -391,7 +393,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiLineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +424,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    

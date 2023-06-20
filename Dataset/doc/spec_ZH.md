@@ -1,24 +1,26 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。数据集  
+实体：数据集  
 ======<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Dataset/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+全局描述：**数据集模式符合STAT-DCAT-AP 1.0.1规范**。  
+版本：1.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `accessRights[string]`: 这个属性指的是表明数据集是否是开放数据、有访问限制或不公开的信息。欧盟出版办公室将创建并维护一个有三个成员（:公开、限制、非公开）的受控词汇表。枚举："公开、限制、非公开  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: 这个属性指的是数据集被更新的频率。  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: 这个属性指的是数据集的二级标识符，比如MAST/ADS、DataCite、DOI、EZID或W3ID。  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: 该属性链接到用于限定和解释观测值的组件，例如计量单位、任何比例系数和元数据，如观测值的状态（如估计值、临时值）。属性是一个概念实体，适用于所有的分发格式，例如，如果一个数据集同时以SDMX和Data Cube形式提供。  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: 这个属性指的是一个实施规则或其他规范。  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: 它与STAT-DCAT-AP 1.0.1的 "联系点 "强制性属性相对应。该属性包含联系信息，可用于发送关于数据集的评论。建议使用vCard。  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: 这个属性包含数据集的自由文本说明。它与DCAT-AP 2.0.1的 "描述 "强制属性相对应。这个属性可以重复用于平行语言版本的描述。  - `dimension[array]`: 该属性链接到识别观察结果的组件，例如，观察结果所适用的时间，或者观察结果所涵盖的地理区域。维度是一个概念性的实体，适用于所有的分发格式，例如在数据集以SDMX和Data Cube形式提供的情况下。  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: 该属性将数据集链接到一个可用的分布。它与STAT-DCAT-AP 1.0.1的 "数据集分布 "强制性属性相对应。  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: 这个属性指的是一个相关的数据集，它是所述数据集的一个版本、版本或改编。  - `id[*]`: 实体的唯一标识符  - `identifier[array]`: 这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: 这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)- `issued[string]`: 这个属性包含了数据集的正式发布（例如，出版）日期。  . Model: [dct:issued](dct:issued)- `keyword[array]`: 这个属性包含一个关键词或标签，描述数据集的情况。  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: 这个属性指的是一个提供数据集、其分布和/或额外信息访问的网页。它的目的是指向原始数据提供者的登陆页面，而不是指向第三方网站上的页面，比如说聚合器。  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: 这个属性指的是数据集的一种语言。如果数据集里有多种语言，这个属性可以重复。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: 这个属性包含数据集被改变或修改的最新日期。  . Model: [dct:modified](dct:modified)- `page[array]`: 这个属性指的是关于这个数据集的一个页面或文件  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: 这个属性包含了关于数据集的世系的声明。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: 这个属性指的是负责提供数据集的实体（组织）。  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: 此属性指的是一个相关的资源  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: 这个属性指的是数据集的样本分布  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: 这个属性指的是一个相关的数据集，描述的数据集就是从这个数据集衍生出来的。  . Model: [dct:source](dct:source)- `spatial[array]`: 这个属性指的是数据集所覆盖的地理区域。  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: 此属性链接到观察值的测量单位，例如欧元、平方公里、购买力标准（PPS）、全时当量、百分比。测量单位是一个概念实体，适用于所有的分布格式，例如，在数据集以SDMX和数据立方体提供的情况下。  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: 这个属性指的是数据集所涵盖的一个时间段。  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: 这个属性指的是数据集的一个类别。一个数据集可以与多个主题相关联  . Model: [dcat:theme](dcat:theme)- `title[array]`: 这个属性包含了给数据集的一个名称。它与DCAT-AP 2.0.1的 "标题 "强制属性相对应。这个属性可以重复用于平行语言版本的名称。  - `type[string]`: NGSI实体类型。它必须是数据集  - `versionInfo[string]`: 这个属性包含了数据集的版本号或其他版本的指定。  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: 这个属性包含了这个版本与数据集的上一个版本之间的差异描述。这个属性可以重复用于平行语言版本的版本说明。  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
-- 没有要求的属性  <!-- /35-RequiredProperties -->  
+- `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-改编自[STAT-DCAT-AP 1.0.1版]（https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf）。术语前面有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为alternateidentifier，但原始IRI保留在notes_context.jsonld中。  
+改编自[STAT-DCAT-AP 1.0.1版](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前面有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为alternateidentifier，但原始IRI保留在notes_context.jsonld中。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## 数据模型的属性描述  
@@ -112,7 +114,7 @@ Dataset:
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of th dimensions related to the item    
+        description: Property. Each one of the dimensions related to the item    
         type: string    
       type: array    
       x-ngsi:    
@@ -269,9 +271,9 @@ Dataset:
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: Geoproperty. Geojson reference to the item. Point    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -292,7 +294,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Point    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. LineString    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -316,7 +318,7 @@ Dataset:
               - coordinates    
             title: GeoJSON LineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. Polygon    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -342,7 +344,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Polygon    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -365,7 +367,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiPoint    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -391,7 +393,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiLineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +424,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    
@@ -501,7 +503,7 @@ Dataset:
 <!-- 80-Examples -->  
 ## ＃＃＃＃有效载荷的例子  
 #### 数据集NGSI-v2关键值示例  
-这里有一个JSON-LD格式的数据集的例子，作为关键值。当使用`options=keyValues'时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+这里有一个JSON-LD格式的数据集的例子，作为key-values。当使用`options=keyValues'时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -627,7 +629,7 @@ Dataset:
 ```  
 </details>  
 #### 数据集NGSI-LD规范化示例  
-下面是一个以JSON-LD格式规范化的数据集的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+下面是一个规范化的JSON-LD格式的数据集的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  

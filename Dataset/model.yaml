@@ -83,7 +83,7 @@ Dataset:
     dimension:
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'
       items:
-        description: Property. Each one of th dimensions related to the item
+        description: Property. Each one of the dimensions related to the item
         type: string
       type: array
       x-ngsi:
@@ -238,7 +238,7 @@ Dataset:
         model: dct:source
         type: Property
     spatial:
-      description: Geoproperty. This property refers to a geographic region that is covered by the Dataset
+      description: This property refers to a geographic region that is covered by the Dataset
       items:
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
         oneOf:
@@ -393,6 +393,7 @@ Dataset:
       type: array
       x-ngsi:
         model: dct:Location
+        type: GeoProperty
     statUnitMeasure:
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'
       items:
