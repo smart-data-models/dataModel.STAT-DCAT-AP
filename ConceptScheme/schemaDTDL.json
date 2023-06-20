@@ -55,6 +55,11 @@
             "comment": "A description of this item"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
@@ -82,7 +87,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "The property skos:hasTopConcept is, by convention, used to link a concept scheme to the SKOS concept(s) which are topmost in the hierarchical relations for that scheme. However, there are no integrity conditions enforcing this convention. Therefore, the graph below, whilst not strictly adhering to the usage convention for skos:hasTopConcept, is nevertheless consistent with the SKOS data model.",
+            "comment": "Relationship. Model:'https://www.w3.org/TR/skos-reference/#schemes'. The property skos:hasTopConcept is, by convention, used to link a concept scheme to the SKOS concept(s) which are topmost in the hierarchical relations for that scheme. However, there are no integrity conditions enforcing this convention. Therefore, the graph below, whilst not strictly adhering to the usage convention for skos:hasTopConcept, is nevertheless consistent with the SKOS data model.",
             "displayName": "hasTopConcept"
         },
         {
@@ -92,7 +97,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property refers to a language of the Concept Schema.",
+            "comment": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Concept Schema.",
             "displayName": "language"
         },
         {
@@ -148,7 +153,7 @@
         {
             "@type": "object",
             "name": "prefLabel",
-            "comment": "A preferred label is a string of UNICODE characters, such as 'romantic love' or '\u308c\u3093\u3042\u3044', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Forma",
+            "comment": "Property. Model:'https://www.w3.org/TR/skos-reference/#prefLabel'. A preferred label is a string of UNICODE characters, such as 'romantic love' or '\u308c\u3093\u3042\u3044', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels pro",
             "displayName": "prefLabel",
             "fields": [
                 {
@@ -180,36 +185,6 @@
                     "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         }
     ]
 }
