@@ -1,0 +1,8 @@
+notesHeader:
+  Adapted from [STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). The terms are preceded by the ontology but this prefix is described in the file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ The string (xyz) will be assigned by the URI Committee responsible for the management of the persistent URIs of the EU institutions and bodies; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) has been mapped to alternate identifier but the original IRI is kept in the notes_context.jsonld.
+
+notesMiddle:
+
+notesFooter:
+
+notesReadme:
