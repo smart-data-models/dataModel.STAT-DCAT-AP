@@ -21,7 +21,7 @@
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 El vocabulario Data Cube representa las dimensiones, atributos y medidas como propiedades RDF. Cada una de ellas es una instancia de la clase abstracta qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1), que a su vez tiene subclases qb:DimensionProperty, qb:AttributeProperty y qb:MeasureProperty. Una propiedad componente encierra varios elementos de información: - el concepto que se representa (por ejemplo, tiempo o área geográfica), - la naturaleza del componente (dimensión, atributo o medida) representada por el tipo de la propiedad componente, - el tipo o lista de códigos utilizados para representar el valor.  
-La propiedad atributo representa atributos de las observaciones del cubo, por ejemplo, la unidad de medida.  
+La propiedad atributo representa los atributos de las observaciones del cubo, por ejemplo, la unidad de medida.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Descripción de las propiedades del modelo de datos  
@@ -76,13 +76,13 @@ AttributeProperty:
         model: https://schema.org/Text    
         type: Property    
     concept:    
-      description: Gives the concept which is being measured or indicated by the Attribute Property.    
+      description: "Relationship. Model:'http://purl.org/linked-data/cube#concept'. Gives the concept which is being measured or indicated by the Attribute Property."    
       type: string    
       x-ngsi:    
         model: "http://purl.org/linked-data/cube#concept"    
         type: Relationship    
     created:    
-      description: "Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created'. Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -124,13 +124,13 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     identifier:    
-      description: An unambiguous reference to the resource within a given context.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier'. An unambiguous reference to the resource within a given context."    
       type: string    
       x-ngsi:    
         model: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier"    
         type: Property    
     label:    
-      description: 'Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource''s name.'    
+      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_label'. Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name."    
       properties:    
         de:    
           type: string    
@@ -151,7 +151,7 @@ AttributeProperty:
         model: "https://www.w3.org/TR/rdf-schema/#ch_label"    
         type: Property    
     language:    
-      description: This property refers to a language of the Attribute Property.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Attribute Property."    
       items:    
         enum:    
           - en    
@@ -169,7 +169,7 @@ AttributeProperty:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -190,7 +190,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -214,7 +214,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -240,7 +240,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -263,7 +263,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -289,7 +289,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -318,9 +318,9 @@ AttributeProperty:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     modified:    
-      description: "Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified'. Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -340,7 +340,7 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     range:    
-      description: 'Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes.'    
+      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_range'. Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/rdf-schema/#ch_range"    
@@ -363,7 +363,7 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be Concept.    
+      description: Property. NGSI Entity type. It has to be Concept.    
       enum:    
         - AttributeProperty    
       type: string    

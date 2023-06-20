@@ -4,30 +4,30 @@
 ===========<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Concept/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**SKOSコンセプトは、アイデアや概念、思考の単位と見なすことができる。しかし、何が思考の単位を構成するかは主観的であり、この定義は制限的というよりは示唆的であることを意図している。SKOSコンセプトの概念は、知識組織システムの概念的または知的構造を説明するとき、およびKOS内で確立された特定のアイデアまたは意味を参照するときに便利です。SKOSは、シソーリや分類スキームのような準形式的なKOSを表現するための手段であるため、このクラスの正式な定義にはある程度の柔軟性が組み込まれていることに注意してください**。  
-バージョン: 0.0.1  
+グローバルな記述：**SKOSコンセプトは、アイデアや概念、思考の単位と見なすことができる。しかし、何をもって思考の単位とするかは主観的なものであり、この定義は制限的なものではなく、示唆的なものであることを意図している。SKOSコンセプトの概念は、知識組織システムの概念的または知的構造を説明するとき、およびKOS内で確立された特定のアイデアまたは意味を参照するときに有用である。SKOSは、シソーリや分類スキームのような半形式のKOSを表現するための手段であるため、このクラスの正式な定義にはある程度の柔軟性が組み込まれていることに注意してください**。  
+バージョン：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inScheme[string]`: この概念が定義されているConceptSchemaへのリンクです。  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `language[array]`: このプロパティは、コンセプトの言語を参照します。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `notation[string]`: 表記は，ある概念スキームの範囲内で概念を一意に識別するために用いられる'T58.5'や'303.4833'などの文字列のことである。表記は、通常、どの自然言語でも単語または単語のシーケンスとして認識されないという点で、語彙ラベルとは異なっている。  . Model: [https://www.w3.org/TR/skos-reference/#notations](https://www.w3.org/TR/skos-reference/#notations)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `prefLabel[object]`: 好ましいラベルは、英語や日本語（ここではひらがなで書かれている）などの与えられた自然言語の'lomantic love'や'れんあい'などのUNICODE文字の文字列である。単純知識組織システムでは、語彙ラベルをあらゆるタイプのリソースに関連付けるための基本的な語彙をいくつか提供しています。好ましいラベルは、知識組織システムの人間が読める表現を生成または作成するときに便利です。これらのラベルは、SKOS概念の意味に関して最も強い手がかりを提供する。形式的には、優先ラベルはRDFプレーンリテラル[RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]である。RDFプレーンリテラルは、UNICODE文字列である字句形式と、[BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]で定義された構文に準拠した文字列であるオプションの言語タグから構成されます。  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entityタイプ。概念でなければならない。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inScheme[string]`: この概念が定義されているConceptSchemaへのリンクです。  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `language[array]`: このプロパティは、Conceptの言語を参照します。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `notation[string]`: 表記とは、「T58.5」や「303.4833」のように、ある概念スキームの範囲内で概念を一意に特定するために使用される文字列のことである。表記は辞書的なラベルとは異なり、自然言語では単語や単語の並びとして認識されることはないのが普通である。  . Model: [https://www.w3.org/TR/skos-reference/#notations](https://www.w3.org/TR/skos-reference/#notations)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `prefLabel[object]`: 好ましいラベルとは、英語や日本語（ここではひらがなで書かれている）などの与えられた自然言語で、「ロマンチックな愛」や「れんあい」のようなUNICODE文字の文字列のことである。単純知識組織システムは、あらゆるタイプのリソースに語彙的なラベルを関連付けるためのいくつかの基本的な語彙を提供します。好ましいラベルは、知識組織システムの人間が読める表現を生成または作成するときに便利です。これらのラベルは、SKOS概念の意味として最も強い手がかりを提供する。形式的には、優先ラベルはRDFプレーンリテラル[RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]です。RDFプレーンリテラルは、UNICODE文字の文字列である字句と、[BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47] で定義された構文に準拠した文字の文字列であるオプションの言語タグからなる。  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entityタイプ。Conceptでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-SKOSコンセプトは、アイデアや概念、思考の単位と見なすことができる。しかし、何が思考の単位を構成するかは主観的であり、この定義は制限的というよりは示唆的であることを意図している。  
-SKOSコンセプトの概念は、知識組織システムの概念的または知的構造を説明するとき、およびKOS内で確立された特定のアイデアまたは意味を参照するときに便利です。  
-SKOSは、シソーリや分類スキームのような準形式的なKOSを表現するための手段 として設計されているので、このクラスの正式な定義にはある程度の柔軟性が 取り込まれていることに注意してください。  
+SKOSコンセプトは、アイデアや概念、思考の単位と見なすことができます。しかし、何をもって思考の単位とするかは主観的なものであり、この定義は制限的なものではなく、示唆的なものであることを意図しています。  
+SKOSコンセプトの概念は、知識組織システムの概念的または知的構造を説明するとき、およびKOS内で確立された特定のアイデアまたは意味を参照するときに有用である。  
+SKOSは、シソーリや分類スキームのような半形式のKOSを表現するための手段であるように設計されているので、このクラスの正式な定義にある程度の柔軟性が組み込まれていることに注意してください。  
 SKOS概念の識別と記述の詳細な例については、[https://www.w3.org/TR/skos-reference/#ref-SKOS-PRIMER]を参照してください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -113,13 +113,13 @@ Concept:
       x-ngsi:    
         type: Property    
     inScheme:    
-      description: Link to the ConceptSchema in which it is defined this Concept.    
+      description: "Relationship. Model:'https://www.w3.org/TR/skos-reference/#schemes'. Link to the ConceptSchema in which it is defined this Concept."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/skos-reference/#schemes"    
         type: Relationship    
     language:    
-      description: This property refers to a language of the Concept.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Concept."    
       items:    
         enum:    
           - en    
@@ -137,7 +137,7 @@ Concept:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -158,7 +158,7 @@ Concept:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -182,7 +182,7 @@ Concept:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -208,7 +208,7 @@ Concept:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -231,7 +231,7 @@ Concept:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -257,7 +257,7 @@ Concept:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -286,14 +286,14 @@ Concept:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     notation:    
-      description: A notation is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme. A notation is different from a lexical label in that a notation is not normally recognizable as a word or sequence of words in any natural language.    
+      description: "Property. Model:'https://www.w3.org/TR/skos-reference/#notations'. A notation is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme. A notation is different from a lexical label in that a notation is not normally recognizable as a word or sequence of words in any natural language."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/skos-reference/#notations"    
@@ -307,7 +307,7 @@ Concept:
       x-ngsi:    
         type: Property    
     prefLabel:    
-      description: "A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
+      description: "Property. Model:'https://www.w3.org/TR/skos-reference/#prefLabel'. A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
       properties:    
         de:    
           type: string    
@@ -345,7 +345,7 @@ Concept:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be Concept.    
+      description: Property. NGSI Entity type. It has to be Concept.    
       enum:    
         - Concept    
       type: string    
@@ -368,8 +368,8 @@ Concept:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### コンセプト NGSI-v2 key-value 例  
-ここでは、ConceptをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### 概念 NGSI-v2 キーバリュー 例  
+ここでは、ConceptをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -388,8 +388,8 @@ Concept:
 }  
 ```  
 </details>  
-#### コンセプト NGSI-v2 正規化例  
-以下は、正規化されたJSON-LD形式のConceptの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 概念 NGSI-v2 正規化例  
+ここでは、正規化されたJSON-LD形式のConceptの例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -420,8 +420,8 @@ Concept:
 }  
 ```  
 </details>  
-#### 概念 NGSI-LD キー値 例  
-ここでは、ConceptをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 概念 NGSI-LD キーバリュー 例  
+ここでは、ConceptをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -445,7 +445,7 @@ Concept:
 ```  
 </details>  
 #### 概念 NGSI-LD 正規化例  
-以下は、ConceptをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、正規化されたJSON-LD形式のConceptの例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  

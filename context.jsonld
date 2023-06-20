@@ -1,5 +1,10 @@
 {
     "@context": {
+        "AttributeProperty": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/AttributeProperty",
+        "Concept": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/Concept",
+        "ConceptScheme": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/ConceptScheme",
+        "Dataset": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/Dataset",
+        "DimensionProperty": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/DimensionProperty",
         "accessRights": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accessRights",
         "accrualPeriodicity": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accrualPeriodicity",
         "address": "https://smartdatamodels.org/address",
@@ -7,6 +12,7 @@
         "alternateidentifier": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/alternateidentifier",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "attribute": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/attribute",
+        "codeList": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/codeList",
         "concept": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/concept",
         "conformsTo": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/conformsTo",
         "contactPoint": "https://smartdatamodels.org/contactPoint",

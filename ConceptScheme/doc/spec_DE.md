@@ -7,7 +7,7 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Globale Beschreibung: **Ein SKOS-Konzeptschema kann als eine Aggregation von einem oder mehreren SKOS-Konzepten betrachtet werden. Semantische Beziehungen (Links) zwischen diesen Konzepten können ebenfalls als Teil eines Konzeptschemas betrachtet werden. Diese Definition ist jedoch eher als Anregung denn als Einschränkung zu verstehen, und das nachstehend beschriebene formale Datenmodell bietet eine gewisse Flexibilität.**  
+Globale Beschreibung: **Ein SKOS-Konzeptschema kann als Aggregation von einem oder mehreren SKOS-Konzepten betrachtet werden. Semantische Beziehungen (Links) zwischen diesen Konzepten können ebenfalls als Teil eines Konzeptschemas betrachtet werden. Diese Definition ist jedoch eher als Anregung denn als Einschränkung zu verstehen, und das nachstehend beschriebene formale Datenmodell bietet eine gewisse Flexibilität.**  
 Version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -15,7 +15,7 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasTopConcept[array]`: Die Eigenschaft skos:hasTopConcept wird vereinbarungsgemäß verwendet, um ein Konzeptschema mit dem/den SKOS-Konzept(en) zu verknüpfen, das/die in den hierarchischen Beziehungen für dieses Schema an oberster Stelle steht/stehen. Es gibt jedoch keine Integritätsbedingungen, die diese Konvention erzwingen. Daher entspricht die nachstehende Grafik zwar nicht genau der Verwendungskonvention für skos:hasTopConcept, ist aber dennoch mit dem SKOS-Datenmodell vereinbar.  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `id[*]`: Eindeutiger Bezeichner der Entität  - `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache des Konzeptschemas.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `prefLabel[object]`: Eine bevorzugte Bezeichnung ist eine Zeichenkette aus UNICODE-Zeichen, wie z.B. "romantische Liebe" oder "れんあい", in einer bestimmten natürlichen Sprache, wie z.B. Englisch oder Japanisch (hier in Hiragana geschrieben). Das Simple Knowledge Organization System stellt ein Basisvokabular zur Verfügung, um lexikalische Bezeichnungen mit Ressourcen aller Art zu assoziieren. Die bevorzugte Bezeichnung ist bei der Generierung oder Erstellung von menschenlesbaren Darstellungen eines Wissensorganisationssystems nützlich. Diese Bezeichnungen bieten die besten Anhaltspunkte für die Bedeutung eines SKOS-Konzepts. Formal ist ein bevorzugtes Label ein RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. Ein RDF-Literal besteht aus einer lexikalischen Form, die eine Zeichenkette aus UNICODE-Zeichen ist, und einem optionalen Sprach-Tag, das eine Zeichenkette ist, die der in [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47] definierten Syntax entspricht.  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Entitätstyp. Es muss ConceptSchema sein.  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasTopConcept[array]`: Die Eigenschaft skos:hasTopConcept wird vereinbarungsgemäß verwendet, um ein Konzeptschema mit dem/den SKOS-Konzept(en) zu verknüpfen, das/die in den hierarchischen Beziehungen für dieses Schema an erster Stelle steht/stehen. Es gibt jedoch keine Integritätsbedingungen, die diese Konvention erzwingen. Daher entspricht die nachstehende Grafik zwar nicht genau der Verwendungskonvention für skos:hasTopConcept, ist aber dennoch mit dem SKOS-Datenmodell vereinbar.  . Model: [https://www.w3.org/TR/skos-reference/#schemes](https://www.w3.org/TR/skos-reference/#schemes)- `id[*]`: Eindeutiger Bezeichner der Entität  - `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache des Konzeptschemas.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `prefLabel[object]`: Eine bevorzugte Bezeichnung ist eine Zeichenkette aus UNICODE-Zeichen, wie z.B. "romantische Liebe" oder "れんあい", in einer bestimmten natürlichen Sprache, wie z.B. Englisch oder Japanisch (hier in Hiragana geschrieben). Das Simple Knowledge Organization System stellt ein Basisvokabular zur Verfügung, um lexikalische Bezeichnungen mit Ressourcen aller Art zu assoziieren. Die bevorzugte Bezeichnung ist bei der Generierung oder Erstellung von menschenlesbaren Darstellungen eines Wissensorganisationssystems nützlich. Diese Bezeichnungen bieten die stärksten Anhaltspunkte für die Bedeutung eines SKOS-Konzepts. Formal ist ein bevorzugtes Label ein RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. Ein RDF-Literal besteht aus einer lexikalischen Form, einer Zeichenkette aus UNICODE-Zeichen, und einem optionalen Sprach-Tag, einer Zeichenkette, die der in [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47] definierten Syntax entspricht.  . Model: [https://www.w3.org/TR/skos-reference/#prefLabel](https://www.w3.org/TR/skos-reference/#prefLabel)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss ConceptSchema sein.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -99,7 +99,7 @@ ConceptScheme:
       x-ngsi:    
         type: Property    
     hasTopConcept:    
-      description: 'The property skos:hasTopConcept is, by convention, used to link a concept scheme to the SKOS concept(s) which are topmost in the hierarchical relations for that scheme. However, there are no integrity conditions enforcing this convention. Therefore, the graph below, whilst not strictly adhering to the usage convention for skos:hasTopConcept, is nevertheless consistent with the SKOS data model.'    
+      description: "Relationship. Model:'https://www.w3.org/TR/skos-reference/#schemes'. The property skos:hasTopConcept is, by convention, used to link a concept scheme to the SKOS concept(s) which are topmost in the hierarchical relations for that scheme. However, there are no integrity conditions enforcing this convention. Therefore, the graph below, whilst not strictly adhering to the usage convention for skos:hasTopConcept, is nevertheless consistent with the SKOS data model."    
       items:    
         type: string    
       type: array    
@@ -120,7 +120,7 @@ ConceptScheme:
       x-ngsi:    
         type: Property    
     language:    
-      description: This property refers to a language of the Concept Schema.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Concept Schema."    
       items:    
         enum:    
           - en    
@@ -138,7 +138,7 @@ ConceptScheme:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -159,7 +159,7 @@ ConceptScheme:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -183,7 +183,7 @@ ConceptScheme:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -209,7 +209,7 @@ ConceptScheme:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -232,7 +232,7 @@ ConceptScheme:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -258,7 +258,7 @@ ConceptScheme:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -287,7 +287,7 @@ ConceptScheme:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: The name of this item.    
       type: string    
@@ -302,7 +302,7 @@ ConceptScheme:
       x-ngsi:    
         type: Property    
     prefLabel:    
-      description: "A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
+      description: "Property. Model:'https://www.w3.org/TR/skos-reference/#prefLabel'. A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
       properties:    
         de:    
           type: string    
@@ -340,7 +340,7 @@ ConceptScheme:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be ConceptSchema.    
+      description: Property. NGSI Entity type. It has to be ConceptSchema.    
       enum:    
         - ConceptScheme    
       type: string    
