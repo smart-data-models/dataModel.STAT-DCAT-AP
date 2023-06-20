@@ -1,31 +1,31 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティAttributeProperty  
-=======================<!-- /10-Header -->  
+エンティティになります：AttributeProperty（アトリビュートプロパティ  
+==========================================<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/AttributeProperty/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな説明。**キューブ内の観測値の属性 (測定単位など) を表す、コンポーネント・プロパティのクラス。  
-バージョン: 0.0.1  
+グローバルな説明です：**キューブ内のオブザベーションの属性（測定単位など）を表すコンポーネントプロパティのクラスです。  
+バージョン：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `concept[string]`: 属性プロパティで測定または表示される概念を示す。  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: この属性プロパティの作成日。文字列インスタンスは、'date-time' ABNF規則に従って有効な表現である場合、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339 のセクション 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339] に由来しています。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `identifier[string]`: 与えられたコンテキスト内のリソースへの曖昧でない参照。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label は rdf:Property のインスタンスで、リソースの名前を人間が読みやすい形で提供するために使用されることがあります。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: このプロパティは、Attribute Property の言語を参照する。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modified[string]`: リソースが変更された日付。文字列インスタンスは、'date-time' ABNF 規則に従った有効な表現であれば、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339 のセクション 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339] に由来します。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `range[string]`: Rangeは、プロパティの値が1つ以上のクラスのインスタンスであることを示すために使用されるrdf:Propertyのインスタンスである。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entityタイプ。概念でなければならない。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `concept[string]`: 属性プロパティで計測・表示する概念を示す。  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: この属性プロパティが作成された日付。文字列インスタンスは，'date-time'ABNF規則に従った有効な表現である場合，この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339の5.6節[https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]に由来しています。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `identifier[string]`: 与えられた文脈の中で、リソースへの曖昧さのない参照。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Labelはrdf:Propertyのインスタンスであり、リソースの名前の人間が読めるバージョンを提供するために使用されるかもしれないものである。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: このプロパティは、Attribute Property の言語を参照する。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `modified[string]`: リソースが変更された日付。文字列インスタンスは、'date-time' ABNF規則に従って有効な表現である場合、この属性に対して有効である。日付と時間のフォーマット名は、RFC 3339の5.6節[https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]に基づいている。  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `range[string]`: Rangeはrdf:Propertyのインスタンスで、プロパティの値が1つ以上のクラスのインスタンスであることを示すために使用されます。  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entityタイプ。Conceptでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-データ・キューブ・ボキャブラリは、ディメンジョン、属性、およびメジャーを RDF プロパティとして表現します。それぞれは抽象的な qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1) クラスのインスタンスで、このクラスには qb:DimensionProperty、qb:AttributeProperty、および qb:MeasureProperty というサブクラスがあります。コンポーネント・プロパティは、いくつかの情報をカプセル化します。 - 表現される概念 (時間または地理的領域など)、 - コンポーネント・プロパティのタイプで表されるコンポーネントの性質 (ディメン ション、属性、メジャー)、 - 値を表すために使用するタイプまたはコード・リストです。  
-属性プロパティは、キューブ内のオブザベーションの属性 (測定単位など) を表します。  
+データ・キューブの語彙は、ディメンション、アトリビュート、メジャーを RDF プロパティとして表現します。それぞれは、抽象 qb:ComponentProperty (https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentproperty-1) クラスのインスタンスで、qb:DimensionProperty、qb:AttributeProperty、および qb:MeasureProperty のサブクラスを持っています。コンポーネント・プロパティは、いくつかの情報をカプセル化します。 - 表現される概念（時間や地理的領域など） - コンポーネント・プロパティのタイプで表されるコンポーネントの性質（ディメンション、属性、メジャー） - 値を表すために使用するタイプまたはコード・リスト。  
+属性プロパティは、キューブ内のオブザベーションの属性 (例えば、測定単位) を表します。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -76,13 +76,13 @@ AttributeProperty:
         model: https://schema.org/Text    
         type: Property    
     concept:    
-      description: Gives the concept which is being measured or indicated by the Attribute Property.    
+      description: "Relationship. Model:'http://purl.org/linked-data/cube#concept'. Gives the concept which is being measured or indicated by the Attribute Property."    
       type: string    
       x-ngsi:    
         model: "http://purl.org/linked-data/cube#concept"    
         type: Relationship    
     created:    
-      description: "Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created'. Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -124,13 +124,13 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     identifier:    
-      description: An unambiguous reference to the resource within a given context.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier'. An unambiguous reference to the resource within a given context."    
       type: string    
       x-ngsi:    
         model: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier"    
         type: Property    
     label:    
-      description: 'Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource''s name.'    
+      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_label'. Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name."    
       properties:    
         de:    
           type: string    
@@ -151,7 +151,7 @@ AttributeProperty:
         model: "https://www.w3.org/TR/rdf-schema/#ch_label"    
         type: Property    
     language:    
-      description: This property refers to a language of the Attribute Property.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Attribute Property."    
       items:    
         enum:    
           - en    
@@ -169,7 +169,7 @@ AttributeProperty:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -190,7 +190,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -214,7 +214,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -240,7 +240,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -263,7 +263,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -289,7 +289,7 @@ AttributeProperty:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -318,9 +318,9 @@ AttributeProperty:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     modified:    
-      description: "Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified'. Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -340,7 +340,7 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     range:    
-      description: 'Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes.'    
+      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_range'. Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/rdf-schema/#ch_range"    
@@ -363,7 +363,7 @@ AttributeProperty:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be Concept.    
+      description: Property. NGSI Entity type. It has to be Concept.    
       enum:    
         - AttributeProperty    
       type: string    
@@ -386,8 +386,8 @@ AttributeProperty:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### AttributeProperty NGSI-v2 key-value の例  
-以下は、AttributePropertyをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+#### AttributeProperty NGSI-v2 key-value 例．  
+ここでは、AttributePropertyをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -410,7 +410,7 @@ AttributeProperty:
 ```  
 </details>  
 #### AttributeProperty NGSI-v2 正規化例  
-以下は、AttributePropertyをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のAttributePropertyを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -453,7 +453,7 @@ AttributeProperty:
 }  
 ```  
 </details>  
-#### AttributeProperty NGSI-LD key-value の例  
+#### AttributeProperty NGSI-LD key-value Example  
 ここでは、AttributePropertyをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -481,7 +481,7 @@ AttributeProperty:
 ```  
 </details>  
 #### AttributeProperty NGSI-LD 正規化例  
-以下は、AttributeProperty を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のAttributePropertyを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
