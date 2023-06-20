@@ -113,13 +113,13 @@ Concept:
       x-ngsi:    
         type: Property    
     inScheme:    
-      description: Link to the ConceptSchema in which it is defined this Concept.    
+      description: "Relationship. Model:'https://www.w3.org/TR/skos-reference/#schemes'. Link to the ConceptSchema in which it is defined this Concept."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/skos-reference/#schemes"    
         type: Relationship    
     language:    
-      description: This property refers to a language of the Concept.    
+      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Concept."    
       items:    
         enum:    
           - en    
@@ -137,7 +137,7 @@ Concept:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -158,7 +158,7 @@ Concept:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -182,7 +182,7 @@ Concept:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -208,7 +208,7 @@ Concept:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -231,7 +231,7 @@ Concept:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -257,7 +257,7 @@ Concept:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -286,14 +286,14 @@ Concept:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     notation:    
-      description: A notation is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme. A notation is different from a lexical label in that a notation is not normally recognizable as a word or sequence of words in any natural language.    
+      description: "Property. Model:'https://www.w3.org/TR/skos-reference/#notations'. A notation is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme. A notation is different from a lexical label in that a notation is not normally recognizable as a word or sequence of words in any natural language."    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/skos-reference/#notations"    
@@ -307,7 +307,7 @@ Concept:
       x-ngsi:    
         type: Property    
     prefLabel:    
-      description: "A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
+      description: "Property. Model:'https://www.w3.org/TR/skos-reference/#prefLabel'. A preferred label is a string of UNICODE characters, such as 'romantic love' or 'れんあい', in a given natural language, such as English or Japanese (written here in hiragana). The Simple Knowledge Organization System provides some basic vocabulary for associating lexical labels with resources of any type. The preferred label is useful when generating or creating human-readable representations of a knowledge organization system. These labels provide the strongest clues as to the meaning of a SKOS concept. Formally, a preferred label is an RDF plain literal [RDF-CONCEPTS, https://www.w3.org/TR/skos-reference/#ref-RDF-CONCEPTS]. An RDF plain literal is composed of a lexical form, which is a string of UNICODE characters, and an optional language tag, which is a string of characters conforming to the syntax defined by [BCP47, https://www.w3.org/TR/skos-reference/#ref-BCP47]."    
       properties:    
         de:    
           type: string    
@@ -345,7 +345,7 @@ Concept:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be Concept.    
+      description: Property. NGSI Entity type. It has to be Concept.    
       enum:    
         - Concept    
       type: string    
