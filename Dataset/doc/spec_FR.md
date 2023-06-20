@@ -7,21 +7,23 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Dataset Schema conforme à la spécification STAT-DCAT-AP 1.0.1**  
+version : 1.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `accessRights[string]`: Cette propriété fait référence aux informations qui indiquent si le jeu de données est une donnée ouverte, s'il est soumis à des restrictions d'accès ou s'il n'est pas public. Un vocabulaire contrôlé comprenant trois membres (:public, :restricted, :non-public) sera créé et mis à jour par l'Office des publications de l'UE. Enum : "public, restreint, non public  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: Cette propriété fait référence à la fréquence de mise à jour de l'ensemble de données.  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: Cette propriété fait référence à un identifiant secondaire de l'ensemble de données, tel que MAST/ADS, DataCite, DOI, EZID ou W3ID.  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: Cette propriété est liée à un composant utilisé pour qualifier et interpréter les valeurs observées, par exemple les unités de mesure, les facteurs d'échelle et les métadonnées telles que le statut de l'observation (par exemple estimé, provisoire). L'attribut est une entité conceptuelle qui s'applique à tous les formats de distribution, par exemple dans le cas où un jeu de données est fourni à la fois en SDMX et en Data Cube.  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: Cette propriété fait référence à une règle de mise en œuvre ou à une autre spécification.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Elle correspond à la propriété obligatoire 'contact point' de STAT-DCAT-AP 1.0.1. Cette propriété contient des informations de contact qui peuvent être utilisées pour envoyer des commentaires sur le jeu de données. L'utilisation de vCard est recommandée  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: Cette propriété contient un compte rendu en texte libre de l'ensemble de données. Elle correspond à la propriété obligatoire "description" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions en langues parallèles de la description.  - `dimension[array]`: Cette propriété est liée à un composant qui identifie les observations, par exemple le temps auquel l'observation s'applique ou une région géographique que l'observation couvre. La dimension est une entité conceptuelle qui s'applique à tous les formats de distribution, par exemple dans le cas où un jeu de données est fourni à la fois en SDMX et en Data Cube.  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: Cette propriété lie le Dataset à une distribution disponible. Elle correspond à la propriété obligatoire 'dataset distribution' de STAT-DCAT-AP 1.0.1  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: Cette propriété fait référence à un jeu de données apparenté qui est une version, une édition ou une adaptation du jeu de données décrit.  - `id[*]`: Identifiant unique de l'entité  - `identifier[array]`: Cette propriété contient l'identifiant principal de l'ensemble de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: Cette propriété contient l'identifiant principal de l'ensemble de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)- `issued[string]`: Cette propriété contient la date d'émission officielle (par exemple, la publication) du jeu de données.  . Model: [dct:issued](dct:issued)- `keyword[array]`: Cette propriété contient un mot-clé ou une étiquette décrivant l'ensemble de données.  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Cette propriété fait référence à une page web qui donne accès à l'ensemble de données, à ses distributions et/ou à des informations supplémentaires. Elle est destinée à pointer vers une page d'atterrissage chez le fournisseur de données original, et non vers une page sur le site d'un tiers, tel qu'un agrégateur.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si l'ensemble de données comporte plusieurs langues.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: Cette propriété contient la date la plus récente à laquelle l'ensemble de données a été changé ou modifié.  . Model: [dct:modified](dct:modified)- `page[array]`: Cette propriété renvoie à une page ou à un document sur cet ensemble de données.  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: Cette propriété contient une déclaration sur le lignage d'un jeu de données.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition du jeu de données.  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: Cette propriété fait référence à une ressource connexe  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: Cette propriété fait référence à une distribution d'échantillons de l'ensemble de données.  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: Cette propriété fait référence à un ensemble de données apparenté dont l'ensemble de données décrit est dérivé.  . Model: [dct:source](dct:source)- `spatial[array]`: Cette propriété fait référence à une région géographique couverte par l'ensemble de données.  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: Cette propriété renvoie à une unité de mesure des observations, par exemple l'euro, le kilomètre carré, le standard de pouvoir d'achat (SPA), l'équivalent temps plein, le pourcentage. L'unité de mesure est une entité conceptuelle qui s'applique à tous les formats de distribution, par exemple lorsqu'un ensemble de données est fourni à la fois en SDMX et en Data Cube.  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: Cette propriété fait référence à une période temporelle couverte par l'ensemble de données.  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: Cette propriété fait référence à une catégorie du Dataset. Un Dataset peut être associé à plusieurs thèmes.  . Model: [dcat:theme](dcat:theme)- `title[array]`: Cette propriété contient un nom donné à l'ensemble de données. Elle correspond à la propriété obligatoire "Title" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  - `type[string]`: Type d'entité NGSI. Il doit s'agir d'un jeu de données  - `versionInfo[string]`: Cette propriété contient un numéro de version ou une autre désignation de la version de l'ensemble de données.  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Cette propriété contient une description des différences entre cette version et une version précédente de l'ensemble de données. Cette propriété peut être répétée pour les versions en langues parallèles des notes de version.  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adapté de [STAT-DCAT-AP version 1.0.1] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). Les termes sont précédés de l'ontologie mais ce préfixe est décrit dans le fichier notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La chaîne (xyz) sera attribuée par le Comité URI responsable de la gestion des URI persistants des institutions et organes de l'UE ; foaf, http://xmlns.com/foaf/0.1/. L'identifiant (adms:identifier) a été mappé sur alternateidentifier mais l'IRI original est conservé dans le fichier notes_context.jsonld.  
+Adapté de [STAT-DCAT-AP version 1.0.1] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). Les termes sont précédés de l'ontologie mais ce préfixe est décrit dans le fichier notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La chaîne (xyz) sera attribuée par le comité URI responsable de la gestion des URI persistants des institutions et organes de l'UE ; foaf, http://xmlns.com/foaf/0.1/. L'identifiant (adms:identifier) a été mappé en alternateidentifier mais l'IRI d'origine est conservé dans le fichier notes_context.jsonld.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
+## Modèle de données description des propriétés  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
@@ -112,7 +114,7 @@ Dataset:
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of th dimensions related to the item    
+        description: Property. Each one of the dimensions related to the item    
         type: string    
       type: array    
       x-ngsi:    
@@ -269,9 +271,9 @@ Dataset:
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: Geoproperty. Geojson reference to the item. Point    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -292,7 +294,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Point    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. LineString    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -316,7 +318,7 @@ Dataset:
               - coordinates    
             title: GeoJSON LineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. Polygon    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -342,7 +344,7 @@ Dataset:
               - coordinates    
             title: GeoJSON Polygon    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiPoint    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -365,7 +367,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiPoint    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -391,7 +393,7 @@ Dataset:
               - coordinates    
             title: GeoJSON MultiLineString    
             type: object    
-          - description: Geoproperty. Geojson reference to the item. MultiLineString    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +424,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    
@@ -500,8 +502,8 @@ Dataset:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### Ensemble de données Valeurs-clés NGSI-v2 Exemple  
-Voici un exemple d'ensemble de données au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Dataset NGSI-v2 key-values Exemple  
+Voici un exemple de jeu de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -533,8 +535,8 @@ Dataset:
 }  
 ```  
 </details>  
-#### Jeu de données NGSI-v2 normalisé Exemple  
-Voici un exemple d'un ensemble de données au format JSON-LD tel que normalisé. Il est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Ensemble de données NGSI-v2 normalisé Exemple  
+Voici un exemple d'un jeu de données au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -589,8 +591,8 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données Valeurs-clés NGSI-LD Exemple  
-Voici un exemple d'un ensemble de données au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Ensemble de données Valeurs clés NGSI-LD Exemple  
+Voici un exemple d'ensemble de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -626,8 +628,8 @@ Dataset:
 }  
 ```  
 </details>  
-#### Jeu de données NGSI-LD normalisé Exemple  
-Voici un exemple d'un ensemble de données au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Ensemble de données NGSI-LD normalisé Exemple  
+Voici un exemple de jeu de données au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -684,7 +686,7 @@ Dataset:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
