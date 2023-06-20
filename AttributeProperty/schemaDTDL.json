@@ -27,7 +27,7 @@
             "writable": true,
             "displayName": "concept",
             "@type": "Relationship",
-            "comment": "Gives the concept which is being measured or indicated by the Attribute Property."
+            "comment": "Relationship. Model:'http://purl.org/linked-data/cube#concept'. Gives the concept which is being measured or indicated by the Attribute Property."
         },
         {
             "name": "created",
@@ -35,7 +35,7 @@
             "displayName": "created",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."
+            "comment": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created'. Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."
         },
         {
             "name": "dataProvider",
@@ -75,7 +75,12 @@
             "displayName": "identifier",
             "@type": "Property",
             "schema": "string",
-            "comment": "An unambiguous reference to the resource within a given context."
+            "comment": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier'. An unambiguous reference to the resource within a given context."
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
         },
         {
             "name": "modified",
@@ -83,7 +88,7 @@
             "displayName": "modified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."
+            "comment": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified'. Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."
         },
         {
             "name": "name",
@@ -99,7 +104,7 @@
             "displayName": "range",
             "@type": "Property",
             "schema": "string",
-            "comment": "Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes."
+            "comment": "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_range'. Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes."
         },
         {
             "name": "seeAlso",
@@ -121,7 +126,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property refers to a language of the Attribute Property.",
+            "comment": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Attribute Property.",
             "displayName": "language"
         },
         {
@@ -177,7 +182,7 @@
         {
             "@type": "object",
             "name": "label",
-            "comment": "Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name.",
+            "comment": "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_label'. Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name.",
             "displayName": "label",
             "fields": [
                 {
@@ -209,36 +214,6 @@
                     "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         }
     ]
 }
