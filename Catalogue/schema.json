@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "modelTags": "INTERSTAT",
   "$id": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json",
   "title": " Smart Data Models - STAT-DCAT-AP Catalogue",
   "description": "Catalogue of datasets compliant with STAT-DCAT-AP 1.0.1 specification.",

@@ -6,5 +6,5 @@ currentAdopters:
  mail:
  organization:
  project:  https://cef-interstat.eu/
- comments: SKOS Concept class defined to be used into statDCAT-AP
+ comments: A physical embodiment of the Dataset in a particular format, including visualisations of the data (http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution).
  startDate: 2023-02-23

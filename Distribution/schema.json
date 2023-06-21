@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
   "$schemaVersion": "0.0.1",
-  "modelTags": "",
+  "modelTags": "INTERSTAT",
   "$id": "https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Distribution/schema.json",
   "title": "Smart Data models STAT-DCAT-AP distribution of a Dataset,",
   "description": "This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1",
@@ -38,7 +38,7 @@
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. This property refers to the file format of the Distribution."
         },
-        "license": {
+        "licence": {
           "type": "string",
           "description": "Property. Model:'dct:license'. This property refers to the licence under which the Distribution is made available."
         },
@@ -94,7 +94,7 @@
         },
         "status": {
           "type": "string",
-          "description": "Property. Model:'adms :status'. This property refers to the maturity of the Distribution."
+          "description": "Property. Model:'adms:status'. This property refers to the maturity of the Distribution."
         },
         "title": {
           "type": "array",
