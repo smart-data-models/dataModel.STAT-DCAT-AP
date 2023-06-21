@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Distribution of the subject dataModel.STAT-DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Distribution_type AS ENUM ('Distribution');
+CREATE TABLE Distribution (accessUrl json, address json, alternateName text, areaServed text, byteSize text, checksum text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, documentation json, downloadURL json, format text, id text, language json, licence text, linkedSchemas json, location json, mediaType text, modificationDate timestamp, name text, owner json, releaseDate timestamp, rights text, seeAlso json, source text, status text, title json, type Distribution_type);
