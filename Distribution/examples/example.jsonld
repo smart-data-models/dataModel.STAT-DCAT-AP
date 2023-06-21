@@ -1,5 +1,6 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
+  "type": "Distribution",
   "dateCreated": "2008-02-15T20:13:19Z",
   "dateModified": "2020-05-07T09:44:12Z",
   "source": "",
@@ -32,7 +33,7 @@
     "district": ""
   },
   "areaServed": "",
-  "type": "Catalogue",
+
   "dataset": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192",
   "publisher": "Interstat project",
   "title": [

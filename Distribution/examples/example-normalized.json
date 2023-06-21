@@ -1,14 +1,13 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
+  "type": "Distribution",
   "dateCreated": {
     "type": "Date-Time",
-    "value":  "2008-02-15T20:13:19Z"
-
+    "value": "2008-02-15T20:13:19Z"
   },
   "dateModified": {
     "type": "Date-Time",
-    "value":  "2020-05-07T09:44:12Z"
-
+    "value": "2020-05-07T09:44:12Z"
   },
   "source": {
     "type": "Text",
@@ -70,7 +69,6 @@
     "type": "Text",
     "value": ""
   },
-  "type": "Catalogue",
   "dataset": {
     "type": "object",
     "value": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192"
@@ -103,8 +101,7 @@
   },
   "releaseDate": {
     "type": "Date-Time",
-    "value":  "2023-04-08T01:19:50Z"
-
+    "value": "2023-04-08T01:19:50Z"
   },
   "themes": {
     "type": "array",
@@ -115,8 +112,7 @@
   },
   "modificationDate": {
     "type": "DateTime",
-    "value":  "2023-05-09T04:54:24Z"
-
+    "value": "2023-05-09T04:54:24Z"
   },
   "hasPart": {
     "type": "URI",
