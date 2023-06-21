@@ -1,59 +1,34 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Distribution  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description: **This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entity: Distribution  
-====================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## List of properties  
 
-[Open License](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## List of properties  
-
-
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Required properties  
-- No required properties  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-Adapted from [STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). The terms are preceded by the ontology but this prefix is described in the file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ The string (xyz) will be assigned by the URI Committee responsible for the management of the persistent URIs of the EU institutions and bodies; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) has been mapped to alternate identifier but the original IRI is kept in the notes_context.jsonld.  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Data Model description of properties  
-
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `accessUrl[array]`: Property. Model:'https://schema.org/URL'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Property. Model:'https://schema.org/Number'. This property contains the size of a Distribution in bytes.  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: Property. Model:'spdx:checksum'. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.  . Model: [spdx:checksum](spdx:checksum)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `documentation[array]`: Property. Model:'foaf:page'. This property refers to a page or document about this Distribution.  . Model: [foaf:page](foaf:page)- `downloadURL[array]`: Property. Model:'dcat:downloadURL'. This property contains a URL that is a direct link to a downloadable file in a given format.  . Model: [dcat:downloadURL](dcat:downloadURL)- `format[string]`: Property. Model:'https://schema.org/Text'. This property refers to the file format of the Distribution.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `language[array]`: Property. Model:'dct:language'. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.  . Model: [dct:language](dct:language)- `licence[string]`: Property. Model:'dct:license'. This property refers to the licence under which the Distribution is made available.  . Model: [dct:license](dct:license)- `linkedSchemas[array]`: Property. Model:'dct:conformsTo'. This property refers to an established schema to which the described Distribution conforms.  . Model: [dct:conformsTo](dct:conformsTo)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mediaType[string]`: Property. Model:'dcat:mediaType'. This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA  . Model: [dcat:mediaType](dcat:mediaType)- `modificationDate[string]`: Property. Model:'dct:modified'. This property contains the most recent date on which the Distribution was changed or modified.  . Model: [dct:modified](dct:modified)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `releaseDate[string]`: Property. Model:'http://purl.org/dc/terms/issued'. This property contains the date of formal issuance (e.g., publication) of the Distribution.  . Model: [http://purl.org/dc/terms/issued](http://purl.org/dc/terms/issued)- `rights[string]`: Property. Model:'dct:rights'. This property refers to a statement that specifies rights associated with the Distribution.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status[string]`: Property. Model:'adms:status'. This property refers to the maturity of the Distribution.  . Model: [adms:status](adms:status)- `title[array]`: Property. Model:'dct:title'. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.  . Model: [dct:title](dct:title)- `type[string]`: Property. NGSI entity type. It has to be Distribution  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Required properties  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adapted from [STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). The terms are preceded by the ontology but this prefix is described in the file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ The string (xyz) will be assigned by the URI Committee responsible for the management of the persistent URIs of the EU institutions and bodies; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) has been mapped to alternate identifier but the original IRI is kept in the notes_context.jsonld.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
+Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -442,25 +417,16 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Example payloads    
-
-#### Distribution NGSI-v2 key-values Example    
-
-Here is an example of a Distribution in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Example payloads    
+#### Distribution NGSI-v2 key-values Example    
+Here is an example of a Distribution in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -548,17 +514,27 @@ Here is an example of a Distribution in JSON-LD format as key-values. This is co
 }  
 ```  
 </details>  
-
-#### Distribution NGSI-v2 normalized Example    
-
-Here is an example of a Distribution in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### Distribution NGSI-v2 normalized Example    
+Here is an example of a Distribution in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "array",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Text",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed"  
+  },  
   "dateCreated": {  
     "type": "Date-Time",  
     "value": "2008-02-15T20:13:19Z"  
@@ -649,8 +625,8 @@ Here is an example of a Distribution in JSON-LD format as normalized. This is co
   "language": {  
     "type": "array",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -722,17 +698,21 @@ Here is an example of a Distribution in JSON-LD format as normalized. This is co
 }  
 ```  
 </details>  
-
-#### Distribution NGSI-LD key-values Example    
-
-Here is an example of a Distribution in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### Distribution NGSI-LD key-values Example    
+Here is an example of a Distribution in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  ,  
+  "format": "JSON_LD"  
+  ,  
+  "status":  "Completed"  
+  ,  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
@@ -773,8 +753,8 @@ Here is an example of a Distribution in JSON-LD format as key-values. This is co
   ],  
   "homepage": "https://cef-interstat.eu/",  
   "language": [  
-    "EN",  
-    "SP"  
+    "en",  
+    "fr"  
   ],  
   "licence": "Financial break course now will bring nation.",  
   "releaseDate": "2023-04-08T01:19:50Z",  
@@ -821,17 +801,27 @@ Here is an example of a Distribution in JSON-LD format as key-values. This is co
 }  
 ```  
 </details>  
-
-#### Distribution NGSI-LD normalized Example    
-
-Here is an example of a Distribution in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### Distribution NGSI-LD normalized Example    
+Here is an example of a Distribution in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "Property",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Property",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+        "type": "Property",  
+        "value": "Completed"  
+    },  
   "dateCreated": {  
     "type": "Property",  
     "value": {  
@@ -928,8 +918,8 @@ Here is an example of a Distribution in JSON-LD format as normalized. This is co
   "language": {  
     "type": "Property",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -1009,21 +999,12 @@ Here is an example of a Distribution in JSON-LD format as normalized. This is co
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
