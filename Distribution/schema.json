@@ -109,7 +109,6 @@
           "format": "date-time",
           "description": "Property. Model:'dct:modified'. This property contains the most recent date on which the Distribution was changed or modified."
         }
-
       }
     }
   ]

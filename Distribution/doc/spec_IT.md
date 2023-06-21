@@ -1,32 +1,59 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: Distribuzione  
-=====================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licenza aperta](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Elenco delle proprietà  
+Entità: Distribuzione  
+=====================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Proprietà richieste  
-- Nessuna proprietà richiesta  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adattato da [STAT-DCAT-AP versione 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). I termini sono preceduti dall'ontologia, ma questo prefisso è descritto nel file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La stringa (xyz) sarà assegnata dal Comitato URI responsabile della gestione degli URI persistenti delle istituzioni e degli organismi dell'UE; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) è stato mappato in un identificatore alternativo, ma l'IRI originale è mantenuto nel file notes_context.jsonld.  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Modello di dati descrizione delle proprietà  
-Ordinati in ordine alfabetico (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Elenco delle proprietà  
+
+
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Proprietà richieste  
+- Nessuna proprietà richiesta  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Adattato da [STAT-DCAT-AP versione 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). I termini sono preceduti dall'ontologia, ma questo prefisso è descritto nel file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La stringa (xyz) sarà assegnata dal Comitato URI responsabile della gestione degli URI persistenti delle istituzioni e degli organismi dell'UE; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) è stato mappato in un identificatore alternativo, ma l'IRI originale è mantenuto nel file notes_context.jsonld.  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Modello di dati descrizione delle proprietà  
+
+Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -415,16 +442,25 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Esempi di payload  
-#### Distribuzione valori-chiave NGSI-v2 Esempio  
-Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Esempi di payload  
+
+#### Distribuzione valori-chiave NGSI-v2 Esempio  
+
+Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -432,7 +468,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -512,11 +548,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### Distribuzione NGSI-v2 normalizzata Esempio  
-Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+
+#### Distribuzione NGSI-v2 normalizzata Esempio  
+
+Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -541,7 +581,7 @@ Distribution:
   },  
   "description": {  
     "type": "Text",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -682,11 +722,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### Distribuzione dei valori-chiave NGSI-LD Esempio  
-Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+
+#### Distribuzione dei valori-chiave NGSI-LD Esempio  
+
+Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -694,7 +738,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -777,11 +821,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### Distribuzione NGSI-LD normalizzata Esempio  
-Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+
+#### Distribuzione NGSI-LD normalizzata Esempio  
+
+Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -812,7 +860,7 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Property",  
@@ -961,12 +1009,21 @@ Distribution:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

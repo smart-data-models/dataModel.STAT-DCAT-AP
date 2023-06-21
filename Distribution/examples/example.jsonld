@@ -1,12 +1,20 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
   "type": "Distribution",
+  "accessUrl": [
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
+    ]
+  ,
+  "format": "JSON_LD"
+  ,
+  "status":  "Completed"
+  ,
   "dateCreated": "2008-02-15T20:13:19Z",
   "dateModified": "2020-05-07T09:44:12Z",
   "source": "",
   "name": "",
   "alternateName": "",
-  "description": "distribution of csv format",
+  "description": "Distribution of statistical data observations",
   "dataProvider": "Statistical source.",
   "owner": [
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",
@@ -42,8 +50,8 @@
   ],
   "homepage": "https://cef-interstat.eu/",
   "language": [
-    "EN",
-    "SP"
+    "en",
+    "fr"
   ],
   "licence": "Financial break course now will bring nation.",
   "releaseDate": "2023-04-08T01:19:50Z",

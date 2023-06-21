@@ -1,32 +1,59 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ流通  
-========<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープン・ライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+エンティティ流通  
+========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- 必須プロパティなし  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)からの引用。用語の前にはオントロジーが付けられているが、この接頭辞はnotes_context.jsonldファイルに記述されている。http://data.europa.eu/(xyz)/statdcat-ap/ 文字列（xyz）は、EUの機関および団体の永続的URIの管理を担当するURI委員会によって割り当てられる。foaf、http://xmlns.com/foaf/0.1/。識別子（adms:identifier）は代替識別子にマッピングされているが、元のIRIはnotes_context.jsonldに保持されている。  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティのリスト  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- 必須プロパティなし  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)からの引用。用語の前にはオントロジーが付けられているが、この接頭辞はnotes_context.jsonldファイルに記述されている。http://data.europa.eu/(xyz)/statdcat-ap/ 文字列（xyz）は、EUの機関および団体の永続的URIの管理を担当するURI委員会によって割り当てられる。foaf、http://xmlns.com/foaf/0.1/。識別子（adms:identifier）は代替識別子にマッピングされているが、元のIRIはnotes_context.jsonldに保持されている。  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -415,16 +442,25 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### 配布 NGSI-v2 キー値の例  
-JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### 配布 NGSI-v2 キー値の例  
+
+JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -432,7 +468,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -512,11 +548,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 分布 NGSI-v2 正規化例  
-以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 分布 NGSI-v2 正規化例  
+
+以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -541,7 +581,7 @@ Distribution:
   },  
   "description": {  
     "type": "Text",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -682,11 +722,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 配布 NGSI-LD キー値の例  
-以下はJSON-LD形式のDistributionをkey-valuesとして返す例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+
+#### 配布 NGSI-LD キー値の例  
+
+以下はJSON-LD形式のDistributionをkey-valuesとして返す例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -694,7 +738,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -777,11 +821,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 分布 NGSI-LD 正規化例  
-以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 分布 NGSI-LD 正規化例  
+
+以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -812,7 +860,7 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Property",  
@@ -961,12 +1009,21 @@ Distribution:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

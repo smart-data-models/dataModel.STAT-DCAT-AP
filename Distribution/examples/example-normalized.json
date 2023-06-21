@@ -1,6 +1,20 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
   "type": "Distribution",
+  "accessUrl": {
+    "type": "array",
+    "value": [
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
+    ]
+  },
+  "format": {
+    "type": "Text",
+    "value": "JSON_LD"
+  },
+  "status": {
+    "type": "Text",
+    "value": "Completed"
+  },
   "dateCreated": {
     "type": "Date-Time",
     "value": "2008-02-15T20:13:19Z"
@@ -23,7 +37,7 @@
   },
   "description": {
     "type": "Text",
-    "value": "distribution of csv format"
+    "value": "Distribution of statistical data observations"
   },
   "dataProvider": {
     "type": "Text",
@@ -91,8 +105,8 @@
   "language": {
     "type": "array",
     "value": [
-      "EN",
-      "SP"
+      "en",
+      "fr"
     ]
   },
   "licence": {

@@ -1,32 +1,59 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：分销  
-=====<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：分销  
+=====
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- 没有要求的属性  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-改编自[STAT-DCAT-AP 1.0.1版](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为备用标识符，但原始IRI保留在notes_context.jsonld中。  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- 没有要求的属性  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+改编自[STAT-DCAT-AP 1.0.1版](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为备用标识符，但原始IRI保留在notes_context.jsonld中。  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -415,16 +442,25 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### 分布式NGSI-v2密钥值示例  
-这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### 分布式NGSI-v2密钥值示例  
+
+这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -432,7 +468,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -512,11 +548,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 分布NGSI-v2规范化示例  
-下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### 分布NGSI-v2规范化示例  
+
+下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -541,7 +581,7 @@ Distribution:
   },  
   "description": {  
     "type": "Text",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -682,11 +722,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 分布NGSI-LD密钥值的例子  
-这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 分布NGSI-LD密钥值的例子  
+
+这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -694,7 +738,7 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "distribution of csv format",  
+  "description": "Distribution of statistical data observations",  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -777,11 +821,15 @@ Distribution:
 }  
 ```  
 </details>  
-#### 分布NGSI-LD归一化实例  
-下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 分布NGSI-LD归一化实例  
+
+下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": {  
@@ -812,7 +860,7 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "distribution of csv format"  
+    "value": "Distribution of statistical data observations"  
   },  
   "dataProvider": {  
     "type": "Property",  
@@ -961,12 +1009,21 @@ Distribution:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  
