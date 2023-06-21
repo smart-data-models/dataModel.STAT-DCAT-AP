@@ -1,0 +1,33 @@
+{
+    "id": "urn:ngsi-ld:Distribution:99ce39c6e6109e5c72baf052221b1038",
+    "type": "Distribution",
+    "accessUrl": {
+        "type": "Property",
+        "value": [
+            "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": "Distribution of statistical data observations."
+    },
+    "format": {
+        "type": "Property",
+        "value": "JSON_LD"
+    },
+    "language": [
+        "en",
+        "fr"
+    ],
+    "status": {
+        "type": "Property",
+        "value": "Completed"
+    },
+    "title": {
+        "type": "Property",
+        "value": "http://bauhaus/jeuDeDonnees/ds1002"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/context.jsonld"
+    ]
+}
