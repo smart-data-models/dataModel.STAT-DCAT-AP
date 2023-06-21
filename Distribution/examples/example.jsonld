@@ -1,0 +1,89 @@
+{
+  "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
+  "dateCreated": "2008-02-15T20:13:19Z",
+  "dateModified": "2020-05-07T09:44:12Z",
+  "source": "",
+  "name": "",
+  "alternateName": "",
+  "description": "distribution of csv format",
+  "dataProvider": "Statistical source.",
+  "owner": [
+    "urn:ngsi-ld:Catalogue:items:HBYW:15307384",
+    "urn:ngsi-ld:Catalogue:items:XXDI:67367024"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Catalogue:items:DRHQ:77720826"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      52.5209531,
+      13.3256918
+    ]
+  },
+  "address": {
+    "streetAddress": "Franklinstrasse 13",
+    "addressLocality": "Berlin",
+    "addressRegion": "Berlin",
+    "addressCountry": "Germany",
+    "postalCode": "10587",
+    "postOfficeBoxNumber": "",
+    "streetNr": "13",
+    "district": ""
+  },
+  "areaServed": "",
+  "type": "Catalogue",
+  "dataset": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192",
+  "publisher": "Interstat project",
+  "title": [
+    "demographic dataset",
+    "Dataset demografico"
+  ],
+  "homepage": "https://cef-interstat.eu/",
+  "language": [
+    "EN",
+    "SP"
+  ],
+  "licence": "Financial break course now will bring nation.",
+  "releaseDate": "2023-04-08T01:19:50Z",
+  "themes": [
+    "Demography",
+    "Social movements"
+  ],
+  "modificationDate": "2023-05-09T04:54:24Z",
+  "hasPart": "urn:ngsi-ld:Catalogue:hasPart:MESA:97735762",
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JCBS:21034868",
+  "record": "urn:ngsi-ld:Catalogue:record:KLPV:86778952",
+  "rights": "open license",
+  "spatial_geographic": [
+    {
+      "type": "Point",
+      "coordinates": [
+        276.5,
+        95.6
+      ],
+      "bbox": [
+        34.9,
+        283.8,
+        861.1,
+        311.7
+      ]
+    },
+    {
+      "type": "Point",
+      "coordinates": [
+        311.1,
+        805.7
+      ],
+      "bbox": [
+        434.9,
+        913.1,
+        618.1,
+        424.5
+      ]
+    }
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/context.jsonld"
+  ]
+}
