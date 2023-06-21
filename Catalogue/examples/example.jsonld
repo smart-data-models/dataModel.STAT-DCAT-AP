@@ -33,7 +33,9 @@
     "district": ""
   },
   "areaServed": "",
-  "dataset": "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176",
+  "dataset": [
+    "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"
+  ]
   "publisher": "INE",
   "title": [
     "Catalogue or statistical resources",
@@ -51,9 +53,13 @@
     "social movements"
   ],
   "modificationDate": "2023-02-24T16:28:58Z",
-  "hasPart": "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320",
+  "hasPart": [
+    "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
+  ],
   "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JACJ:87819283",
-  "record": "urn:ngsi-ld:Catalogue:record:UEFV:49174271",
+  "record": [
+    "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
+  ],
   "rights": "Open licensed",
   "spatial_geographic": [
     {

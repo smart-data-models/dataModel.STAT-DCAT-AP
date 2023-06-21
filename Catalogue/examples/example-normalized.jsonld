@@ -71,7 +71,7 @@
   "areaServed": "",
   "dataset": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"
+    "object": ["urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"]
   },
   "publisher": {
     "type": "Property",
@@ -122,7 +122,7 @@
   },
   "hasPart": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
+    "object": ["urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"]
   },
   "isPartOf": {
     "type": "Relationship",
@@ -130,7 +130,8 @@
   },
   "record": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
+    "object": [
+      "urn:ngsi-ld:Catalogue:record:UEFV:49174271"]
   },
   "rights": {
     "type": "Property",

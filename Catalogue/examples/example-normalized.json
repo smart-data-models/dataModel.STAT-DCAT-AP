@@ -64,8 +64,10 @@
   },
   "areaServed": "",
   "dataset": {
-    "type": "object",
-    "value": "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"
+    ]
   },
   "publisher": {
     "type": "Text",
@@ -109,16 +111,20 @@
     "value": "2023-02-24T16:28:58Z"
   },
   "hasPart": {
-    "type": "URI",
-    "value": "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
+    ]
   },
   "isPartOf": {
     "type": "URI",
     "value": "urn:ngsi-ld:Catalogue:isPartOf:JACJ:87819283"
   },
   "record": {
-    "type": "URI",
-    "value": "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
+    ]
   },
   "rights": {
     "type": "Text",
