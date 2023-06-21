@@ -1,59 +1,34 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体：分销  
+=====<!-- /10-Header -->  
+<!-- 15-License -->  
+[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全局描述：**根据STAT-DCAT-AP标准1.0.1**，这是一个属于数据集的分布。  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-实体：分销  
-=====
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+##属性列表  
 
-[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-##属性列表  
-
-
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-所需属性  
-- 没有要求的属性  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-改编自[STAT-DCAT-AP 1.0.1版](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为备用标识符，但原始IRI保留在notes_context.jsonld中。  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## 数据模型的属性描述  
-
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `accessUrl[array]`: 属性。模型:'https://schema.org/URL'。这个属性包含一个URL，可以访问数据集的分布。访问URL的资源可能包含如何获得数据集的信息。  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: 属性。模型:'https://schema.org/Number'。该属性包含一个分布的大小，以字节为单位。  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: 属性。模型:'spdx:checksum'。这个属性提供了一个机制，可以用来验证一个分布的内容没有改变。  . Model: [spdx:checksum](spdx:checksum)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `documentation[array]`: 属性。模型:'foaf:page'。此属性指的是关于此分销的页面或文件。  . Model: [foaf:page](foaf:page)- `downloadURL[array]`: 属性。模型:'dcat:downloadURL'。该属性包含一个URL，它是一个给定格式的可下载文件的直接链接。  . Model: [dcat:downloadURL](dcat:downloadURL)- `format[string]`: 属性。模型:'https://schema.org/Text'。此属性指的是分销的文件格式。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `language[array]`: 属性。模型:'dct:language'。此属性指的是分布中使用的一种语言。如果元数据以多种语言提供，这个属性可以重复。  . Model: [dct:language](dct:language)- `licence[string]`: 属性。模型:'dct:license'。此属性指的是提供分销服务的许可证。  . Model: [dct:license](dct:license)- `linkedSchemas[array]`: 属性。模型:'dct:conformsTo'。这个属性指的是一个既定的模式，所描述的分布符合该模式。  . Model: [dct:conformsTo](dct:conformsTo)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `mediaType[string]`: 属性。模型:'dcat:mediaType'。此属性指的是由IANA管理的媒体类型官方登记册中定义的分布的媒体类型。  . Model: [dcat:mediaType](dcat:mediaType)- `modificationDate[string]`: 属性。模型:'dct:modified'。此属性包含分布被改变或修改的最新日期。  . Model: [dct:modified](dct:modified)- `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `releaseDate[string]`: 属性。模型:'http://purl.org/dc/terms/issued'。此属性包含了《分布》的正式发行（例如，出版）日期。  . Model: [http://purl.org/dc/terms/issued](http://purl.org/dc/terms/issued)- `rights[string]`: 属性。模型:'dct:rights'。此属性指的是指定与分布相关的权利的声明。  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `status[string]`: 属性。模型:'adms:status'。此属性指的是分销的成熟度。  . Model: [adms:status](adms:status)- `title[array]`: 属性。模型:'dct:title'。这个属性包含了给分布的名称。这个属性可以重复用于平行语言版本的描述。  . Model: [dct:title](dct:title)- `type[string]`: 属性。NGSI实体类型。它必须是分销  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+所需属性  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+改编自[STAT-DCAT-AP 1.0.1版](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但这个前缀在notes_context.jsonld文件中描述。 http://data.europa.eu/(xyz)/statdcat-ap/ 字符串(xyz)将由负责管理欧盟机构和机关持久性URI的URI委员会分配；foaf，http://xmlns.com/foaf/0.1/。标识符(adms:identifier)已被映射为备用标识符，但原始IRI保留在notes_context.jsonld中。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -442,25 +417,16 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ＃＃＃＃有效载荷的例子  
-
-#### 分布式NGSI-v2密钥值示例  
-
-这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ＃＃＃＃有效载荷的例子  
+#### 分布式NGSI-v2密钥值示例  
+这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -548,17 +514,27 @@ Distribution:
 }  
 ```  
 </details>  
-
-#### 分布NGSI-v2规范化示例  
-
-下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### 分布NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "array",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Text",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed"  
+  },  
   "dateCreated": {  
     "type": "Date-Time",  
     "value": "2008-02-15T20:13:19Z"  
@@ -649,8 +625,8 @@ Distribution:
   "language": {  
     "type": "array",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -722,17 +698,21 @@ Distribution:
 }  
 ```  
 </details>  
-
-#### 分布NGSI-LD密钥值的例子  
-
-这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 分布NGSI-LD密钥值的例子  
+这里是一个以JSON-LD格式作为key-values的分布实例。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  ,  
+  "format": "JSON_LD"  
+  ,  
+  "status":  "Completed"  
+  ,  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
@@ -773,8 +753,8 @@ Distribution:
   ],  
   "homepage": "https://cef-interstat.eu/",  
   "language": [  
-    "EN",  
-    "SP"  
+    "en",  
+    "fr"  
   ],  
   "licence": "Financial break course now will bring nation.",  
   "releaseDate": "2023-04-08T01:19:50Z",  
@@ -821,17 +801,27 @@ Distribution:
 }  
 ```  
 </details>  
-
-#### 分布NGSI-LD归一化实例  
-
-下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 分布NGSI-LD归一化实例  
+下面是一个以JSON-LD格式规范化的分布的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "Property",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Property",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+        "type": "Property",  
+        "value": "Completed"  
+    },  
   "dateCreated": {  
     "type": "Property",  
     "value": {  
@@ -928,8 +918,8 @@ Distribution:
   "language": {  
     "type": "Property",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -1009,21 +999,12 @@ Distribution:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
