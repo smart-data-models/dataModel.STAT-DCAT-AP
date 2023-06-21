@@ -1,59 +1,34 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Distribuzione  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa è una distribuzione appartenente a un set di dati secondo lo standard STAT-DCAT-AP 1.0.1**.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entità: Distribuzione  
-=====================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Elenco delle proprietà  
 
-[Licenza aperta](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Elenco delle proprietà  
-
-
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Proprietà richieste  
-- Nessuna proprietà richiesta  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-Adattato da [STAT-DCAT-AP versione 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). I termini sono preceduti dall'ontologia, ma questo prefisso è descritto nel file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La stringa (xyz) sarà assegnata dal Comitato URI responsabile della gestione degli URI persistenti delle istituzioni e degli organismi dell'UE; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) è stato mappato in un identificatore alternativo, ma l'IRI originale è mantenuto nel file notes_context.jsonld.  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Modello di dati descrizione delle proprietà  
-
-Ordinati in ordine alfabetico (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `accessUrl[array]`: Proprietà. Modello:'https://schema.org/URL'. Questa proprietà contiene un URL che dà accesso a una distribuzione del set di dati. La risorsa dell'URL di accesso può contenere informazioni su come ottenere il set di dati.  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Proprietà. Modello:'https://schema.org/Number'. Questa proprietà contiene la dimensione di una Distribuzione in byte.  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: Proprietà. Modello:'spdx:checksum'. Questa proprietà fornisce un meccanismo che può essere utilizzato per verificare che il contenuto di una distribuzione non sia stato modificato.  . Model: [spdx:checksum](spdx:checksum)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `documentation[array]`: Proprietà. Modello:'foaf:page'. Questa proprietà si riferisce a una pagina o a un documento su questa Distribuzione.  . Model: [foaf:page](foaf:page)- `downloadURL[array]`: Proprietà. Modello:'dcat:downloadURL'. Questa proprietà contiene un URL che è un collegamento diretto a un file scaricabile in un determinato formato.  . Model: [dcat:downloadURL](dcat:downloadURL)- `format[string]`: Proprietà. Modello:'https://schema.org/Text'. Questa proprietà si riferisce al formato del file della distribuzione.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `language[array]`: Proprietà. Modello:'dct:language'. Questa proprietà si riferisce a una lingua utilizzata nella Distribuzione. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [dct:language](dct:language)- `licence[string]`: Proprietà. Modello:'dct:license'. Questa proprietà si riferisce alla licenza con cui la Distribuzione è resa disponibile.  . Model: [dct:license](dct:license)- `linkedSchemas[array]`: Proprietà. Modello:'dct:conformsTo'. Questa proprietà si riferisce a uno schema stabilito a cui la Distribuzione descritta è conforme.  . Model: [dct:conformsTo](dct:conformsTo)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaType[string]`: Proprietà. Modello:'dcat:mediaType'. Questa proprietà si riferisce al tipo di supporto della Distribuzione come definito nel registro ufficiale dei tipi di supporto gestito da IANA.  . Model: [dcat:mediaType](dcat:mediaType)- `modificationDate[string]`: Proprietà. Modello:'dct:modified'. Questa proprietà contiene la data più recente in cui la Distribuzione è stata modificata.  . Model: [dct:modified](dct:modified)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `releaseDate[string]`: Proprietà. Modello:'http://purl.org/dc/terms/issued'. Questa proprietà contiene la data di emissione formale (ad esempio, la pubblicazione) della distribuzione.  . Model: [http://purl.org/dc/terms/issued](http://purl.org/dc/terms/issued)- `rights[string]`: Proprietà. Modello:'dct:rights'. Questa proprietà si riferisce a una dichiarazione che specifica i diritti associati alla Distribuzione.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Proprietà. Modello:'adms:status'. Questa proprietà si riferisce alla maturità della Distribuzione.  . Model: [adms:status](adms:status)- `title[array]`: Proprietà. Modello:'dct:title'. Questa proprietà contiene un nome dato alla Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [dct:title](dct:title)- `type[string]`: Proprietà. Tipo di entità NGSI. Deve essere Distribuzione  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Proprietà richieste  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato da [STAT-DCAT-AP versione 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf). I termini sono preceduti dall'ontologia, ma questo prefisso è descritto nel file notes_context.jsonld. http://data.europa.eu/(xyz)/statdcat-ap/ La stringa (xyz) sarà assegnata dal Comitato URI responsabile della gestione degli URI persistenti delle istituzioni e degli organismi dell'UE; foaf, http://xmlns.com/foaf/0.1/. identifier (adms:identifier) è stato mappato in un identificatore alternativo, ma l'IRI originale è mantenuto nel file notes_context.jsonld.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -442,25 +417,16 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Esempi di payload  
-
-#### Distribuzione valori-chiave NGSI-v2 Esempio  
-
-Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### Distribuzione valori-chiave NGSI-v2 Esempio  
+Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -548,17 +514,27 @@ Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo �
 }  
 ```  
 </details>  
-
-#### Distribuzione NGSI-v2 normalizzata Esempio  
-
-Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+#### Distribuzione NGSI-v2 normalizzata Esempio  
+Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "array",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Text",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed"  
+  },  
   "dateCreated": {  
     "type": "Date-Time",  
     "value": "2008-02-15T20:13:19Z"  
@@ -649,8 +625,8 @@ Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è comp
   "language": {  
     "type": "array",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -722,17 +698,21 @@ Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è comp
 }  
 ```  
 </details>  
-
-#### Distribuzione dei valori-chiave NGSI-LD Esempio  
-
-Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### Distribuzione dei valori-chiave NGSI-LD Esempio  
+Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  ,  
+  "format": "JSON_LD"  
+  ,  
+  "status":  "Completed"  
+  ,  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
@@ -773,8 +753,8 @@ Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo �
   ],  
   "homepage": "https://cef-interstat.eu/",  
   "language": [  
-    "EN",  
-    "SP"  
+    "en",  
+    "fr"  
   ],  
   "licence": "Financial break course now will bring nation.",  
   "releaseDate": "2023-04-08T01:19:50Z",  
@@ -821,17 +801,27 @@ Ecco un esempio di Distribuzione in formato JSON-LD come valori-chiave. Questo �
 }  
 ```  
 </details>  
-
-#### Distribuzione NGSI-LD normalizzata Esempio  
-
-Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+#### Distribuzione NGSI-LD normalizzata Esempio  
+Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "Property",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Property",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+        "type": "Property",  
+        "value": "Completed"  
+    },  
   "dateCreated": {  
     "type": "Property",  
     "value": {  
@@ -928,8 +918,8 @@ Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è comp
   "language": {  
     "type": "Property",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -1009,21 +999,12 @@ Ecco un esempio di Distribuzione in formato JSON-LD normalizzato. Questo è comp
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
