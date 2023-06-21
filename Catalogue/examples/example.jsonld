@@ -1,0 +1,89 @@
+{
+  "id": "urn:ngsi-ld:Catalogue:id:KSLT:97146192",
+  "type": "Catalogue",
+  "dateCreated": "2023-03-20T18:53:50Z",
+  "dateModified": "2023-06-29T11:37:12Z",
+  "source": "INE",
+  "name": "Catalogue of statistical resources",
+  "alternateName": "Catalogue",
+  "description": "List of converted statistical resources",
+  "dataProvider": "INE",
+  "owner": [
+    "urn:ngsi-ld:Catalogue:items:FRAY:12902985",
+    "urn:ngsi-ld:Catalogue:items:WMSS:90165917"
+  ],
+  "seeAlso": [
+    "urn:ngsi-ld:Catalogue:items:XSHA:97687196"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      52.5209531,
+      13.3256918
+    ]
+  },
+  "address": {
+    "streetAddress": "Franklinstrasse 13",
+    "addressLocality": "Berlin",
+    "addressRegion": "Berlin",
+    "addressCountry": "Germany",
+    "postalCode": "10587",
+    "postOfficeBoxNumber": "",
+    "streetNr": "13",
+    "district": ""
+  },
+  "areaServed": "",
+  "dataset": "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176",
+  "publisher": "INE",
+  "title": [
+    "Catalogue or statistical resources",
+    "Catalogo de recursos estadisticos"
+  ],
+  "homepage": "urn:ngsi-ld:Catalogue:homepage:FXWI:96370263",
+  "language": [
+    "SP",
+    "EN"
+  ],
+  "licence": "CC BY 4.0",
+  "releaseDate": "2023-01-20T11:03:48Z",
+  "themes": [
+    "demography",
+    "social movements"
+  ],
+  "modificationDate": "2023-02-24T16:28:58Z",
+  "hasPart": "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320",
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JACJ:87819283",
+  "record": "urn:ngsi-ld:Catalogue:record:UEFV:49174271",
+  "rights": "Open licensed",
+  "spatial_geographic": [
+    {
+      "type": "Point",
+      "coordinates": [
+        121.7,
+        146.6
+      ],
+      "bbox": [
+        46.5,
+        926.8,
+        995.6,
+        403.5
+      ]
+    },
+    {
+      "type": "Point",
+      "coordinates": [
+        60.3,
+        491.9
+      ],
+      "bbox": [
+        652.6,
+        335.8,
+        341.6,
+        875.0
+      ]
+    }
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/context.jsonld"
+  ]
+}

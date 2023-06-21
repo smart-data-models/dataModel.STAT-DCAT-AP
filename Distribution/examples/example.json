@@ -1,5 +1,6 @@
 {
-  "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
+  "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",
+   "type": "Distribution",
   "dateCreated": "2008-02-15T20:13:19Z",
   "dateModified": "2020-05-07T09:44:12Z",
   "source": "",
@@ -8,11 +9,11 @@
   "description": "distribution of csv format",
   "dataProvider": "Statistical source.",
   "owner": [
-    "urn:ngsi-ld:Catalogue:items:HBYW:15307384",
-    "urn:ngsi-ld:Catalogue:items:XXDI:67367024"
+    "urn:ngsi-ld:Distribution:items:HBYW:15307384",
+    "urn:ngsi-ld:Distribution:items:XXDI:67367024"
   ],
   "seeAlso": [
-    "urn:ngsi-ld:Catalogue:items:DRHQ:77720826"
+    "urn:ngsi-ld:Distribution:items:DRHQ:77720826"
   ],
   "location": {
     "type": "Point",
@@ -32,7 +33,7 @@
     "district": ""
   },
   "areaServed": "",
-  "type": "Catalogue",
+
   "dataset": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192",
   "publisher": "Interstat project",
   "title": [
@@ -51,9 +52,9 @@
     "Social movements"
   ],
   "modificationDate": "2023-05-09T04:54:24Z",
-  "hasPart": "urn:ngsi-ld:Catalogue:hasPart:MESA:97735762",
-  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JCBS:21034868",
-  "record": "urn:ngsi-ld:Catalogue:record:KLPV:86778952",
+  "hasPart": "urn:ngsi-ld:Distribution:hasPart:MESA:97735762",
+  "isPartOf": "urn:ngsi-ld:Distribution:isPartOf:JCBS:21034868",
+  "record": "urn:ngsi-ld:Distribution:record:KLPV:86778952",
   "rights": "open license",
   "spatial_geographic": [
     {
