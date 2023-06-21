@@ -5,6 +5,7 @@
   "$id": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json",
   "title": " Smart Data Models - STAT-DCAT-AP Catalogue",
   "description": "Catalogue of datasets compliant with STAT-DCAT-AP 1.0.1 specification.",
+  "derivedFrom": "https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf",
   "type": "object",
   "allOf": [
     {

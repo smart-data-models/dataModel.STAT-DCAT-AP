@@ -5,6 +5,7 @@
   "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/Dataset/schema.json",
   "title": "Dataset STAT-DCAT-AP schema",
   "description": "Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification",
+  "derivedFrom": "https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf",
   "type": "object",
   "properties": {
     "id": {

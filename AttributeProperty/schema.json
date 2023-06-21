@@ -5,6 +5,7 @@
   "title": "Smart Data models - Attribute Property schema (Cube)",
   "modelTags": "INTERSTAT",
   "description": "The class of component properties which represent attributes of observations in the cube, e.g. unit of measurement.",
+  "derivedFrom": "https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf",
   "type": "object",
   "required": [
     "id",

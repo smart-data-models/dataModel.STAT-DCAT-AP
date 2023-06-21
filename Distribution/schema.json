@@ -6,6 +6,7 @@
   "title": "Smart Data models STAT-DCAT-AP distribution of a Dataset,",
   "description": "This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1",
   "type": "object",
+  "derivedFrom": "https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf",
   "required": [
     "id",
     "type"
