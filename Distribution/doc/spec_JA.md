@@ -1,59 +1,34 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ流通  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全体的な説明**これはSTAT-DCAT-AP標準1.0.1**に従ったデータセットに属するディストリビューションである。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティ流通  
-========
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティのリスト  
 
-[オープン・ライセンス](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)  
-
-[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティのリスト  
-
-
-<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必須プロパティ  
-- 必須プロパティなし  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)からの引用。用語の前にはオントロジーが付けられているが、この接頭辞はnotes_context.jsonldファイルに記述されている。http://data.europa.eu/(xyz)/statdcat-ap/ 文字列（xyz）は、EUの機関および団体の永続的URIの管理を担当するURI委員会によって割り当てられる。foaf、http://xmlns.com/foaf/0.1/。識別子（adms:identifier）は代替識別子にマッピングされているが、元のIRIはnotes_context.jsonldに保持されている。  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `accessUrl[array]`: プロパティ。モデル:'https://schema.org/URL'.このプロパティには、データセットの配布にアクセスできる URL が含まれます。アクセスURLのリソースには、データセットの取得方法に関する情報が含まれている場合があります。  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: プロパティ。モデル:'https://schema.org/Number'.このプロパティには、ディストリビューションのサイズがバイト単位で格納されます。  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: プロパティ。モデル:'spdx:checksum'.このプロパティは、ディストリビューションの内容が変更されていないことを検証するために使用できるメカニズムを提供します。  . Model: [spdx:checksum](spdx:checksum)- `dataProvider[string]`: 整合データ・エンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `documentation[array]`: プロパティ。モデル:'foaf:page'.このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [foaf:page](foaf:page)- `downloadURL[array]`: プロパティ。モデル：'dcat:downloadURL'。このプロパティには、指定された形式でダウンロード可能なファイルへの直接リンクである URL が含まれます。  . Model: [dcat:downloadURL](dcat:downloadURL)- `format[string]`: プロパティ。モデル:'https://schema.org/Text'.このプロパティは、ディストリビューションのファイル形式を参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意識別子  - `language[array]`: プロパティ。モデル:'dct:language'.このプロパティは、ディストリビューションで使用される言語を指す。メタデータが複数の言語で提供される場合は、このプロパティを繰り返すことができます。  . Model: [dct:language](dct:language)- `licence[string]`: プロパティ。モデル:'dct:license'.このプロパティは、ディストリビューションが利用可能になるライセンスを指します。  . Model: [dct:license](dct:license)- `linkedSchemas[array]`: プロパティ。Model:'dct:conformsTo'.このプロパティは、記述されたディストリビューションが準拠する確立されたスキーマを指す。  . Model: [dct:conformsTo](dct:conformsTo)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaType[string]`: プロパティ。モデル：'dcat:mediaType'。このプロパティは、IANAによって管理されるメディアタイプの公式登録で定義されるディストリビューションのメディアタイプを指す。  . Model: [dcat:mediaType](dcat:mediaType)- `modificationDate[string]`: プロパティ。モデル:'dct:modified'.このプロパティには、ディストリビューションが変更または修正された最新の日付が含まれます。  . Model: [dct:modified](dct:modified)- `name[string]`: このアイテムの名前。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `releaseDate[string]`: プロパティ。モデル:'http://purl.org/dc/terms/issued'.このプロパティには、ディストリビューションの正式発行（発行など）の日付が含まれる。  . Model: [http://purl.org/dc/terms/issued](http://purl.org/dc/terms/issued)- `rights[string]`: プロパティ。モデル:'dct:rights'.このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指します。  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨します。  - `status[string]`: プロパティ。モデル:'adms:status'.このプロパティは、ディストリビューションの成熟度を示します。  . Model: [adms:status](adms:status)- `title[array]`: プロパティモデル:'dct:title'.このプロパティには、ディストリビューションに与えられた名前が含まれる。このプロパティは、並列言語版の説明のために繰り返すことができます。  . Model: [dct:title](dct:title)- `type[string]`: プロパティ。NGSI エンティティタイプ。ディストリビューションでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+STAT-DCAT-AP version 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)からの引用。用語の前にはオントロジーが付けられているが、この接頭辞はnotes_context.jsonldファイルに記述されている。http://data.europa.eu/(xyz)/statdcat-ap/ 文字列（xyz）は、EUの機関および団体の永続的URIの管理を担当するURI委員会によって割り当てられる。foaf、http://xmlns.com/foaf/0.1/。識別子（adms:identifier）は代替識別子にマッピングされているが、元のIRIはnotes_context.jsonldに保持されている。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
@@ -442,25 +417,16 @@ Distribution:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### 配布 NGSI-v2 キー値の例  
-
-JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### 配布 NGSI-v2 キー値の例  
+JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -548,17 +514,27 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
 }  
 ```  
 </details>  
-
-#### 分布 NGSI-v2 正規化例  
-
-以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 分布 NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "array",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Text",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed"  
+  },  
   "dateCreated": {  
     "type": "Date-Time",  
     "value": "2008-02-15T20:13:19Z"  
@@ -649,8 +625,8 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
   "language": {  
     "type": "array",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -722,17 +698,21 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
 }  
 ```  
 </details>  
-
-#### 配布 NGSI-LD キー値の例  
-
-以下はJSON-LD形式のDistributionをkey-valuesとして返す例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+#### 配布 NGSI-LD キー値の例  
+以下はJSON-LD形式のDistributionをkey-valuesとして返す例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  ,  
+  "format": "JSON_LD"  
+  ,  
+  "status":  "Completed"  
+  ,  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
@@ -773,8 +753,8 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
   ],  
   "homepage": "https://cef-interstat.eu/",  
   "language": [  
-    "EN",  
-    "SP"  
+    "en",  
+    "fr"  
   ],  
   "licence": "Financial break course now will bring nation.",  
   "releaseDate": "2023-04-08T01:19:50Z",  
@@ -821,17 +801,27 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
 }  
 ```  
 </details>  
-
-#### 分布 NGSI-LD 正規化例  
-
-以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 分布 NGSI-LD 正規化例  
+以下は、正規化された JSON-LD 形式のディストリビューションの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
+  "accessUrl": {  
+    "type": "Property",  
+    "value": [  
+      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+    ]  
+  },  
+  "format": {  
+    "type": "Property",  
+    "value": "JSON_LD"  
+  },  
+  "status": {  
+        "type": "Property",  
+        "value": "Completed"  
+    },  
   "dateCreated": {  
     "type": "Property",  
     "value": {  
@@ -928,8 +918,8 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
   "language": {  
     "type": "Property",  
     "value": [  
-      "EN",  
-      "SP"  
+      "en",  
+      "fr"  
     ]  
   },  
   "licence": {  
@@ -1009,21 +999,12 @@ JSON-LD形式のDistributionのkey-valuesの例である。これはNGSI-v2と�
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
