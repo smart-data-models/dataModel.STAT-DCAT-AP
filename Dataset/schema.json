@@ -60,6 +60,10 @@
         "description": "Property. Title in different languages"
       }
     },
+    "Type": {
+      "type": "string",
+      "description": "Property. Model:s kos:Concept. This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established."
+    },
     "contactPoint": {
       "type": "array",
       "description": "Property. Model:'vcard:Kind'. It corresponds with the 'contact point' mandatory property of STAT-DCAT-AP 1.0.1. This property contains contact information that can be used for sending comments about the Dataset. Use of vCard is recommended",
