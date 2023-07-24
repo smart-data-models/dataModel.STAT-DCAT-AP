@@ -33,7 +33,8 @@
           "description": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.",
           "items": {
             "type": "string",
-            "description": "Property. Each one of the languages."
+            "description": "Property. Each one of the languages.",
+            "enum": ["en", "fr", "it", "es", "de", "jp", "zh"]
           }
         },
         "label": {

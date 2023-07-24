@@ -34,6 +34,7 @@
           "description": "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem'. This property refers to a language of the Attribute Property.",
           "items": {
             "type": "string",
+            "description": "Property. Each one of the languages.",
             "enum": ["en", "fr", "it", "es", "de", "jp", "zh"]
           }
         },
@@ -42,25 +43,32 @@
           "description": "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_label'. Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name.",
           "properties": {
             "en": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in English."
             },
             "fr": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in French."
             },
             "it": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in Italian."
             },
             "es": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in Spanish."
             },
             "de": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in German language."
             },
             "jp": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in Japanese."
             },
             "zh": {
-              "type": "string"
+              "type": "string",
+              "description": "Property. Label in Chinese."
             }
           }
         },
