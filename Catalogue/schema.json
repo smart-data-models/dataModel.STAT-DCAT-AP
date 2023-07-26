@@ -25,7 +25,7 @@
         },
         "dataset": {
           "type": "array",
-          "description": "Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'dcat:Dataset'",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#dataset'. This property links the Catalogue with a Dataset that is part of the Catalogue.",
           "items": {
             "anyOf": [
               {
@@ -43,13 +43,21 @@
             ]
           }
         },
+        "description": {
+          "type": "array",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 11 of the pdf document https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf.",
+          "items": {
+            "type": "string",
+            "description": "Property. Catalog description in different languages"
+          }
+        },
         "publisher": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:'dct:publisher'"
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/#term_Agent'. This property refers to an entity (organisation) responsible for making the Catalogue available."
         },
         "title": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/URL'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.",
           "items": {
             "type": "string"
           }
@@ -57,39 +65,39 @@
         "homepage": {
           "type": "string",
           "format": "uri",
-          "description": "Property. Model:'foaf:homepage'. This property refers to a web page that acts as the main page for the Catalogue."
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/#term_homepage'. This property refers to a web page that acts as the main page for the Catalogue."
         },
         "language": {
           "type": "array",
-          "description": "Property. Model:'dct:language'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.",
+          "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.",
           "items": {
             "type": "string"
           }
         },
-        "licence": {
+        "license": {
           "type": "string",
-          "description": "Property. Model:'dct:license'. This property refers to the licence under which the Catalogue can be used or reused."
+          "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property refers to the licence under which the Catalogue can be used or reused."
         },
-        "releaseDate": {
+        "issued": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'http://purl.org/dc/terms/issued'. This property contains the date of formal issuance (e.g., publication) of the Catalogue."
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Catalogue."
         },
-        "themes": {
+        "themeTaxonomy": {
           "type": "array",
-          "description": "Property. Model:'dcat:themeTaxonomy'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets.",
+          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets.",
           "items": {
             "type": "string"
           }
         },
-        "modificationDate": {
+        "modified": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Model:'http://purl.org/dc/terms/modified'. This property contains the most recent date on which the Catalogue was modified."
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue was modified."
         },
         "hasPart": {
           "type": "array",
-          "description": "Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue that is part of the described Catalogue",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue that is part of the described Catalogue",
           "items": {
             "type": "string",
             "format": "uri"
@@ -98,11 +106,11 @@
         "isPartOf": {
           "type": "string",
           "format": "uri",
-          "description": "Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included."
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included."
         },
         "record": {
           "type": "array",
-          "description": "Relationship. This property refers to a Catalogue Record that is part of the Catalogue",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#CatalogRecord'. This property refers to a Catalogue Record that is part of the Catalogue.",
           "items": {
             "anyOf": [
               {
@@ -110,23 +118,23 @@
                 "minLength": 1,
                 "maxLength": 256,
                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                "description": "Property. Identifier format of any NGSI entity"
+                "description": "Property. Identifier format of any NGSI entity."
               },
               {
                 "type": "string",
                 "format": "uri",
-                "description": "Property. Identifier format of any NGSI entity"
+                "description": "Property. Identifier format of any NGSI entity."
               }
             ]
           }
         },
         "rights": {
           "type": "string",
-          "description": "Property. Model:'dct:rights'. This property refers to a statement that specifies rights associated with the Catalogue."
+          "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to a statement that specifies rights associated with the Catalogue."
         },
-        "spatial_geographic": {
+        "spatial": {
           "type": "array",
-          "description": "GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:'dct:spatial'",
+          "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographical area covered by the Catalogue.",
           "items": {
             "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
           }

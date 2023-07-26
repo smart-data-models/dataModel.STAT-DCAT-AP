@@ -7,6 +7,10 @@
       "dsd1"
     ]
   },
+  "Type": {
+    "type": "Property",
+    "value": "http://data.europa.eu/xyz"
+  },
   "language": {
     "type": "Property",
     "value": [

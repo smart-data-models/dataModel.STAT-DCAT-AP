@@ -115,11 +115,11 @@
       "fr"
     ]
   },
-  "licence": {
+  "license": {
     "type": "Property",
     "value": "Financial break course now will bring nation."
   },
-  "releaseDate": {
+  "issued": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
@@ -133,7 +133,7 @@
       "Social movements"
     ]
   },
-  "modificationDate": {
+  "modified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
