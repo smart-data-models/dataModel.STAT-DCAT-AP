@@ -1,19 +1,18 @@
 {
-  "id": "urn:ngsi-ld:DimensionProperty:d3002",
-  "type": "DimensionProperty",
-  "language": [
-    "en",
-    "fr"
-  ],
-  "label": {
-    "en": "SDMX dimension ADJUSTMENT",
-    "fr": "Dimension SDMX ADJUSTMENT"
-  },
-  "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",
-  "concept": "urn:ngsi-ld:Concept:adjustment",
-  "created": "2022-01-15T07:00:00+00:00",
-  "identifier": "d3002",
-  "modified": "2022-01-15T07:30:00+00:00",
-  "range": "http://bauhaus/codes/AjustementSaisonnier",
-
+    "id": "urn:ngsi-ld:DimensionProperty:d3002",
+    "type": "DimensionProperty",
+    "language": [
+      "en",
+      "fr"
+    ],
+    "label": {
+      "en": "SDMX dimension ADJUSTMENT",
+      "fr": "Dimension SDMX ADJUSTMENT"
+    },
+    "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",
+    "concept": "urn:ngsi-ld:Concept:adjustment",
+    "created": "2022-01-15T07:00:00+00:00",
+    "identifier": "d3002",
+    "modified": "2022-01-15T07:30:00+00:00",
+    "range": "http://bauhaus/codes/AjustementSaisonnier"  
 }
