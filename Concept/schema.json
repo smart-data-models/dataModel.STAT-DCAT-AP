@@ -54,31 +54,31 @@
                     "properties": {
                         "en": {
                             "type": "string",
-                            "description": "Property. Label in English."
+                            "description": "Property. Label in English"
                         },
                         "fr": {
                             "type": "string",
-                            "description": "Property. Label in French."
+                            "description": "Property. Label in French"
                         },
                         "it": {
                             "type": "string",
-                            "description": "Property. Label in Italian."
+                            "description": "Property. Label in Italian"
                         },
                         "es": {
                             "type": "string",
-                            "description": "Property. Label in Spanish."
+                            "description": "Property. Label in Spanish"
                         },
                         "de": {
                             "type": "string",
-                            "description": "Property. Label in German language."
+                            "description": "Property. Label in German language"
                         },
                         "jp": {
                             "type": "string",
-                            "description": "Property. Label in Japanese."
+                            "description": "Property. Label in Japanese"
                         },
                         "zh": {
                             "type": "string",
-                            "description": "Property. Label in Chinese."
+                            "description": "Property. Label in Chinese"
                         }
                     }
                 },
