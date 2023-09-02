@@ -190,7 +190,7 @@ Catalogue:
               minItems: 2
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - Point
               type: string
           required:
@@ -216,7 +216,7 @@ Catalogue:
               minItems: 2
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - LineString
               type: string
           required:
@@ -244,7 +244,7 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - Polygon
               type: string
           required:
@@ -269,7 +269,7 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - MultiPoint
               type: string
           required:
@@ -297,7 +297,7 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - MultiLineString
               type: string
           required:
@@ -327,7 +327,7 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: &type_-_enum
+              enum:
                 - MultiPolygon
               type: string
           required:
@@ -438,7 +438,8 @@ Catalogue:
               minItems: 2
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - Point
               type: string
           - bbox:
               items:
@@ -454,7 +455,8 @@ Catalogue:
               minItems: 2
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - LineString
               type: string
           - bbox:
               items:
@@ -472,7 +474,8 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - Polygon
               type: string
           - bbox:
               items:
@@ -487,7 +490,8 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - MultiPoint
               type: string
           - bbox:
               items:
@@ -505,7 +509,8 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - MultiLineString
               type: string
           - bbox:
               items:
@@ -524,7 +529,8 @@ Catalogue:
                 type: array
               type: array
             type:
-              enum: *type_-_enum
+              enum:
+                - MultiPolygon
               type: string
         x-ngsi:
           type: GeoProperty
