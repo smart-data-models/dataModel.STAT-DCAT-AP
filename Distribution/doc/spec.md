@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `accessUrl[array]`: Property. Model:'https://schema.org/URL'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Property. Model:'https://schema.org/Number'. This property contains the size of a Distribution in bytes.  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: Property. Model:'spdx:checksum'. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.  . Model: [spdx:checksum](spdx:checksum)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `documentation[array]`: Property. Model:'foaf:page'. This property refers to a page or document about this Distribution.  . Model: [foaf:page](foaf:page)- `downloadURL[array]`: Property. Model:'dcat:downloadURL'. This property contains a URL that is a direct link to a downloadable file in a given format.  . Model: [dcat:downloadURL](dcat:downloadURL)- `format[string]`: Property. Model:'https://schema.org/Text'. This property refers to the file format of the Distribution.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `language[array]`: Property. Model:'dct:language'. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.  . Model: [dct:language](dct:language)- `licence[string]`: Property. Model:'dct:license'. This property refers to the licence under which the Distribution is made available.  . Model: [dct:license](dct:license)- `linkedSchemas[array]`: Property. Model:'dct:conformsTo'. This property refers to an established schema to which the described Distribution conforms.  . Model: [dct:conformsTo](dct:conformsTo)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mediaType[string]`: Property. Model:'dcat:mediaType'. This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA  . Model: [dcat:mediaType](dcat:mediaType)- `modificationDate[string]`: Property. Model:'dct:modified'. This property contains the most recent date on which the Distribution was changed or modified.  . Model: [dct:modified](dct:modified)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `releaseDate[string]`: Property. Model:'http://purl.org/dc/terms/issued'. This property contains the date of formal issuance (e.g., publication) of the Distribution.  . Model: [http://purl.org/dc/terms/issued](http://purl.org/dc/terms/issued)- `rights[string]`: Property. Model:'dct:rights'. This property refers to a statement that specifies rights associated with the Distribution.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status[string]`: Property. Model:'adms:status'. This property refers to the maturity of the Distribution.  . Model: [adms:status](adms:status)- `title[array]`: Property. Model:'dct:title'. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.  . Model: [dct:title](dct:title)- `type[string]`: Property. NGSI entity type. It has to be Distribution  <!-- /30-PropertiesList -->  
+- `Type[string]`: This property links to a type of the Distribution, e.g. that it is a visualisation  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `accessUrl[array]`: This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: This property contains the size of a Distribution in bytes  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: This property provides a mechanism that can be used to verify that the contents of a distribution have not changed  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: This property refers to an established schema to which the described Distribution conforms  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[array]`: This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: This property contains a URL that is a direct link to a downloadable file in a given format  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: This property refers to the file format of the Distribution  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: Unique identifier of the entity  - `issued[date-time]`: This property contains the date of formal issuance (e.g., publication) of the Distribution  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: This property refers to the licence under which the Distribution is made available  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mediaType[string]`: This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: This property contains the most recent date on which the Distribution was changed or modified  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `page[array]`: This property refers to a page or document about this Distribution  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: This property refers to a statement that specifies rights associated with the Distribution  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `status[string]`: This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI entity type. It has to be Distribution  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,8 +39,14 @@
 Distribution:    
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1    
   properties:    
+    Type:    
+      description: 'This property links to a type of the Distribution, e.g. that it is a visualisation'    
+      type: string    
+      x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
+        type: Property    
     accessUrl:    
-      description: 'Property. Model:''https://schema.org/URL''. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.'    
+      description: This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset    
       items:    
         minItems: 1    
         type: string    
@@ -45,29 +58,51 @@ Distribution:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -84,101 +119,116 @@ Distribution:
         model: https://schema.org/Text    
         type: Property    
     byteSize:    
-      description: 'Property. Model:''https://schema.org/Number''. This property contains the size of a Distribution in bytes.'    
+      description: This property contains the size of a Distribution in bytes    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number    
+        model: "https://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     checksum:    
-      description: 'Property. Model:''spdx:checksum''. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.'    
+      description: This property provides a mechanism that can be used to verify that the contents of a distribution have not changed    
       type: string    
       x-ngsi:    
-        model: spdx:checksum    
+        model: "http://spdx.org/rdf/terms#Checksum"    
+        type: Property    
+    conformsTo:    
+      description: This property refers to an established schema to which the described Distribution conforms    
+      items:    
+        description: Every rule o standard the distribution complies with    
+        type: string    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        model: http://purl.org/dc/terms/Standard    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: A description of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    documentation:    
-      description: 'Property. Model:''foaf:page''. This property refers to a page or document about this Distribution.'    
+      description: This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description    
       items:    
+        description: Every description of the distribution in a language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: foaf:page    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     downloadURL:    
-      description: 'Property. Model:''dcat:downloadURL''. This property contains a URL that is a direct link to a downloadable file in a given format.'    
+      description: This property contains a URL that is a direct link to a downloadable file in a given format    
       items:    
+        description: Every URL available for downloading    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dcat:downloadURL    
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     format:    
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to the file format of the Distribution.'    
+      description: This property refers to the file format of the Distribution    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text    
+        model: "http://purl.org/dc/terms#MediaTypeOrExtent"    
         type: Property    
     id:    
-      anyOf: &distribution_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
-    language:    
-      description: 'Property. Model:''dct:language''. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.'    
-      items:    
-        type: string    
-      type: array    
-      x-ngsi:    
-        model: dct:language    
-        type: Property    
-    licence:    
-      description: 'Property. Model:''dct:license''. This property refers to the licence under which the Distribution is made available.'    
+    issued:    
+      description: 'This property contains the date of formal issuance (e.g., publication) of the Distribution'    
+      format: date-time    
       type: string    
       x-ngsi:    
-        model: dct:license    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
-    linkedSchemas:    
-      description: 'Property. Model:''dct:conformsTo''. This property refers to an established schema to which the described Distribution conforms.'    
+    language:    
+      description: This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages    
       items:    
         type: string    
       type: array    
       x-ngsi:    
-        model: dct:conformsTo    
+        model: http://purl.org/dc/terms/LinguisticSystem    
+        type: Property    
+    license:    
+      description: This property refers to the licence under which the Distribution is made available    
+      type: string    
+      x-ngsi:    
+        model: "http://purl.org/dc/terms#LicenseDocument"    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -199,7 +249,9 @@ Distribution:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -223,7 +275,9 @@ Distribution:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -249,7 +303,9 @@ Distribution:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -272,7 +328,9 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -298,7 +356,9 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -326,46 +386,66 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mediaType:    
-      description: 'Property. Model:''dcat:mediaType''. This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA'    
+      description: This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA    
       type: string    
       x-ngsi:    
-        model: dcat:mediaType    
+        model: "http://purl.org/dc/terms#MediaTypeOrExtent"    
         type: Property    
-    modificationDate:    
-      description: 'Property. Model:''dct:modified''. This property contains the most recent date on which the Distribution was changed or modified.'    
+    modified:    
+      description: This property contains the most recent date on which the Distribution was changed or modified    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: dct:modified    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *distribution_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
-    releaseDate:    
-      description: 'Property. Model:''http://purl.org/dc/terms/issued''. This property contains the date of formal issuance (e.g., publication) of the Distribution.'    
-      format: date-time    
-      type: string    
+    page:    
+      description: This property refers to a page or document about this Distribution    
+      items:    
+        description: Every page providing information about the distribution    
+        type: string    
+        x-ngsi:    
+          type: Property    
+      type: array    
       x-ngsi:    
-        model: http://purl.org/dc/terms/issued    
+        model: "http://xmlns.com/foaf/0.1/#term_Document"    
         type: Property    
     rights:    
-      description: 'Property. Model:''dct:rights''. This property refers to a statement that specifies rights associated with the Distribution.'    
+      description: This property refers to a statement that specifies rights associated with the Distribution    
       type: string    
       x-ngsi:    
-        model: dct:rights    
+        model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
@@ -380,26 +460,31 @@ Distribution:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     status:    
-      description: 'Property. Model:''adms:status''. This property refers to the maturity of the Distribution.'    
+      description: 'This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn'    
+      enum:    
+        - Completed    
+        - Deprecated    
+        - Under Development    
+        - Withdrawn    
       type: string    
       x-ngsi:    
-        model: adms:status    
+        model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     title:    
-      description: 'Property. Model:''dct:title''. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.'    
+      description: This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description    
       items:    
         type: string    
       type: array    
       x-ngsi:    
-        model: dct:title    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI entity type. It has to be Distribution    
+      description: NGSI entity type. It has to be Distribution    
       enum:    
         - Distribution    
       type: string    
@@ -922,11 +1007,11 @@ Distribution:
       "fr"  
     ]  
   },  
-  "licence": {  
+  "license": {  
     "type": "Property",  
     "value": "Financial break course now will bring nation."  
   },  
-  "releaseDate": {  
+  "issued": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
@@ -940,7 +1025,7 @@ Distribution:
       "Social movements"  
     ]  
   },  
-  "modificationDate": {  
+  "modified": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
