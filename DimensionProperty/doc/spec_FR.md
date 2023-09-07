@@ -15,7 +15,20 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `codeList[string]`: Liens vers le schéma conceptuel mesuré ou indiqué par la propriété de dimension.  . Model: [Relationship, http://purl.org/linked-data/cube#codeList](Relationship, http://purl.org/linked-data/cube#codeList)- `concept[string]`: Indique le concept qui est mesuré ou indiqué par la propriété d'attribut.  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[string]`: Date de création de cette propriété d'attribut. Une instance de chaîne est valide par rapport à cet attribut s'il s'agit d'une représentation valide conformément à la règle ABNF "date-time". Les noms des formats de date et d'heure sont dérivés du RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `identifier[string]`: Une référence non ambiguë à la ressource dans un contexte donné.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label est une instance de rdf:Property qui peut être utilisée pour fournir une version lisible par l'homme du nom d'une ressource.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)- `language[array]`: Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si l'ensemble de données comporte plusieurs langues.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `modified[string]`: Date à laquelle la ressource a été modifiée. Une instance de chaîne est valide par rapport à cet attribut s'il s'agit d'une représentation valide selon la règle ABNF "date-time". Les noms des formats de date et d'heure sont dérivés du RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `range[string]`: Range est une instance de rdf:Property utilisée pour indiquer que les valeurs d'une propriété sont des instances d'une ou plusieurs classes.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de DimensionProperty.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `codeList[string]`: Liens vers le schéma conceptuel qui est mesuré ou indiqué par la propriété de dimension  . Model: [http://purl.org/linked-data/cube#codeList](http://purl.org/linked-data/cube#codeList)- `concept[string]`: Donne le concept qui est mesuré ou indiqué par la propriété d'attribut  . Model: [http://purl.org/linked-data/cube#concept](http://purl.org/linked-data/cube#concept)- `created[date-time]`: Date de création de cette propriété d'attribut. Une instance de chaîne est valide par rapport à cet attribut s'il s'agit d'une représentation valide conformément à la règle ABNF "date-time". Les noms des formats de date et d'heure sont dérivés du RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `identifier[string]`: Une référence non ambiguë à la ressource dans un contexte donné  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier)- `label[object]`: Label est une instance de rdf:Property qui peut être utilisée pour fournir une version lisible par l'homme du nom d'une ressource.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_label](https://www.w3.org/TR/rdf-schema/#ch_label)	- `de[string]`: Label en langue allemande    
+	- `en[string]`: Label en anglais    
+	- `es[string]`: Label en espagnol    
+	- `fr[string]`: Label en français    
+	- `it[string]`: Etiquette en italien    
+	- `jp[string]`: Étiquette en japonais    
+- `language[array]`: Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si l'ensemble de données contient plusieurs langues.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `modified[date-time]`: Date à laquelle la ressource a été modifiée. Une instance de chaîne est valide par rapport à cet attribut s'il s'agit d'une représentation valide selon la règle ABNF "date-time". Les noms des formats de date et d'heure sont dérivés du RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339].  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)- `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `range[string]`: Range est une instance de rdf:Property utilisée pour indiquer que les valeurs d'une propriété sont des instances d'une ou plusieurs classes.  . Model: [https://www.w3.org/TR/rdf-schema/#ch_range](https://www.w3.org/TR/rdf-schema/#ch_range)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de DimensionProperty  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -37,29 +50,51 @@ DimensionProperty:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -76,37 +111,37 @@ DimensionProperty:
         model: https://schema.org/Text    
         type: Property    
     codeList:    
-      description: "Relationship. Model:'http://purl.org/linked-data/cube#codeList'. Links to the Concept Schema which is being measured or indicated by the Dimension Property."    
+      description: Links to the Concept Schema which is being measured or indicated by the Dimension Property    
       type: string    
       x-ngsi:    
         model: "http://purl.org/linked-data/cube#codeList"    
         type: Relationship    
     concept:    
-      description: "Relationship. Model:'http://purl.org/linked-data/cube#concept'. Gives the concept which is being measured or indicated by the Attribute Property."    
+      description: Gives the concept which is being measured or indicated by the Attribute Property    
       type: string    
       x-ngsi:    
         model: "http://purl.org/linked-data/cube#concept"    
         type: Relationship    
     created:    
-      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created'. Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Date of creation of this attribute property. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]"    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created"    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -117,65 +152,93 @@ DimensionProperty:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &dimensionproperty_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     identifier:    
-      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier'. An unambiguous reference to the resource within a given context."    
+      description: An unambiguous reference to the resource within a given context    
       type: string    
       x-ngsi:    
         model: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#identifier"    
         type: Property    
     label:    
-      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_label'. Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource's name."    
+      description: 'Label is an instance of rdf:Property that may be used to provide a human-readable version of a resource''s name'    
       properties:    
         de:    
-          description: Property. Label in German language    
+          description: Label in German language    
           type: string    
+          x-ngsi:    
+            type: Property    
         en:    
-          description: Property. Label in English    
+          description: Label in English    
           type: string    
+          x-ngsi:    
+            type: Property    
         es:    
-          description: Property. Label in Spanish    
+          description: Label in Spanish    
           type: string    
+          x-ngsi:    
+            type: Property    
         fr:    
-          description: 'Property. Label in French '    
+          description: Label in French    
           type: string    
+          x-ngsi:    
+            type: Property    
         it:    
-          description: Property. Label in Italian    
+          description: Label in Italian    
           type: string    
+          x-ngsi:    
+            type: Property    
         jp:    
-          description: Property. Label in Japanese    
+          description: Label in Japanese    
           type: string    
+          x-ngsi:    
+            type: Property    
         zh:    
-          description: Property. Label in Chinese    
+          description: Label in Chinese    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: "https://www.w3.org/TR/rdf-schema/#ch_label"    
         type: Property    
     language:    
-      description: 'Property. Model:''dct:LinguisticSystem''. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.'    
+      description: This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset    
       items:    
-        description: Property. Each one of the languages    
+        description: Each one of the languages    
+        enum:    
+          - en    
+          - fr    
+          - it    
+          - es    
+          - de    
+          - jp    
+          - zh    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:LinguisticSystem    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -196,7 +259,9 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -220,7 +285,9 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -246,7 +313,9 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -269,7 +338,9 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -295,7 +366,9 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -323,30 +396,46 @@ DimensionProperty:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     modified:    
-      description: "Property. Model:'https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified'. Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]."    
+      description: "Date on which the resource was changed. A string instance is valid against this attribute if it is a valid representation according to the 'date-time' ABNF rule. Date and time format names are derived from RFC 3339, section 5.6 [https://json-schema.org/draft/2020-12/json-schema-validation.html#RFC3339]"    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified"    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *dimensionproperty_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     range:    
-      description: "Property. Model:'https://www.w3.org/TR/rdf-schema/#ch_range'. Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes."    
+      description: 'Range is an instance of rdf:Property that is used to state that the values of a property are instances of one or more classes'    
       type: string    
       x-ngsi:    
         model: "https://www.w3.org/TR/rdf-schema/#ch_range"    
@@ -364,12 +453,12 @@ DimensionProperty:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. NGSI Entity type. It has to be DimensionProperty.    
+      description: NGSI Entity type. It has to be DimensionProperty    
       enum:    
         - DimensionProperty    
       type: string    
@@ -379,7 +468,7 @@ DimensionProperty:
     - id    
     - type    
   type: object    
-  x-derived-from: ""    
+  x-derived-from: https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/DimensionProperty/LICENSE.md    
   x-model-schema: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/tree/master/DimensionPropertySTAT-DCAT-AP/schema.json    
@@ -397,22 +486,22 @@ DimensionProperty:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DimensionProperty:d3002",  
-  "type": "DimensionProperty",  
-  "language": [  
-    "en",  
-    "fr"  
-  ],  
-  "label": {  
-    "en": "SDMX dimension ADJUSTMENT",  
-    "fr": "Dimension SDMX ADJUSTMENT"  
-  },  
-  "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",  
-  "concept": "urn:ngsi-ld:Concept:adjustment",  
-  "created": "2022-01-15T07:00:00+00:00",  
-  "identifier": "d3002",  
-  "modified": "2022-01-15T07:30:00+00:00",  
-  "range": "http://bauhaus/codes/AjustementSaisonnier",  
+    "id": "urn:ngsi-ld:DimensionProperty:d3002",  
+    "type": "DimensionProperty",  
+    "language": [  
+      "en",  
+      "fr"  
+    ],  
+    "label": {  
+      "en": "SDMX dimension ADJUSTMENT",  
+      "fr": "Dimension SDMX ADJUSTMENT"  
+    },  
+    "codeList": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",  
+    "concept": "urn:ngsi-ld:Concept:adjustment",  
+    "created": "2022-01-15T07:00:00+00:00",  
+    "identifier": "d3002",  
+    "modified": "2022-01-15T07:30:00+00:00",  
+    "range": "http://bauhaus/codes/AjustementSaisonnier"    
 }  
 ```  
 </details>  
