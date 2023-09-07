@@ -15,7 +15,13 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `accessRights[string]`: Diese Eigenschaft bezieht sich auf Informationen, die angeben, ob es sich bei dem Datensatz um offene Daten handelt, ob der Zugang eingeschränkt oder nicht öffentlich ist. Ein kontrolliertes Vokabular mit drei Mitgliedern (:public, :restricted, :non-public) wird vom Amt für Veröffentlichungen der EU erstellt und gepflegt. Enum:'public, restricted, non-public' (öffentlich, eingeschränkt, nicht öffentlich)  . Model: [foaf:Agent](foaf:Agent)- `accrualPeriodicity[string]`: Diese Eigenschaft bezieht sich auf die Häufigkeit, mit der das Dataset aktualisiert wird.  . Model: [dct:Frequency](dct:Frequency)- `alternateidentifier[array]`: Diese Eigenschaft bezieht sich auf einen sekundären Identifikator des Datensatzes, wie MAST/ADS, DataCite, DOI, EZID oder W3ID.  . Model: [dct:identifier](dct:identifier)- `attribute[array]`: Diese Eigenschaft verweist auf eine Komponente, die zur Qualifizierung und Interpretation der beobachteten Werte verwendet wird, z. B. Maßeinheiten, etwaige Skalierungsfaktoren und Metadaten wie der Status der Beobachtung (z. B. geschätzt, vorläufig). Das Attribut ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:attribute](stat:attribute)- `conformsTo[array]`: Diese Eigenschaft bezieht sich auf eine Durchführungsvorschrift oder eine andere Spezifikation.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Sie entspricht der obligatorischen Eigenschaft "Kontaktstelle" von STAT-DCAT-AP 1.0.1. Diese Eigenschaft enthält Kontaktinformationen, die für die Übermittlung von Kommentaren über den Datensatz verwendet werden können. Die Verwendung von vCard wird empfohlen  . Model: [vcard:Kind](vcard:Kind)- `description[object]`: Diese Eigenschaft enthält eine Freitextbeschreibung des Datasets. Sie entspricht der obligatorischen Eigenschaft "description" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  - `dimension[array]`: Diese Eigenschaft verweist auf eine Komponente, die Beobachtungen identifiziert, z. B. die Zeit, für die die Beobachtung gilt, oder eine geografische Region, die die Beobachtung abdeckt. Dimension ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. für den Fall, dass ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:dimension](stat:dimension)- `distribution[array]`: Diese Eigenschaft verknüpft das Dataset mit einer verfügbaren Verteilung. Sie entspricht der obligatorischen Eigenschaft "Dataset Distribution" von STAT-DCAT-AP 1.0.1  . Model: [dcat:distribution](dcat:distribution)- `hasVersion[array]`: Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, der eine Version, Ausgabe oder Anpassung des beschriebenen Datensatzes ist.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `identifier[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `isVersionOf[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `issued[string]`: Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Datensatzes.  . Model: [dct:issued](dct:issued)- `keyword[array]`: Diese Eigenschaft enthält ein Schlüsselwort oder Tag, das den Datensatz beschreibt  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Diese Eigenschaft verweist auf eine Webseite, die Zugang zu dem Datensatz, seinen Verteilungen und/oder zusätzlichen Informationen bietet. Sie soll auf eine Landing Page beim ursprünglichen Datenanbieter verweisen, nicht auf eine Seite auf einer Website eines Dritten, z. B. eines Aggregators.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache des Datasets. Diese Eigenschaft kann wiederholt werden, wenn mehrere Sprachen im Dataset vorhanden sind.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `modified[string]`: Diese Eigenschaft enthält das jüngste Datum, an dem der Datensatz geändert oder modifiziert wurde.  . Model: [dct:modified](dct:modified)- `page[array]`: Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diesen Datensatz  . Model: [foaf:Document](foaf:Document)- `provenance[array]`: Diese Eigenschaft enthält eine Aussage über die Abstammung eines Datasets.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Datensatzes verantwortlich ist  . Model: [foaf:Agent](foaf:Agent)- `relation[array]`: Diese Eigenschaft verweist auf eine verwandte Ressource  . Model: [rdfs:Resource](rdfs:Resource)- `sample[array]`: Diese Eigenschaft bezieht sich auf eine Stichprobenverteilung des Datensatzes  . Model: [rdfs:Resource](rdfs:Resource)- `source[array]`: Diese Eigenschaft verweist auf einen verwandten Datensatz, von dem der beschriebene Datensatz abgeleitet ist  . Model: [dct:source](dct:source)- `spatial[array]`: Diese Eigenschaft bezieht sich auf eine geografische Region, die durch den Datensatz abgedeckt wird  . Model: [dct:Location](dct:Location)- `statUnitMeasure[array]`: Diese Eigenschaft verweist auf eine Maßeinheit für die Beobachtungen, z. B. Euro, Quadratkilometer, Kaufkraftstandard (KKS), Vollzeitäquivalent, Prozentsatz. Die Maßeinheit ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [stat:UnitMeasure](stat:UnitMeasure)- `temporal[array]`: Diese Eigenschaft bezieht sich auf einen Zeitraum, den der Datensatz abdeckt  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `theme[array]`: Diese Eigenschaft bezieht sich auf eine Kategorie des Datasets. Ein Dataset kann mit mehreren Themen verbunden sein  . Model: [dcat:theme](dcat:theme)- `title[array]`: Diese Eigenschaft enthält einen Namen für den Datensatz. Sie entspricht der obligatorischen Eigenschaft "Titel" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden.  - `type[string]`: NGSI-Entitätstyp. Es muss Dataset sein  - `versionInfo[string]`: Diese Eigenschaft enthält eine Versionsnummer oder eine andere Versionsbezeichnung des Datasets  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [adms:versionNotes](adms:versionNotes)<!-- /30-PropertiesList -->  
+- `Type[string]`: Diese Eigenschaft bezieht sich auf den Typ des Datasets. Ein kontrolliertes Vokabular für die Werte wurde noch nicht festgelegt.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `accessRights[string]`: Diese Eigenschaft bezieht sich auf Informationen, die angeben, ob es sich bei dem Datensatz um offene Daten handelt, ob der Zugang eingeschränkt oder nicht öffentlich ist. Ein kontrolliertes Vokabular mit drei Mitgliedern (:public, :restricted, :non-public) wird vom Amt für Veröffentlichungen der EU erstellt und gepflegt. Enum:'public, restricted, non-public' (öffentlich, eingeschränkt, nicht öffentlich)  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/RightsStatement)- `accrualPeriodicity[string]`: Diese Eigenschaft bezieht sich auf die Häufigkeit, mit der das Dataset aktualisiert wird.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Frequency](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Frequency)- `attribute[array]`: Diese Eigenschaft verweist auf eine Komponente, die zur Qualifizierung und Interpretation der beobachteten Werte verwendet wird, z. B. Maßeinheiten, etwaige Skalierungsfaktoren und Metadaten wie der Status der Beobachtung (z. B. geschätzt, vorläufig). Das Attribut ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [http://purl.org/linked-data/cube#AttributeProperty](http://purl.org/linked-data/cube#AttributeProperty)- `conformsTo[array]`: Diese Eigenschaft bezieht sich auf eine Durchführungsvorschrift oder eine andere Spezifikation.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Standard](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Standard)- `contactPoint[array]`: Sie entspricht der obligatorischen Eigenschaft "Kontaktstelle" von STAT-DCAT-AP 1.0.1. Diese Eigenschaft enthält Kontaktinformationen, die für die Übermittlung von Kommentaren über den Datensatz verwendet werden können. Die Verwendung von vCard wird empfohlen  . Model: [http://www.w3.org/2006/vcard/ns#Kind](http://www.w3.org/2006/vcard/ns#Kind)- `description[object]`: Diese Eigenschaft enthält eine Freitextbeschreibung des Datasets. Sie entspricht der obligatorischen Eigenschaft "description" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)	- `de[string]`: Beschreibung auf Deutsch    
+	- `en[string]`: Beschreibung auf Englisch    
+	- `es[string]`: Beschreibung auf Spanisch    
+	- `fr[string]`: Beschreibung auf Französisch    
+	- `it[string]`: Beschreibung auf Italienisch    
+	- `ja[string]`: Beschreibung in Japan    
+- `dimension[array]`: Diese Eigenschaft verweist auf eine Komponente, die Beobachtungen identifiziert, z. B. die Zeit, für die die Beobachtung gilt, oder eine geografische Region, die die Beobachtung abdeckt. Dimension ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. für den Fall, dass ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [http://purl.org/linked-data/cube#DimensionProperty](http://purl.org/linked-data/cube#DimensionProperty)- `distribution[array]`: Diese Eigenschaft verknüpft das Dataset mit einer verfügbaren Verteilung. Sie entspricht der obligatorischen Eigenschaft "Dataset Distribution" von STAT-DCAT-AP 1.0.1.  . Model: [https://www.w3.org/ns/dcat2.ttl#Distribution](https://www.w3.org/ns/dcat2.ttl#Distribution)- `hasQualityAnnotation[array]`: Diese Eigenschaft verweist auf eine Aussage zur Qualität des Datensatzes, einschließlich Bewertung, Qualitätszertifikat, Feedback, das mit dem Datensatz verknüpft werden kann.  . Model: [http://www.w3.org/ns/oa#Annotation](http://www.w3.org/ns/oa#Annotation)- `hasVersion[array]`: Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, der eine Version, Ausgabe oder Anpassung des beschriebenen Datensatzes ist.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `id[*]`: Eindeutiger Bezeichner der Entität  - `identifier[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `isVersionOf[array]`: Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `issued[date-time]`: Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Datensatzes.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `keyword[array]`: Diese Eigenschaft enthält ein Schlüsselwort oder Tag, das den Datensatz beschreibt.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `landingPage[array]`: Diese Eigenschaft verweist auf eine Webseite, die Zugang zu dem Datensatz, seinen Verteilungen und/oder zusätzlichen Informationen bietet. Sie soll auf eine Landing Page beim ursprünglichen Datenanbieter verweisen, nicht auf eine Seite auf einer Website eines Dritten, z. B. eines Aggregators.  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache des Datasets. Diese Eigenschaft kann wiederholt werden, wenn mehrere Sprachen im Dataset vorhanden sind.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem)- `modified[date-time]`: Diese Eigenschaft enthält das jüngste Datum, an dem der Datensatz geändert oder modifiziert wurde.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `numSeries[number]`:   . Model: [Property, http://www.w3.org/2000/01/rdf-schema#Literal, This property contains the number of data series contained in th e Dataset](Property, http://www.w3.org/2000/01/rdf-schema#Literal, This property contains the number of data series contained in th e Dataset)- `otherIdentifier[array]`: Diese Eigenschaft bezieht sich auf einen sekundären Identifikator des Datensatzes, wie MAST/ADS, DataCite, DOI, EZID oder W3ID.  . Model: [http://www.w3.org/ns/adms#Identifier](http://www.w3.org/ns/adms#Identifier)- `page[array]`: Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diesen Datensatz  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `provenance[array]`: Diese Eigenschaft enthält eine Aussage über die Abstammung eines Datasets.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/ProvenanceStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/ProvenanceStatement)- `publisher[string]`: Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Datensatzes verantwortlich ist  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `relation[array]`: Diese Eigenschaft verweist auf eine verwandte Ressource  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `sample[array]`: Diese Eigenschaft bezieht sich auf eine Stichprobenverteilung des Datensatzes  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `source[array]`: Diese Eigenschaft verweist auf einen verwandten Datensatz, von dem der beschriebene Datensatz abgeleitet ist  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `spatial[array]`: Diese Eigenschaft bezieht sich auf eine geografische Region, die durch den Datensatz abgedeckt wird  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location)- `statUnitMeasure[array]`: Diese Eigenschaft verweist auf eine Maßeinheit für die Beobachtungen, z. B. Euro, Quadratkilometer, Kaufkraftstandard (KKS), Vollzeitäquivalent, Prozentsatz. Die Maßeinheit ist eine konzeptionelle Einheit, die für alle Verteilungsformate gilt, z. B. wenn ein Datensatz sowohl in SDMX als auch in Data Cube bereitgestellt wird.  . Model: [https://www.w3.org/2009/08/skos-reference/skos.html#Concept](https://www.w3.org/2009/08/skos-reference/skos.html#Concept)- `temporal[array]`: Diese Eigenschaft bezieht sich auf den Zeitraum, den das Dataset abdeckt.  . Model: [https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/PeriodOfTime)- `theme[array]`: Diese Eigenschaft bezieht sich auf eine Kategorie des Datasets. Ein Dataset kann mit mehreren Themen verbunden sein  . Model: [https://www.w3.org/2009/08/skos-reference/skos.html#Concept](https://www.w3.org/2009/08/skos-reference/skos.html#Concept)- `title[array]`: Diese Eigenschaft enthält einen Namen für den Datensatz. Sie entspricht der obligatorischen Eigenschaft "Titel" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI-Entitätstyp. Es muss Dataset sein  - `versionInfo[string]`: Diese Eigenschaft enthält eine Versionsnummer oder eine andere Versionsbezeichnung des Datasets  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `versionNotes[array]`: Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,6 +38,12 @@
 Dataset:    
   description: Dataset Schema meeting STAT-DCAT-AP 1.0.1 specification    
   properties:    
+    Type:    
+      description: This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.    
+      type: string    
+      x-ngsi:    
+        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        type: Property    
     accessRights:    
       description: 'This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. Enum:''public, restricted, non-public'''    
       enum:    
@@ -40,32 +52,24 @@ Dataset:
         - non-public    
       type: string    
       x-ngsi:    
-        model: foaf:Agent    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/RightsStatement    
         type: Property    
     accrualPeriodicity:    
       description: This property refers to the frequency at which the Dataset is updated.    
       type: string    
       x-ngsi:    
-        model: dct:Frequency    
-        type: Property    
-    alternateidentifier:    
-      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.'    
-      items:    
-        description: Property. Each one of th different identifiers    
-        format: uri    
-        type: string    
-      type: array    
-      x-ngsi:    
-        model: dct:identifier    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Frequency    
         type: Property    
     attribute:    
       description: 'This property links to a component used to qualify and interpret observed values, e.g. units of measure, any scaling factors and metadata such as the status of the observation (e.g. estimated, provisional). Attribute is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of the attributes related to the item    
+        description: Each one of the attributes related to the item    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: stat:attribute    
+        model: "http://purl.org/linked-data/cube#AttributeProperty"    
         type: Property    
     conformsTo:    
       description: This property refers to an implementing rule or other specification.    
@@ -73,7 +77,7 @@ Dataset:
         type: string    
       type: array    
       x-ngsi:    
-        model: dct:conformsTo    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Standard    
         type: Property    
     contactPoint:    
       description: It corresponds with the 'contact point' mandatory property of STAT-DCAT-AP 1.0.1. This property contains contact information that can be used for sending comments about the Dataset. Use of vCard is recommended    
@@ -82,384 +86,421 @@ Dataset:
         type: string    
       type: array    
       x-ngsi:    
-        model: vcard:Kind    
+        model: "http://www.w3.org/2006/vcard/ns#Kind"    
         type: Property    
     description:    
       description: This property contains a free-text account of the Dataset. It corresponds with the 'description' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the description.    
       properties:    
         de:    
-          description: Property. Description in German    
+          description: Description in German    
           type: string    
+          x-ngsi:    
+            type: Property    
         en:    
-          description: Property. Description in English    
+          description: Description in English    
           type: string    
+          x-ngsi:    
+            type: Property    
         es:    
-          description: Property. Description in Spanish    
+          description: Description in Spanish    
           type: string    
+          x-ngsi:    
+            type: Property    
         fr:    
-          description: Property. Description in French    
+          description: Description in French    
           type: string    
+          x-ngsi:    
+            type: Property    
         it:    
-          description: Property. Description in Italian    
+          description: Description in Italian    
           type: string    
+          x-ngsi:    
+            type: Property    
         ja:    
-          description: Property. Description in Japan    
+          description: Description in Japan    
           type: string    
+          x-ngsi:    
+            type: Property    
         zh:    
-          description: Property. Description in Chinese    
+          description: Description in Chinese    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     dimension:    
       description: 'This property links to a component that identifies observations, e.g. the time to which the observation applies, or a geographic region which the observation covers. Dimension is a conceptual entity that applies to all distribution formats, e.g. in case a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: Property. Each one of the dimensions related to the item    
+        description: Each one of the dimensions related to the item    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: stat:dimension    
+        model: "http://purl.org/linked-data/cube#DimensionProperty"    
         type: Property    
     distribution:    
-      description: This property links the Dataset to an available Distributions. It corresponds with the 'dataset distribution' mandatory property of STAT-DCAT-AP 1.0.1    
+      description: This property links the Dataset to an available Distributions. It corresponds with the 'dataset distribution' mandatory property of STAT-DCAT-AP 1.0.1.    
       items:    
-        description: Property. URI of the different distributions of the dataset    
+        description: URI of the different distributions of the dataset    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dcat:distribution    
+        model: "https://www.w3.org/ns/dcat2.ttl#Distribution"    
+        type: Property    
+    hasQualityAnnotation:    
+      description: 'This property links to a statement related to quality of the Dataset, including rating, quality certificate, feedback that can be associated to the Dataset.'    
+      items:    
+        description: Each of the quality annotation values.    
+        type: string    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        model: "http://www.w3.org/ns/oa#Annotation"    
         type: Property    
     hasVersion:    
       description: 'This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.'    
       items:    
-        description: Property. Description of the different versions    
+        description: Description of the different versions    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     id:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     identifier:    
       description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
       items:    
-        description: Property. Each one of the identifiers    
+        description: Each one of the identifiers    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:identifier    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     isVersionOf:    
       description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
       items:    
-        description: Property. Uri pointing to the different origins for the versions    
+        description: Uri pointing to the different origins for the versions    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:identifier    
+        model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     issued:    
       description: 'This property contains the date of formal issuance (e.g., publication) of the Dataset.'    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: dct:issued    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     keyword:    
-      description: 'This property contains a keyword or tag, describing the Dataset'    
+      description: 'This property contains a keyword or tag, describing the Dataset.'    
       items:    
-        description: Property. Description of the different keywords    
+        description: Description of the different keywords    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dcat:keyword    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     landingPage:    
       description: 'This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.'    
       items:    
-        description: Property. URI of the different landing pages related to the item    
+        description: URI of the different landing pages related to the item    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dcat:landingPage    
+        model: "http://xmlns.com/foaf/0.1/#term_Document"    
         type: Property    
     language:    
       description: This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.    
       items:    
-        description: Property. Each one of the languages    
+        description: Each one of the languages    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:LinguisticSystem    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LinguisticSystem    
         type: Property    
     modified:    
       description: This property contains the most recent date on which the Dataset was changed or modified.    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: dct:modified    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        type: Property    
+    numSeries:    
+      description: ""    
+      type: number    
+      x-ngsi:    
+        model: "Property, http://www.w3.org/2000/01/rdf-schema#Literal, This property contains the number of data series contained in th e Dataset"    
+    otherIdentifier:    
+      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.'    
+      items:    
+        description: Each one of th different identifiers    
+        format: uri    
+        type: string    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        model: "http://www.w3.org/ns/adms#Identifier"    
         type: Property    
     page:    
       description: This property refers to a page or document about this Dataset    
       items:    
-        description: Property. Link to the different pages related to the item    
+        description: Link to the different pages related to the item    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: foaf:Document    
+        model: "http://xmlns.com/foaf/0.1/#term_Document"    
         type: Property    
     provenance:    
       description: This property contains a statement about the lineage of a Dataset.    
       items:    
-        description: Property. Each one of the different provenance sources    
+        description: Each one of the different provenance sources    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:ProvenanceStatement    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/ProvenanceStatement    
         type: Property    
     publisher:    
       description: This property refers to an entity (organisation) responsible for making the Dataset available    
       type: string    
       x-ngsi:    
-        model: foaf:Agent    
+        model: "http://xmlns.com/foaf/0.1/#term_Agent"    
         type: Property    
     relation:    
       description: This property refers to a related resource    
       items:    
-        description: Property. Additional URI related to the resource    
+        description: Additional URI related to the resource    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: rdfs:Resource    
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     sample:    
       description: This property refers to a sample distribution of the dataset    
       items:    
-        description: Property. Pointer to the different resources    
+        description: Pointer to the different resources    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: rdfs:Resource    
+        model: "http://www.w3.org/ns/dcat#Distribution"    
         type: Property    
     source:    
       description: This property refers to a related Dataset from which the described Dataset is derived    
       items:    
-        description: Property. each one of the different sources    
+        description: each one of the different sources    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:source    
+        model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     spatial:    
       description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: GeoProperty. Geojson reference to the item. Point    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
-              type:    
-                enum:    
-                  - Point    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON Point    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. LineString    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   items:    
-                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
                   minItems: 2    
                   type: array    
                 minItems: 2    
                 type: array    
-              type:    
-                enum:    
-                  - LineString    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON LineString    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. Polygon    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
                   minItems: 4    
                   type: array    
                 type: array    
-              type:    
-                enum:    
-                  - Polygon    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON Polygon    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiPoint    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiPoint    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiPoint    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiLineString    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 2    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiLineString    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiLineString    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiLineString    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    items:    
-                      items:    
-                        type: number    
-                      minItems: 2    
-                      type: array    
-                    minItems: 4    
-                    type: array    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiPolygon    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiPolygon    
-            type: object    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+        x-ngsi:    
+          type: GeoProperty    
       type: array    
       x-ngsi:    
-        model: dct:Location    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/Location    
         type: GeoProperty    
     statUnitMeasure:    
       description: 'This property links to a unit of measurement of the observations, for example Euro, square kilometre, purchasing power standard (PPS), full- time equivalent, percentage. Unit of measurement is a conceptual entity that applies to all distribution formats , e.g. in the case when a dataset is provided both in SDMX and in Data Cube.'    
       items:    
-        description: 'Property. Each one of the resources to define the units of measurement '    
+        description: Each one of the resources to define the units of measurement.    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: stat:UnitMeasure    
+        model: "https://www.w3.org/2009/08/skos-reference/skos.html#Concept"    
         type: Property    
     temporal:    
-      description: This property refers to a temporal period that the Dataset covers    
+      description: This property refers to a temporal period that the Dataset covers.    
       items:    
-        description: Property. Each one of the different dates or periods    
+        description: Each one of the different dates or periods    
         format: date-time    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dct:PeriodOfTime    
+        model: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/PeriodOfTime    
         type: Property    
     theme:    
       description: This property refers to a category of the Dataset. A Dataset may be associated with multiple themes    
       items:    
-        description: Property. Each one of the different themes    
+        description: Each one of the different themes    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: dcat:theme    
+        model: "https://www.w3.org/2009/08/skos-reference/skos.html#Concept"    
         type: Property    
     title:    
       description: This property contains a name given to the Dataset. It corresponds with the 'Title' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the name.    
       items:    
-        description: Property. Title in different languages    
+        description: Title in different languages    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
       description: NGSI entity type. It has to be Dataset    
@@ -472,16 +513,18 @@ Dataset:
       description: This property contains a version number or other version designation of the Dataset    
       type: string    
       x-ngsi:    
-        model: owl:versionInfo    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     versionNotes:    
       description: This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.    
       items:    
-        description: Property. Each one of the notes related to the item    
+        description: Each one of the notes related to the item    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: adms:versionNotes    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
   required:    
     - id    
@@ -489,7 +532,7 @@ Dataset:
     - description    
     - title    
   type: object    
-  x-derived-from: ""    
+  x-derived-from: https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Dataset/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/Dataset/schema.json    
@@ -640,6 +683,10 @@ Dataset:
     "value": [  
       "dsd1"  
     ]  
+  },  
+  "Type": {  
+    "type": "Property",  
+    "value": "http://data.europa.eu/xyz"  
   },  
   "language": {  
     "type": "Property",  
