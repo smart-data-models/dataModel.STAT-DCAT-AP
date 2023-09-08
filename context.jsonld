@@ -18,12 +18,20 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "attribute": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/attribute",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "byteSize": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/byteSize",
         "checksum": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/checksum",
         "codeList": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/codeList",
         "concept": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/concept",
         "conformsTo": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/conformsTo",
         "contactPoint": "https://smartdatamodels.org/contactPoint",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "created": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/created",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dataset": {
