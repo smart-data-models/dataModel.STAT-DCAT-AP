@@ -1,3 +1,3 @@
-/* (Beta) Export of data model DimensionProperty of the subject dataModel.STAT-DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model DimensionProperty of the subject dataModel.STAT-DCAT-AP for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DimensionProperty_type AS ENUM ('DimensionProperty');
-CREATE TABLE DimensionProperty (address json, alternateName text, areaServed text, codeList text, concept text, created timestamp, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, identifier text, label json, language json, location json, modified timestamp, name text, owner json, range text, seeAlso json, source text, type DimensionProperty_type);
+CREATE TABLE DimensionProperty (address JSON, alternateName TEXT, areaServed TEXT, codeList TEXT, concept TEXT, created TIMESTAMP, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, identifier TEXT, label JSON, language JSON, modified TIMESTAMP, name TEXT, owner JSON, range TEXT, source TEXT, type DimensionProperty_type);
