@@ -6,7 +6,9 @@
   "source": "",
   "name": "",
   "alternateName": "",
-  "description": "Distribution of statistical data observations",
+  "description": [
+    "Distribution of statistical data observations"
+  ],
   "dataProvider": "Statistical source.",
   "owner": [
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",
