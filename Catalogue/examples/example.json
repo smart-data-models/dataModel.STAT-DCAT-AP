@@ -6,7 +6,9 @@
   "source": "INE",
   "name": "Catalogue of statistical resources",
   "alternateName": "Catalogue",
-  "description": "List of converted statistical resources",
+  "description": [
+    "List of converted statistical resources"
+  ],
   "dataProvider": "INE",
   "owner": [
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",
