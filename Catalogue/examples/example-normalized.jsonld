@@ -29,7 +29,9 @@
   },
   "description": {
     "type": "Property",
-    "value": "List of converted statistical resources"
+    "value": [
+      "List of converted statistical resources"
+      ]
   },
   "dataProvider": {
     "type": "Property",
