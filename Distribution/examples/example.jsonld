@@ -2,19 +2,18 @@
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",
   "type": "Distribution",
   "accessUrl": [
-      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
-    ]
-  ,
-  "format": "JSON_LD"
-  ,
-  "status":  "Completed"
-  ,
+    "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
+  ],
+  "format": "JSON_LD",
+  "status":  "Completed",
   "dateCreated": "2008-02-15T20:13:19Z",
   "dateModified": "2020-05-07T09:44:12Z",
   "source": "",
   "name": "",
   "alternateName": "",
-  "description": "Distribution of statistical data observations",
+  "description": [
+    "Distribution of statistical data observations"
+  ],
   "dataProvider": "Statistical source.",
   "owner": [
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",
@@ -41,7 +40,6 @@
     "district": ""
   },
   "areaServed": "",
-
   "dataset": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192",
   "publisher": "Interstat project",
   "title": [
