@@ -43,7 +43,9 @@
   },
   "description": {
     "type": "Property",
-    "value": "Distribution of statistical data observations"
+    "value": [
+      "Distribution of statistical data observations"
+      ]
   },
   "dataProvider": {
     "type": "Property",
