@@ -22,8 +22,10 @@
     "value": "Catalogue"
   },
   "description": {
-    "type": "Text",
-    "value": "List of converted statistical resources"
+    "type": "StructuredValue",
+    "value": [
+      "List of converted statistical resources"
+    ]
   },
   "dataProvider": {
     "type": "Text",
