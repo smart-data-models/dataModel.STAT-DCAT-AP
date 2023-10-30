@@ -36,8 +36,10 @@
     "value": ""
   },
   "description": {
-    "type": "Text",
-    "value": "Distribution of statistical data observations"
+    "type": "StructuredValue",
+    "value": [
+      "Distribution of statistical data observations"
+    ]
   },
   "dataProvider": {
     "type": "Text",
