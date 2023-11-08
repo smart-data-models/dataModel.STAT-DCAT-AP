@@ -55,16 +55,22 @@
     }
   },
   "address": {
-    "streetAddress": "Franklinstrasse 13",
-    "addressLocality": "Berlin",
-    "addressRegion": "Berlin",
-    "addressCountry": "Germany",
-    "postalCode": "10587",
-    "postOfficeBoxNumber": "",
-    "streetNr": "13",
-    "district": ""
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Franklinstrasse 13",
+      "addressLocality": "Berlin",
+      "addressRegion": "Berlin",
+      "addressCountry": "Germany",
+      "postalCode": "10587",
+      "postOfficeBoxNumber": "",
+      "streetNr": "13",
+      "district": ""
+    }
   },
-  "areaServed": "",
+  "areaServed": {
+    "type": "Text",
+    "value": ""
+  },
   "dataset": {
     "type": "array",
     "value": [
