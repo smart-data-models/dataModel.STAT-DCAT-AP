@@ -34,7 +34,7 @@
                 "dataProvider": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/dataProvider"
                 },
-                "onwer": {
+                "owner": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/owner"
                 },
                 "seeAlso": {
