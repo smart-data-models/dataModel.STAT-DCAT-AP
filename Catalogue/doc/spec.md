@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dataset[array]`: This property links the Catalogue with a Dataset that is part of the Catalogue  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[array]`: This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 11 of the pdf document https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: This property refers to a related Catalogue that is part of the described Catalogue  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: This property refers to a web page that acts as the main page for the Catalogue  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: Unique identifier of the entity  - `isPartOf[uri]`: This property refers to a related Catalogue in which the described Catalogue is physically or logically included  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: This property contains the date of formal issuance (e.g., publication) of the Catalogue  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: This property refers to the licence under which the Catalogue can be used or reused  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modified[date-time]`: This property contains the most recent date on which the Catalogue was modified  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `publisher[string]`: This property refers to an entity (organisation) responsible for making the Catalogue available  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: This property refers to a Catalogue Record that is part of the Catalogue  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: This property refers to a statement that specifies rights associated with the Catalogue  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `spatial[array]`: This property refers to a geographical area covered by the Catalogue  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: This property refers to a knowledge organization system used to classify the Catalogue's Datasets  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: It has to be Catalogue  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dataset[array]`: This property links the Catalogue with a Dataset that is part of the Catalogue  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[array]`: This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 11 of the pdf document https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: This property refers to a related Catalogue that is part of the described Catalogue  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: This property refers to a web page that acts as the main page for the Catalogue  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: Unique identifier of the entity  - `isPartOf[uri]`: This property refers to a related Catalogue in which the described Catalogue is physically or logically included  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: This property contains the date of formal issuance (e.g., publication) of the Catalogue  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: This property refers to the licence under which the Catalogue can be used or reused  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modified[date-time]`: This property contains the most recent date on which the Catalogue was modified  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: The name of this item  - `onwer[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `publisher[string]`: This property refers to an entity (organisation) responsible for making the Catalogue available  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: This property refers to a Catalogue Record that is part of the Catalogue  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: This property refers to a statement that specifies rights associated with the Catalogue  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `spatial[array]`: This property refers to a geographical area covered by the Catalogue  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: This property refers to a knowledge organization system used to classify the Catalogue's Datasets  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: It has to be Catalogue  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -389,7 +390,7 @@ Catalogue:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -613,7 +614,7 @@ Catalogue:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Catalogue/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -633,7 +634,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -747,8 +750,10 @@ Catalogue:
     "value": "Catalogue"  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "List of converted statistical resources"  
+    "type": "StructuredValue",  
+    "value": [  
+      "List of converted statistical resources"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -778,16 +783,22 @@ Catalogue:
     }  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": "",  
-    "streetNr": "13",  
-    "district": ""  
+    "type": "StructuredValue",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": "",  
+      "streetNr": "13",  
+      "district": ""  
+    }  
   },  
-  "areaServed": "",  
+  "areaServed": {  
+    "type": "Text",  
+    "value": ""  
+  },  
   "dataset": {  
     "type": "array",  
     "value": [  
@@ -901,7 +912,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -1025,7 +1038,9 @@ Catalogue:
   },  
   "description": {  
     "type": "Property",  
-    "value": "List of converted statistical resources"  
+    "value": [  
+      "List of converted statistical resources"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
