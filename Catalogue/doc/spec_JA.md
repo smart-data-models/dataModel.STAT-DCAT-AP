@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな記述**STAT-DCAT-AP 1.0.1 仕様に準拠したデータセットのカタログ。  
-バージョン: 0.0.1  
+バージョン: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dataset[array]`: このプロパティは、カタログと、カタログの一部であるデータセットをリンクします。  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[array]`: このプロパティには、カタログのフリーテキストの説明が含まれる。このプロパティは、並行言語版の説明のために繰り返すことができます。多言語に関する詳細については、pdf文書 https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf のセクション11を参照してください。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: このプロパティは、記述されたカタログの一部である関連カタログを参照する。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: このプロパティは、カタログのメインページとして機能するウェブページを参照します。  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: エンティティの一意識別子  - `isPartOf[uri]`: このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを参照する。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: このプロパティには、カタログの正式発行日（発行日など）が含まれる。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: このプロパティは、カタログ内のデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。メタデータが複数の言語で提供される場合は、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: このプロパティは、カタログを使用または再利用できるライセンスを指します。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `modified[date-time]`: このプロパティには、カタログが修正された最新の日付が含まれる。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `publisher[string]`: このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指す。  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: このプロパティは、カタログの一部であるカタログレコードを参照する。  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: このプロパティは、カタログに関連する権利を指定するステートメントを指す。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `spatial[array]`: このプロパティは、カタログがカバーする地理的範囲を指す。  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: このプロパティは、カタログのデータセットを分類するために使用される知識体系を指します。  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: このプロパティはカタログに与えられた名前を含む。このプロパティは、並列言語版の名前のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: カタログでなければならない  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dataset[array]`: このプロパティは、カタログと、カタログの一部であるデータセットをリンクします。  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[array]`: このプロパティには、カタログのフリーテキストの説明が含まれる。このプロパティは、並行言語版の説明のために繰り返すことができます。多言語に関する詳細については、pdf文書 https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf のセクション11を参照してください。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: このプロパティは、記述されたカタログの一部である関連カタログを参照する。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: このプロパティは、カタログのメインページとして機能するウェブページを参照します。  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: エンティティの一意識別子  - `isPartOf[uri]`: このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを参照する。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: このプロパティには、カタログの正式発行日（発行日など）が含まれる。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: このプロパティは、カタログ内のデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。メタデータが複数の言語で提供される場合は、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: このプロパティは、カタログを使用または再利用できるライセンスを指します。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `modified[date-time]`: このプロパティには、カタログが修正された最新の日付が含まれる。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: このアイテムの名前  - `onwer[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `publisher[string]`: このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指す。  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: このプロパティは、カタログの一部であるカタログレコードを参照する。  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: このプロパティは、カタログに関連する権利を指定するステートメントを指す。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `spatial[array]`: このプロパティは、カタログがカバーする地理的範囲を指す。  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: このプロパティは、カタログのデータセットを分類するために使用される知識体系を指します。  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: このプロパティはカタログに与えられた名前を含む。このプロパティは、並列言語版の名前のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: カタログでなければならない  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -389,7 +390,7 @@ Catalogue:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -613,7 +614,7 @@ Catalogue:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Catalogue/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -633,7 +634,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -747,8 +750,10 @@ Catalogue:
     "value": "Catalogue"  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "List of converted statistical resources"  
+    "type": "StructuredValue",  
+    "value": [  
+      "List of converted statistical resources"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -778,16 +783,22 @@ Catalogue:
     }  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": "",  
-    "streetNr": "13",  
-    "district": ""  
+    "type": "StructuredValue",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": "",  
+      "streetNr": "13",  
+      "district": ""  
+    }  
   },  
-  "areaServed": "",  
+  "areaServed": {  
+    "type": "Text",  
+    "value": ""  
+  },  
   "dataset": {  
     "type": "array",  
     "value": [  
@@ -901,7 +912,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -1025,7 +1038,9 @@ Catalogue:
   },  
   "description": {  
     "type": "Property",  
-    "value": "List of converted statistical resources"  
+    "value": [  
+      "List of converted statistical resources"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
