@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: 이 속성에는 분포의 크기(바이트)가 포함됩니다.  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: 이 속성은 배포의 콘텐츠가 변경되지 않았는지 확인하는 데 사용할 수 있는 메커니즘을 제공합니다.  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: 이 속성은 설명된 배포가 따르는 설정된 스키마를 나타냅니다.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[array]`: 이 속성에는 배포판에 대한 무료 텍스트 설명이 포함되어 있습니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복될 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: 이 속성에는 지정된 형식의 다운로드 가능한 파일에 대한 직접 링크인 URL이 포함되어 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: 이 속성은 배포의 파일 형식을 나타냅니다.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: 엔티티의 고유 식별자  - `issued[date-time]`: 이 속성에는 배포판의 공식 발행 날짜(예: 게시)가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 이 속성은 배포에 사용되는 언어를 나타냅니다. 메타데이터가 여러 언어로 제공되는 경우 이 속성을 반복할 수 있습니다.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 이 속성은 배포판을 사용할 수 있는 라이선스를 나타냅니다.  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `mediaType[string]`: 이 속성은 IANA에서 관리하는 공식 미디어 유형 등록에 정의된 배포의 미디어 유형을 나타냅니다.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: 이 속성에는 배포가 변경되거나 수정된 가장 최근 날짜가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `page[array]`: 이 속성은 이 배포에 대한 페이지 또는 문서를 참조합니다.  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: 이 속성은 배포와 관련된 권한을 지정하는 문을 나타냅니다.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `status[string]`: 이 속성은 배포의 성숙도를 나타냅니다. 완료, 사용 중단, 개발 중, 철회 중 하나의 값을 사용해야 합니다.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 이 속성에는 배포에 지정된 이름이 포함됩니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복할 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI 엔티티 유형. 배포여야 합니다.  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: 이 속성에는 분포의 크기(바이트)가 포함됩니다.  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: 이 속성은 배포의 콘텐츠가 변경되지 않았는지 확인하는 데 사용할 수 있는 메커니즘을 제공합니다.  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: 이 속성은 설명된 배포가 따르는 설정된 스키마를 나타냅니다.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[array]`: 이 속성에는 배포판에 대한 무료 텍스트 설명이 포함되어 있습니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복될 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: 이 속성에는 지정된 형식의 다운로드 가능한 파일에 대한 직접 링크인 URL이 포함되어 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: 이 속성은 배포의 파일 형식을 나타냅니다.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: 엔티티의 고유 식별자  - `issued[date-time]`: 이 속성에는 배포판의 공식 발행 날짜(예: 게시)가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 이 속성은 배포에 사용되는 언어를 나타냅니다. 메타데이터가 여러 언어로 제공되는 경우 이 속성을 반복할 수 있습니다.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 이 속성은 배포판을 사용할 수 있는 라이선스를 나타냅니다.  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `mediaType[string]`: 이 속성은 IANA에서 관리하는 공식 미디어 유형 등록에 정의된 배포의 미디어 유형을 나타냅니다.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: 이 속성에는 배포가 변경되거나 수정된 가장 최근 날짜가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: 이 항목의 이름  - `onwer[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `page[array]`: 이 속성은 이 배포에 대한 페이지 또는 문서를 참조합니다.  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: 이 속성은 배포와 관련된 권한을 지정하는 문을 나타냅니다.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `status[string]`: 이 속성은 배포의 성숙도를 나타냅니다. 완료, 사용 중단, 개발 중, 철회 중 하나의 값을 사용해야 합니다.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 이 속성에는 배포에 지정된 이름이 포함됩니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복할 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI 엔티티 유형. 배포여야 합니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -409,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -500,7 +500,7 @@ Distribution:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Distribution/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -520,7 +520,9 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -642,8 +644,10 @@ Distribution:
     "value": ""  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "Distribution of statistical data observations"  
+    "type": "StructuredValue",  
+    "value": [  
+      "Distribution of statistical data observations"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -792,19 +796,18 @@ Distribution:
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": [  
-      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
-    ]  
-  ,  
-  "format": "JSON_LD"  
-  ,  
-  "status":  "Completed"  
-  ,  
+    "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+  ],  
+  "format": "JSON_LD",  
+  "status":  "Completed",  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -936,7 +939,9 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "Distribution of statistical data observations"  
+    "value": [  
+      "Distribution of statistical data observations"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
@@ -1089,7 +1094,7 @@ Distribution:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
