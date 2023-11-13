@@ -76,7 +76,6 @@
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "notation": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/notation",
         "numSeries": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/numSeries",
-        "onwer": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/onwer",
         "otherIdentifier": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/otherIdentifier",
         "owner": "https://smartdatamodels.org/owner",
         "page": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/page",
