@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dataset[array]`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[array]`: Esta propiedad contiene una descripción en texto libre del Catálogo. Esta propiedad puede repetirse para versiones lingüísticas paralelas de la descripción. Para más información sobre cuestiones multilingües, consulte la sección 11 del documento pdf https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: Esta propiedad hace referencia a un Catálogo relacionado que forma parte del Catálogo descrito  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: Esta propiedad hace referencia a una página web que actúa como página principal del Catálogo  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: Identificador único de la entidad  - `isPartOf[uri]`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los Conjuntos de Datos del Catálogo. Esta propiedad puede repetirse si los metadatos se facilitan en varios idiomas.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: Esta propiedad se refiere a la licencia bajo la cual puede utilizarse o reutilizarse el Catálogo  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `modified[date-time]`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `publisher[string]`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial[array]`: Esta propiedad se refiere a una zona geográfica cubierta por el Catálogo  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los Conjuntos de Datos del Catálogo  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para versiones del nombre en idiomas paralelos  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tiene que ser Catálogo  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dataset[array]`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[array]`: Esta propiedad contiene una descripción en texto libre del Catálogo. Esta propiedad puede repetirse para versiones lingüísticas paralelas de la descripción. Para más información sobre cuestiones multilingües, consulte la sección 11 del documento pdf https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: Esta propiedad hace referencia a un Catálogo relacionado que forma parte del Catálogo descrito  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: Esta propiedad hace referencia a una página web que actúa como página principal del Catálogo  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: Identificador único de la entidad  - `isPartOf[uri]`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los Conjuntos de Datos del Catálogo. Esta propiedad puede repetirse si los metadatos se facilitan en varios idiomas.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: Esta propiedad se refiere a la licencia bajo la cual puede utilizarse o reutilizarse el Catálogo  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `modified[date-time]`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: El nombre de este artículo  - `onwer[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `publisher[string]`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial[array]`: Esta propiedad se refiere a una zona geográfica cubierta por el Catálogo  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los Conjuntos de Datos del Catálogo  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para versiones del nombre en idiomas paralelos  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tiene que ser Catálogo  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -389,7 +390,7 @@ Catalogue:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -613,7 +614,7 @@ Catalogue:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Catalogue/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -633,7 +634,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -747,8 +750,10 @@ Catalogue:
     "value": "Catalogue"  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "List of converted statistical resources"  
+    "type": "StructuredValue",  
+    "value": [  
+      "List of converted statistical resources"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -778,16 +783,22 @@ Catalogue:
     }  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": "",  
-    "streetNr": "13",  
-    "district": ""  
+    "type": "StructuredValue",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": "",  
+      "streetNr": "13",  
+      "district": ""  
+    }  
   },  
-  "areaServed": "",  
+  "areaServed": {  
+    "type": "Text",  
+    "value": ""  
+  },  
   "dataset": {  
     "type": "array",  
     "value": [  
@@ -901,7 +912,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -1025,7 +1038,9 @@ Catalogue:
   },  
   "description": {  
     "type": "Property",  
-    "value": "List of converted statistical resources"  
+    "value": [  
+      "List of converted statistical resources"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
