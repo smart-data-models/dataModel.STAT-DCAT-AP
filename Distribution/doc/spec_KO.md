@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 글로벌 설명: **STAT-DCAT-AP 표준 1.0.1**에 따른 데이터 세트에 속하는 배포입니다.  
-버전: 0.0.1  
+버전: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -409,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    onwer:    
+    owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
