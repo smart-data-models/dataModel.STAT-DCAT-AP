@@ -1,0 +1,298 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Distribution;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models STAT-DCAT-AP distribution of a Dataset, adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.STAT-DCAT-AP/master/Distribution/schema.json",
+    "description": "This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1",
+    "displayName": "Distribution",
+    "contents": [
+        {
+            "name": "Type",
+            "writable": true,
+            "displayName": "Type",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property links to a type of the Distribution, e.g. that it is a visualisation"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "byteSize",
+            "writable": true,
+            "displayName": "byteSize",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "This property contains the size of a Distribution in bytes"
+        },
+        {
+            "name": "checksum",
+            "writable": true,
+            "displayName": "checksum",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "format",
+            "writable": true,
+            "displayName": "format",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the file format of the Distribution"
+        },
+        {
+            "name": "issued",
+            "writable": true,
+            "displayName": "issued",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "This property contains the date of formal issuance (e.g., publication) of the Distribution"
+        },
+        {
+            "name": "license",
+            "writable": true,
+            "displayName": "license",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the licence under which the Distribution is made available"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "mediaType",
+            "writable": true,
+            "displayName": "mediaType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA"
+        },
+        {
+            "name": "modified",
+            "writable": true,
+            "displayName": "modified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "This property contains the most recent date on which the Distribution was changed or modified"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "rights",
+            "writable": true,
+            "displayName": "rights",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to a statement that specifies rights associated with the Distribution"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "accessUrl",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset",
+            "displayName": "accessUrl"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "conformsTo",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to an established schema to which the described Distribution conforms",
+            "displayName": "conformsTo"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "description",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description",
+            "displayName": "description"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "downloadURL",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a URL that is a direct link to a downloadable file in a given format",
+            "displayName": "downloadURL"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "language",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages",
+            "displayName": "language"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "onwer",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "onwer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "page",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to a page or document about this Distribution",
+            "displayName": "page"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "title",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description",
+            "displayName": "title"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Completed",
+                        "displayName": "Completed",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Deprecated",
+                        "displayName": "Deprecated",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Under Development",
+                        "displayName": "Under Development",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Withdrawn",
+                        "displayName": "Withdrawn",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
