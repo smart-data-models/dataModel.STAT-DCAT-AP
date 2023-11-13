@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Questa è una distribuzione appartenente a un set di dati secondo lo standard STAT-DCAT-AP 1.0.1**.  
-versione: 0.0.1  
+versione: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -409,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    onwer:    
+    owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
