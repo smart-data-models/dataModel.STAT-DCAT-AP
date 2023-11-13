@@ -370,7 +370,7 @@ Distribution:
       type: string
       x-ngsi:
         type: Property
-    onwer:
+    owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf:
