@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: このプロパティは、ディストリビューションのサイズをバイト数で表します。  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: このプロパティは、ディストリビューションの内容が変更されていないことを検証するために使用できるメカニズムを提供します。  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: このプロパティは、記述されたディストリビューションが準拠する、確立されたスキーマを指す。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[array]`: このプロパティには、ディストリビューションに関するフリーテキストの説明が含まれる。このプロパティは、並列言語版の説明のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: このプロパティには、指定された形式でダウンロード可能なファイルへの直接リンクである URL が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: このプロパティは、ディストリビューションのファイルフォーマットを参照します。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: エンティティの一意識別子  - `issued[date-time]`: このプロパティには、ディストリビューションの正式発行日（発行日など）が格納される。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: このプロパティは、ディストリビューションで使用される言語を指す。メタデータが複数の言語で提供される場合、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: このプロパティは、ディストリビューションが利用可能となるライセンスを意味する。  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaType[string]`: このプロパティは、IANAが管理するメディアタイプの公式登録で定義されている、ディストリビューションのメディアタイプを指す。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: このプロパティには、ディストリビューションが変更または修正された最新の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `page[array]`: このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指す。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `status[string]`: このプロパティは、ディストリビューションの満期を指す。Completed、Deprecated、Under Development、Withdrawnのいずれかの値を取らなければなりません。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: このプロパティには、ディストリビューションに与えられた名前が含まれる。このプロパティは、並列言語版の記述のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSIエンティティタイプ。ディストリビューションでなければならない。  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: このプロパティは、ディストリビューションのサイズをバイト数で表します。  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: このプロパティは、ディストリビューションの内容が変更されていないことを検証するために使用できるメカニズムを提供します。  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: このプロパティは、記述されたディストリビューションが準拠する、確立されたスキーマを指す。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[array]`: このプロパティには、ディストリビューションに関するフリーテキストの説明が含まれる。このプロパティは、並列言語版の説明のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: このプロパティには、指定された形式でダウンロード可能なファイルへの直接リンクである URL が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: このプロパティは、ディストリビューションのファイルフォーマットを参照します。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: エンティティの一意識別子  - `issued[date-time]`: このプロパティには、ディストリビューションの正式発行日（発行日など）が格納される。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: このプロパティは、ディストリビューションで使用される言語を指す。メタデータが複数の言語で提供される場合、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: このプロパティは、ディストリビューションが利用可能となるライセンスを意味する。  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaType[string]`: このプロパティは、IANAが管理するメディアタイプの公式登録で定義されている、ディストリビューションのメディアタイプを指す。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: このプロパティには、ディストリビューションが変更または修正された最新の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: このアイテムの名前  - `onwer[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `page[array]`: このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指す。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `status[string]`: このプロパティは、ディストリビューションの満期を指す。Completed、Deprecated、Under Development、Withdrawnのいずれかの値を取らなければなりません。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: このプロパティには、ディストリビューションに与えられた名前が含まれる。このプロパティは、並列言語版の記述のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSIエンティティタイプ。ディストリビューションでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -408,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -499,7 +500,7 @@ Distribution:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Distribution/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -519,7 +520,9 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -641,8 +644,10 @@ Distribution:
     "value": ""  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "Distribution of statistical data observations"  
+    "type": "StructuredValue",  
+    "value": [  
+      "Distribution of statistical data observations"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -791,19 +796,18 @@ Distribution:
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": [  
-      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
-    ]  
-  ,  
-  "format": "JSON_LD"  
-  ,  
-  "status":  "Completed"  
-  ,  
+    "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+  ],  
+  "format": "JSON_LD",  
+  "status":  "Completed",  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -935,7 +939,9 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "Distribution of statistical data observations"  
+    "value": [  
+      "Distribution of statistical data observations"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
