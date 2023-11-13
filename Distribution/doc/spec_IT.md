@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Questa proprietà contiene la dimensione di una distribuzione in byte.  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: Questa proprietà fornisce un meccanismo che può essere utilizzato per verificare che il contenuto di una distribuzione non sia stato modificato.  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: Questa proprietà si riferisce a uno schema stabilito a cui la Distribuzione descritta è conforme.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[array]`: Questa proprietà contiene un resoconto in testo libero della Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: Questa proprietà contiene un URL che è un collegamento diretto a un file scaricabile in un determinato formato.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: Questa proprietà si riferisce al formato del file della distribuzione.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: Identificatore univoco dell'entità  - `issued[date-time]`: Questa proprietà contiene la data di emissione formale (ad esempio, di pubblicazione) della distribuzione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Questa proprietà si riferisce a una lingua utilizzata nella Distribuzione. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: Questa proprietà si riferisce alla licenza con cui la Distribuzione è resa disponibile.  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaType[string]`: Questa proprietà si riferisce al tipo di supporto della distribuzione, come definito nel registro ufficiale dei tipi di supporto gestito da IANA.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: Questa proprietà contiene la data più recente in cui la Distribuzione è stata cambiata o modificata.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `page[array]`: Questa proprietà si riferisce a una pagina o a un documento relativo a questa Distribuzione.  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: Questa proprietà si riferisce a una dichiarazione che specifica i diritti associati alla Distribuzione  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Questa proprietà si riferisce alla scadenza della Distribuzione. DEVE assumere uno dei valori Completato, Deprecato, In fase di sviluppo, Ritirato.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Questa proprietà contiene un nome dato alla Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tipo di entità NGSI. Deve essere Distribuzione  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Questa proprietà contiene la dimensione di una distribuzione in byte.  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: Questa proprietà fornisce un meccanismo che può essere utilizzato per verificare che il contenuto di una distribuzione non sia stato modificato.  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: Questa proprietà si riferisce a uno schema stabilito a cui la Distribuzione descritta è conforme.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[array]`: Questa proprietà contiene un resoconto in testo libero della Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: Questa proprietà contiene un URL che è un collegamento diretto a un file scaricabile in un determinato formato.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: Questa proprietà si riferisce al formato del file della distribuzione.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: Identificatore univoco dell'entità  - `issued[date-time]`: Questa proprietà contiene la data di emissione formale (ad esempio, di pubblicazione) della distribuzione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Questa proprietà si riferisce a una lingua utilizzata nella Distribuzione. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: Questa proprietà si riferisce alla licenza con cui la Distribuzione è resa disponibile.  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mediaType[string]`: Questa proprietà si riferisce al tipo di supporto della distribuzione, come definito nel registro ufficiale dei tipi di supporto gestito da IANA.  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: Questa proprietà contiene la data più recente in cui la Distribuzione è stata cambiata o modificata.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: Il nome di questo elemento  - `onwer[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `page[array]`: Questa proprietà si riferisce a una pagina o a un documento relativo a questa Distribuzione.  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: Questa proprietà si riferisce a una dichiarazione che specifica i diritti associati alla Distribuzione  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Questa proprietà si riferisce alla scadenza della Distribuzione. DEVE assumere uno dei valori Completato, Deprecato, In fase di sviluppo, Ritirato.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Questa proprietà contiene un nome dato alla Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tipo di entità NGSI. Deve essere Distribuzione  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -408,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -499,7 +500,7 @@ Distribution:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Distribution/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -519,7 +520,9 @@ Distribution:
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Distribution:items:HBYW:15307384",  
@@ -641,8 +644,10 @@ Distribution:
     "value": ""  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "Distribution of statistical data observations"  
+    "type": "StructuredValue",  
+    "value": [  
+      "Distribution of statistical data observations"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -791,19 +796,18 @@ Distribution:
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": [  
-      "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
-    ]  
-  ,  
-  "format": "JSON_LD"  
-  ,  
-  "status":  "Completed"  
-  ,  
+    "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"  
+  ],  
+  "format": "JSON_LD",  
+  "status":  "Completed",  
   "dateCreated": "2008-02-15T20:13:19Z",  
   "dateModified": "2020-05-07T09:44:12Z",  
   "source": "",  
   "name": "",  
   "alternateName": "",  
-  "description": "Distribution of statistical data observations",  
+  "description": [  
+    "Distribution of statistical data observations"  
+  ],  
   "dataProvider": "Statistical source.",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:HBYW:15307384",  
@@ -935,7 +939,9 @@ Distribution:
   },  
   "description": {  
     "type": "Property",  
-    "value": "Distribution of statistical data observations"  
+    "value": [  
+      "Distribution of statistical data observations"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
