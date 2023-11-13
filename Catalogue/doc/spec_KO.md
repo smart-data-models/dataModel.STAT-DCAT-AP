@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 글로벌 설명: **STAT-DCAT-AP 1.0.1 사양을 준수하는 데이터 세트의 카탈로그**.  
-버전: 0.0.1  
+버전: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dataset[array]`: 이 속성은 카탈로그를 카탈로그의 일부인 데이터 세트와 연결합니다.  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[array]`: 이 속성에는 카탈로그의 무료 텍스트 설명이 포함되어 있습니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복될 수 있습니다. 다국어 문제에 대한 자세한 내용은 PDF 문서의 섹션 11(https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)을 참조하세요.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: 이 속성은 설명된 카탈로그의 일부인 관련 카탈로그를 참조합니다.  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: 이 속성은 카탈로그의 기본 페이지 역할을 하는 웹 페이지를 나타냅니다.  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: 엔티티의 고유 식별자  - `isPartOf[uri]`: 이 속성은 설명된 카탈로그가 물리적으로 또는 논리적으로 포함된 관련 카탈로그를 나타냅니다.  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: 이 속성에는 카탈로그의 공식 발행 날짜(예: 발행)가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 이 속성은 카탈로그에 있는 데이터 세트의 제목, 설명 등을 설명하는 텍스트 메타데이터에 사용되는 언어를 나타냅니다. 메타데이터가 여러 언어로 제공되는 경우 이 속성을 반복할 수 있습니다.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 이 속성은 카탈로그를 사용하거나 재사용할 수 있는 라이선스를 나타냅니다.  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `modified[date-time]`: 이 속성에는 카탈로그가 수정된 가장 최근 날짜가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `publisher[string]`: 이 속성은 카탈로그를 제공하는 책임이 있는 법인(조직)을 나타냅니다.  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: 이 속성은 카탈로그의 일부인 카탈로그 레코드를 나타냅니다.  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: 이 속성은 카탈로그와 관련된 권한을 지정하는 문을 나타냅니다.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `spatial[array]`: 이 속성은 카탈로그가 적용되는 지리적 영역을 나타냅니다.  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: 이 속성은 카탈로그의 데이터셋을 분류하는 데 사용되는 지식 조직 시스템을 나타냅니다.  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: 이 속성은 카탈로그에 지정된 이름을 포함합니다. 이 속성은 이름의 병렬 언어 버전에 대해 반복될 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: 카탈로그여야 합니다.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dataset[array]`: 이 속성은 카탈로그를 카탈로그의 일부인 데이터 세트와 연결합니다.  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[array]`: 이 속성에는 카탈로그의 무료 텍스트 설명이 포함되어 있습니다. 이 속성은 설명의 병렬 언어 버전에 대해 반복될 수 있습니다. 다국어 문제에 대한 자세한 내용은 PDF 문서의 섹션 11(https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)을 참조하세요.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: 이 속성은 설명된 카탈로그의 일부인 관련 카탈로그를 참조합니다.  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: 이 속성은 카탈로그의 기본 페이지 역할을 하는 웹 페이지를 나타냅니다.  . Model: [http://xmlns.com/foaf/0.1/#term_homepage](http://xmlns.com/foaf/0.1/#term_homepage)- `id[*]`: 엔티티의 고유 식별자  - `isPartOf[uri]`: 이 속성은 설명된 카탈로그가 물리적으로 또는 논리적으로 포함된 관련 카탈로그를 나타냅니다.  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: 이 속성에는 카탈로그의 공식 발행 날짜(예: 발행)가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 이 속성은 카탈로그에 있는 데이터 세트의 제목, 설명 등을 설명하는 텍스트 메타데이터에 사용되는 언어를 나타냅니다. 메타데이터가 여러 언어로 제공되는 경우 이 속성을 반복할 수 있습니다.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 이 속성은 카탈로그를 사용하거나 재사용할 수 있는 라이선스를 나타냅니다.  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `modified[date-time]`: 이 속성에는 카탈로그가 수정된 가장 최근 날짜가 포함됩니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: 이 항목의 이름  - `onwer[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `publisher[string]`: 이 속성은 카탈로그를 제공하는 책임이 있는 법인(조직)을 나타냅니다.  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: 이 속성은 카탈로그의 일부인 카탈로그 레코드를 나타냅니다.  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: 이 속성은 카탈로그와 관련된 권한을 지정하는 문을 나타냅니다.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `spatial[array]`: 이 속성은 카탈로그가 적용되는 지리적 영역을 나타냅니다.  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: 이 속성은 카탈로그의 데이터셋을 분류하는 데 사용되는 지식 조직 시스템을 나타냅니다.  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: 이 속성은 카탈로그에 지정된 이름을 포함합니다. 이 속성은 이름의 병렬 언어 버전에 대해 반복될 수 있습니다.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: 카탈로그여야 합니다.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -390,7 +390,7 @@ Catalogue:
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
+    onwer:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
@@ -614,7 +614,7 @@ Catalogue:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Catalogue/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -634,7 +634,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -748,8 +750,10 @@ Catalogue:
     "value": "Catalogue"  
   },  
   "description": {  
-    "type": "Text",  
-    "value": "List of converted statistical resources"  
+    "type": "StructuredValue",  
+    "value": [  
+      "List of converted statistical resources"  
+    ]  
   },  
   "dataProvider": {  
     "type": "Text",  
@@ -779,16 +783,22 @@ Catalogue:
     }  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": "",  
-    "streetNr": "13",  
-    "district": ""  
+    "type": "StructuredValue",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": "",  
+      "streetNr": "13",  
+      "district": ""  
+    }  
   },  
-  "areaServed": "",  
+  "areaServed": {  
+    "type": "Text",  
+    "value": ""  
+  },  
   "dataset": {  
     "type": "array",  
     "value": [  
@@ -902,7 +912,9 @@ Catalogue:
   "source": "INE",  
   "name": "Catalogue of statistical resources",  
   "alternateName": "Catalogue",  
-  "description": "List of converted statistical resources",  
+  "description": [  
+    "List of converted statistical resources"  
+  ],  
   "dataProvider": "INE",  
   "owner": [  
     "urn:ngsi-ld:Catalogue:items:FRAY:12902985",  
@@ -1026,7 +1038,9 @@ Catalogue:
   },  
   "description": {  
     "type": "Property",  
-    "value": "List of converted statistical resources"  
+    "value": [  
+      "List of converted statistical resources"  
+      ]  
   },  
   "dataProvider": {  
     "type": "Property",  
@@ -1078,7 +1092,7 @@ Catalogue:
     "type": "Property",  
     "value": [  
       "Catalogue or statistical resources",  
-      "Cat√°logo de recursos estadisticos"  
+      "CatÃ¡logo de recursos estadisticos"  
     ]  
   },  
   "homepage": {  
@@ -1174,7 +1188,7 @@ Catalogue:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
