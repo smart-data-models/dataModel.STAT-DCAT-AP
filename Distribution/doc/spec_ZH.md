@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 总体描述**这是一个属于 STAT-DCAT-AP 标准 1.0.1 数据集的分布**。  
-版本： 0.0.1  
+版本： 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -409,7 +409,7 @@ Distribution:
       type: string    
       x-ngsi:    
         type: Property    
-    onwer:    
+    owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
