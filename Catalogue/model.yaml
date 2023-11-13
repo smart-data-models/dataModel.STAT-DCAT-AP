@@ -575,4 +575,4 @@ Catalogue:
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Catalogue/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Catalogue/schema.json
   x-model-tags: INTERSTAT
-  x-version: 0.0.1
+  x-version: 0.0.2
