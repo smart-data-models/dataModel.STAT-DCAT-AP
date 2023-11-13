@@ -196,13 +196,13 @@
         },
         {
             "@type": "Telemetry",
-            "name": "onwer",
+            "name": "owner",
             "schema": {
                 "@type": "Array",
                 "elementSchema": "string"
             },
             "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
-            "displayName": "onwer"
+            "displayName": "owner"
         },
         {
             "@type": "Telemetry",
