@@ -2,13 +2,13 @@
   "id": "urn:ngsi-ld:Dataset:dsd1",
   "type": "Dataset",
   "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "dsd1"
     ]
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "en",
       "fr",
@@ -23,11 +23,11 @@
     "type": "StructuredValue",
     "value": {
       "en": "Population by sex, age and local administrative unit",
-      "fr": "Population par sexe, âge et unité administrative locale"
+      "fr": "Population par sexe, \u00e2ge et unit\u00e9 administrative locale"
     }
   },
   "dimension": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:DimensionProperty:dim-age",
       "urn:ngsi-ld:DimensionProperty:dim-sex",
@@ -35,14 +35,14 @@
     ]
   },
   "attribute": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:AttributeProperty:unitMeasure",
       "urn:ngsi-ld:AttributeProperty:att-nuts3"
     ]
   },
   "statUnitMeasure": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Measure:obsValue"
     ]
