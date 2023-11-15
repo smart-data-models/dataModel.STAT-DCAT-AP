@@ -1,38 +1,38 @@
 {
-    "id": "urn:ngsi-ld:AttributeProperty:a3003",
-    "type": "AttributeProperty",
-    "language": {
-        "type": "array",
-        "value": [
-            "en",
-            "fr"
-        ]
-    },
-    "label": {
-        "type": "StructuredValue",
-        "value": {
-            "en": "SDMX attribute COMMENT_OBS",
-            "fr": "Attribut SDMX "
-        }
-    },
-    "concept": {
-        "type": "URL",
-        "value": "urn:ngsi-ld:Concept:c4303"
-    },
-    "created": {
-        "type": "Date-Time",
-        "value": "2022-01-15T07:00:00+00:00"
-    },
-    "identifier": {
-        "type": "Text",
-        "value": "a3003"
-    },
-    "modified": {
-        "type": "Date-Time",
-        "value": "2022-01-15T07:30:00+00:00"
-    },
-    "range": {
-        "type": "Text",
-        "value": "xsd:string"
+  "id": "urn:ngsi-ld:AttributeProperty:a3003",
+  "type": "AttributeProperty",
+  "language": {
+    "type": "StructuredValue",
+    "value": [
+      "en",
+      "fr"
+    ]
+  },
+  "label": {
+    "type": "StructuredValue",
+    "value": {
+      "en": "SDMX attribute COMMENT_OBS",
+      "fr": "Attribut SDMX "
     }
+  },
+  "concept": {
+    "type": "Text",
+    "value": "urn:ngsi-ld:Concept:c4303"
+  },
+  "created": {
+    "type": "DateTime",
+    "value": "2022-01-15T07:00:00+00:00"
+  },
+  "identifier": {
+    "type": "Text",
+    "value": "a3003"
+  },
+  "modified": {
+    "type": "DateTime",
+    "value": "2022-01-15T07:30:00+00:00"
+  },
+  "range": {
+    "type": "Text",
+    "value": "xsd:string"
+  }
 }
