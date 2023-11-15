@@ -2,11 +2,11 @@
   "id": "urn:ngsi-ld:Catalogue:id:KSLT:97146192",
   "type": "Catalogue",
   "dateCreated": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2023-03-20T18:53:50Z"
   },
   "dateModified": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2023-06-29T11:37:12Z"
   },
   "source": {
@@ -32,14 +32,14 @@
     "value": "INE"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:items:FRAY:12902985",
       "urn:ngsi-ld:Catalogue:items:WMSS:90165917"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:items:XSHA:97687196"
     ]
@@ -72,7 +72,7 @@
     "value": ""
   },
   "dataset": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:dataset:VLNR:72960176"
     ]
@@ -82,10 +82,10 @@
     "value": "INE"
   },
   "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Catalogue or statistical resources",
-      "Catálogo de recursos estadisticos"
+      "Cat\u00e1logo de recursos estadisticos"
     ]
   },
   "homepage": {
@@ -93,7 +93,7 @@
     "value": "urn:ngsi-ld:Catalogue:homepage:FXWI:96370263"
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "SP",
       "EN"
@@ -104,32 +104,32 @@
     "value": "CC BY 4.0"
   },
   "releaseDate": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2023-01-20T11:03:48Z"
   },
   "themes": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "demography",
       "social movements"
     ]
   },
   "modificationDate": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2023-02-24T16:28:58Z"
   },
   "hasPart": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
     ]
   },
   "isPartOf": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:Catalogue:isPartOf:JACJ:87819283"
   },
   "record": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
     ]
@@ -139,7 +139,7 @@
     "value": "Open licensed"
   },
   "spatial_geographic": {
-    "type": "geo:json",
+    "type": "StructuredValue",
     "value": [
       {
         "type": "Point",
