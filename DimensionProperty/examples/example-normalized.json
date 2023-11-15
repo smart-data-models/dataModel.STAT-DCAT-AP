@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:DimensionProperty:d3002",
   "type": "DimensionProperty",
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "en",
       "fr"
@@ -16,15 +16,15 @@
     }
   },
   "codeList": {
-    "type": "URI",
-    "object": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"
+    "type": "Text",
+    "value": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier"
   },
   "concept": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:Concept:adjustment"
   },
   "created": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2022-01-15T07:00:00+00:00"
   },
   "identifier": {
@@ -32,7 +32,7 @@
     "value": "d3002"
   },
   "modified": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2022-01-15T07:30:00+00:00"
   },
   "range": {
