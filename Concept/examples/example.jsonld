@@ -8,7 +8,7 @@
   "inScheme": "urn:ngsi-ld:ConceptSchema:ajustementsSaisonnier",
   "prefLabel": {
     "en": "Neither seasonally adjusted nor calendar adjusted data",
-    "fr": "Non ajustée"
+    "fr": "Non ajust\u00e9e"
   },
   "notation": "N",
   "@context": [
