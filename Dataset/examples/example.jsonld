@@ -10,7 +10,7 @@
   ],
   "description": {
     "en": "Population by sex, age and local administrative unit",
-    "fr": "Population par sexe, âge et unité administrative locale"
+    "fr": "Population par sexe, \u00e2ge et unit\u00e9 administrative locale"
   },
   "dimension": [
     "urn:ngsi-ld:DimensionProperty:dim-age",
