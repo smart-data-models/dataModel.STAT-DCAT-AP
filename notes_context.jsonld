@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "Agent": "http://xmlns.com/foaf/0.1/Agent",
+    "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "LicenceDocument": "http://purl.org/dc/terms/LicenseDocument",
+    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "LinguisticSystem": "http://purl.org/dc/terms/LinguisticSystem"
+  },
+  "dataset": {
+    "@id": "http://www.w3.org/ns/dcat#dataset",
+    "@type": "@id"
+  }
+}

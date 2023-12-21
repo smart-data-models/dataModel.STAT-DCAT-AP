@@ -99,22 +99,22 @@
       "EN"
     ]
   },
-  "licence": {
+  "license": {
     "type": "Text",
     "value": "CC BY 4.0"
   },
-  "releaseDate": {
+  "issued": {
     "type": "DateTime",
     "value": "2023-01-20T11:03:48Z"
   },
-  "themes": {
+  "themeTaxonomy": {
     "type": "StructuredValue",
     "value": [
       "demography",
       "social movements"
     ]
   },
-  "modificationDate": {
+  "modified": {
     "type": "DateTime",
     "value": "2023-02-24T16:28:58Z"
   },
@@ -138,7 +138,7 @@
     "type": "Text",
     "value": "Open licensed"
   },
-  "spatial_geographic": {
+  "spatial": {
     "type": "StructuredValue",
     "value": [
       {

@@ -51,7 +51,7 @@
                     ],
                     "description": "Property. NGSI entity type. It has to be Distribution"
                 },
-                "accessUrl": {
+                "accessURL": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/URL'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset",
                     "items": {

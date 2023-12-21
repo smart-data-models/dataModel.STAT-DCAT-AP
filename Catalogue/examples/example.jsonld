@@ -48,13 +48,13 @@
     "SP",
     "EN"
   ],
-  "licence": "CC BY 4.0",
-  "releaseDate": "2023-01-20T11:03:48Z",
-  "themes": [
+  "license": "CC BY 4.0",
+  "issued": "2023-01-20T11:03:48Z",
+  "themeTaxonomy": [
     "demography",
     "social movements"
   ],
-  "modificationDate": "2023-02-24T16:28:58Z",
+  "modified": "2023-02-24T16:28:58Z",
   "hasPart": [
     "urn:ngsi-ld:Catalogue:hasPart:EQFC:38298320"
   ],
@@ -63,7 +63,7 @@
     "urn:ngsi-ld:Catalogue:record:UEFV:49174271"
   ],
   "rights": "Open licensed",
-  "spatial_geographic": [
+  "spatial": [
     {
       "type": "Point",
       "coordinates": [
