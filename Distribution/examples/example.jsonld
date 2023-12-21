@@ -46,18 +46,18 @@
     "demographic dataset",
     "Dataset demografico"
   ],
-  "homepage": "https://cef-interstat.eu/",
+  "page": "https://cef-interstat.eu/",
   "language": [
     "en",
     "fr"
   ],
-  "licence": "Financial break course now will bring nation.",
-  "releaseDate": "2023-04-08T01:19:50Z",
+  "license": "Financial break course now will bring nation.",
+  "issued": "2023-04-08T01:19:50Z",
   "themes": [
     "Demography",
     "Social movements"
   ],
-  "modificationDate": "2023-05-09T04:54:24Z",
+  "modified": "2023-05-09T04:54:24Z",
   "hasPart": "urn:ngsi-ld:Catalogue:hasPart:MESA:97735762",
   "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JCBS:21034868",
   "record": "urn:ngsi-ld:Catalogue:record:KLPV:86778952",

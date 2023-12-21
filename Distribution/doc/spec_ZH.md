@@ -1,19 +1,37 @@
-<!-- 10-Header -->    
+<!-- 10-Header -->
+    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-实体：分发    
-=====<!-- /10-Header -->    
-<!-- 15-License -->    
-[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)    
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
-<!-- /15-License -->    
-<!-- 20-Description -->    
-总体描述**这是一个属于 STAT-DCAT-AP 标准 1.0.1 数据集的分布**。    
-版本： 0.0.2    
-<!-- /20-Description -->    
-<!-- 30-PropertiesList -->    
-## 属性列表    
-<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。    
-- `Type[string]`: 该属性与 Distribution 的类型相关联，例如它是一种可视化类型  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `accessUrl[array]`: 该属性包含一个可访问数据集分布的 URL。访问 URL 上的资源可能包含有关如何获取数据集的信息  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+
+实体：分发    
+=====
+<!-- /10-Header -->
+    
+<!-- 15-License -->
+    
+
+[开放许可](https://github.com/smart-data-models//dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md)    
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+<!-- /15-License -->
+    
+<!-- 20-Description -->
+    
+
+总体描述**这是一个属于 STAT-DCAT-AP 标准 1.0.1 数据集的分布**。    
+
+版本： 0.0.2    
+<!-- /20-Description -->
+    
+<!-- 30-PropertiesList -->
+    
+
+## 属性列表    
+
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。    
+- `Type[string]`: 该属性与 Distribution 的类型相关联，例如它是一种可视化类型  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
+- `accessUrl[array]`: 该属性包含一个可访问数据集分布的 URL。访问 URL 上的资源可能包含有关如何获取数据集的信息  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
 	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理      
@@ -21,20 +39,62 @@
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: 标识公共街道上特定房产的编号      
-- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: 该属性包含以字节为单位的分布大小  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: 该属性提供了一种机制，可用于验证分发的内容没有改变  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `conformsTo[array]`: 该属性指的是已建立的模式，所述分发符合该模式  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[array]`: 该属性包含对 "分布 "的自由文本描述。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: 该属性包含一个 URL，它是指向给定格式可下载文件的直接链接  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: 该属性指的是分发的文件格式  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `id[*]`: 实体的唯一标识符  - `issued[date-time]`: 该属性包含正式发布（如出版）《分发》的日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 该属性指的是 "分发 "中使用的语言。如果元数据以多种语言提供，该属性可重复使用  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 该属性指的是提供 "分发 "所依据的许可证  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `mediaType[string]`: 该属性指的是由 IANA 管理的媒体类型官方注册表中定义的 "分发 "媒体类型。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)- `modified[date-time]`: 该属性包含更改或修改 "分布 "的最新日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `name[string]`: 该项目的名称  - `onwer[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `page[array]`: 该属性指向有关此分发的页面或文件  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: 该属性指的是一项声明，其中规定了与分发相关的权利  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `status[string]`: 该属性指的是分发的成熟度。它的值必须是已完成、已废弃、开发中、已撤销中的一个。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 该属性包含赋予分布的名称。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI 实体类型。必须是配送  <!-- /30-PropertiesList -->    
-<!-- 35-RequiredProperties -->    
-所需属性    
-- `id`  - `type`  <!-- /35-RequiredProperties -->    
-<!-- 40-RequiredProperties -->    
-改编自[STAT-DCAT-AP 版本 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但该前缀在文件 notes_context.jsonld 中描述。http://data.europa.eu/(xyz)/statdcat-ap/ 字符串 (xyz) 将由负责管理欧盟机构和团体持久 URI 的 URI 委员会分配；foaf, http://xmlns.com/foaf/0.1/。标识符 (adms:identifier) 已被映射为备用标识符，但原始 IRI 保留在 notes_context.jsonld 中。    
-<!-- /40-RequiredProperties -->    
-<!-- 50-DataModelHeader -->    
-## 属性的数据模型描述    
-按字母顺序排列（点击查看详情）    
-<!-- /50-DataModelHeader -->    
-<!-- 60-ModelYaml -->    
+- `alternateName[string]`: 该项目的替代名称  
+- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `byteSize[number]`: 该属性包含以字节为单位的分布大小  . Model: [https://www.w3.org/2000/01/rdf-schema#Literal](https://www.w3.org/2000/01/rdf-schema#Literal)
+- `checksum[string]`: 该属性提供了一种机制，可用于验证分发的内容没有改变  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)
+- `conformsTo[array]`: 该属性指的是已建立的模式，所述分发符合该模式  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)
+- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  
+- `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  
+- `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  
+- `description[array]`: 该属性包含对 "分布 "的自由文本描述。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)
+- `downloadURL[array]`: 该属性包含一个 URL，它是指向给定格式可下载文件的直接链接  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
+- `format[string]`: 该属性指的是分发的文件格式  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)
+- `id[*]`: 实体的唯一标识符  
+- `issued[date-time]`: 该属性包含正式发布（如出版）《分发》的日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)
+- `language[array]`: 该属性指的是 "分发 "中使用的语言。如果元数据以多种语言提供，该属性可重复使用  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
+- `license[string]`: 该属性指的是提供 "分发 "所依据的许可证  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)
+- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  
+- `mediaType[string]`: 该属性指的是由 IANA 管理的媒体类型官方注册表中定义的 "分发 "媒体类型。  . Model: [http://purl.org/dc/terms#MediaTypeOrExtent](http://purl.org/dc/terms#MediaTypeOrExtent)
+- `modified[date-time]`: 该属性包含更改或修改 "分布 "的最新日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)
+- `name[string]`: 该项目的名称  
+- `onwer[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  
+- `page[array]`: 该属性指向有关此分发的页面或文件  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)
+- `rights[string]`: 该属性指的是一项声明，其中规定了与分发相关的权利  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)
+- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  
+- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  
+- `status[string]`: 该属性指的是分发的成熟度。它的值必须是已完成、已废弃、开发中、已撤销中的一个。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)
+- `title[array]`: 该属性包含赋予分布的名称。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)
+- `type[string]`: NGSI 实体类型。必须是配送  
+<!-- /30-PropertiesList -->
+    
+<!-- 35-RequiredProperties -->
+    
+
+所需属性    
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+    
+<!-- 40-RequiredProperties -->
+    
+
+改编自[STAT-DCAT-AP 版本 1.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf)。术语前有本体，但该前缀在文件 notes_context.jsonld 中描述。http://data.europa.eu/(xyz)/statdcat-ap/ 字符串 (xyz) 将由负责管理欧盟机构和团体持久 URI 的 URI 委员会分配；foaf, http://xmlns.com/foaf/0.1/。标识符 (adms:identifier) 已被映射为备用标识符，但原始 IRI 保留在 notes_context.jsonld 中。    
+<!-- /40-RequiredProperties -->
+    
+<!-- 50-DataModelHeader -->
+    
+
+## 属性的数据模型描述    
+
+按字母顺序排列（点击查看详情）    
+<!-- /50-DataModelHeader -->
+    
+<!-- 60-ModelYaml -->
+    
 <details><summary><strong>full yaml details</strong></summary>      
-```yaml    
+
+```yaml    
 Distribution:      
   description: This is a distribution belonging ot a dataset according to the STAT-DCAT-AP standard 1.0.1      
   properties:      
@@ -501,16 +561,25 @@ Distribution:
   x-version: 0.0.2      
 ```    
 </details>      
-<!-- /60-ModelYaml -->    
-<!-- 70-MiddleNotes -->    
-<!-- /70-MiddleNotes -->    
-<!-- 80-Examples -->    
-## 有效载荷示例    
-#### NGSI-v2 密钥值分布示例    
-下面是一个以 JSON-LD 格式作为键值的分布示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
+<!-- /60-ModelYaml -->
+    
+<!-- 70-MiddleNotes -->
+    
+<!-- /70-MiddleNotes -->
+    
+<!-- 80-Examples -->
+    
+
+## 有效载荷示例    
+
+#### NGSI-v2 密钥值分布示例    
+
+下面是一个以 JSON-LD 格式作为键值的分布示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",  
   "type": "Distribution",  
   "dateCreated": "2008-02-15T20:13:19Z",  
@@ -564,7 +633,7 @@ Distribution:
     "Demography",  
     "Social movements"  
   ],  
-  "modificationDate": "2023-05-09T04:54:24Z",  
+  "modified": "2023-05-09T04:54:24Z",  
   "hasPart": "urn:ngsi-ld:Distribution:hasPart:MESA:97735762",  
   "isPartOf": "urn:ngsi-ld:Distribution:isPartOf:JCBS:21034868",  
   "record": "urn:ngsi-ld:Distribution:record:KLPV:86778952",  
@@ -600,11 +669,15 @@ Distribution:
 }  
 ```  
 </details>    
-#### NGSI-v2 标准化分布示例    
-下面是一个规范化 JSON-LD 格式的 "分布 "示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
+
+#### NGSI-v2 标准化分布示例    
+
+下面是一个规范化 JSON-LD 格式的 "分布 "示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": {  
@@ -732,7 +805,7 @@ Distribution:
       "Social movements"  
     ]  
   },  
-  "modificationDate": {  
+  "modified": {  
     "type": "DateTime",  
     "value": "2023-05-09T04:54:24Z"  
   },  
@@ -786,11 +859,15 @@ Distribution:
 }  
 ```  
 </details>    
-#### NGSI-LD 密钥值分布示例    
-下面是一个以 JSON-LD 格式作为键值的分布示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
+
+#### NGSI-LD 密钥值分布示例    
+
+下面是一个以 JSON-LD 格式作为键值的分布示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": [  
@@ -849,7 +926,7 @@ Distribution:
     "Demography",  
     "Social movements"  
   ],  
-  "modificationDate": "2023-05-09T04:54:24Z",  
+  "modified": "2023-05-09T04:54:24Z",  
   "hasPart": "urn:ngsi-ld:Catalogue:hasPart:MESA:97735762",  
   "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:JCBS:21034868",  
   "record": "urn:ngsi-ld:Catalogue:record:KLPV:86778952",  
@@ -888,11 +965,15 @@ Distribution:
 }  
 ```  
 </details>    
-#### NGSI-LD 归一化分布示例    
-下面是一个规范化 JSON-LD 格式的 "分布 "示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
+
+#### NGSI-LD 归一化分布示例    
+
+下面是一个规范化 JSON-LD 格式的 "分布 "示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LVVL:16506295",  
   "type": "Distribution",  
   "accessUrl": {  
@@ -1088,12 +1169,21 @@ Distribution:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->    
-<!-- 90-FooterNotes -->    
-<!-- /90-FooterNotes -->    
-<!-- 95-Units -->    
-请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。    
-<!-- /95-Units -->    
-<!-- 97-LastFooter -->    
+</details><!-- /80-Examples -->
+    
+<!-- 90-FooterNotes -->
+    
+<!-- /90-FooterNotes -->
+    
+<!-- 95-Units -->
+    
+
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。    
+<!-- /95-Units -->
+    
+<!-- 97-LastFooter -->
+    
 ---    
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->    
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+    

@@ -100,7 +100,7 @@
       "Dataset demografico"
     ]
   },
-  "homepage": {
+  "page": {
     "type": "Text",
     "value": "https://cef-interstat.eu/"
   },
@@ -111,11 +111,11 @@
       "fr"
     ]
   },
-  "licence": {
+  "license": {
     "type": "Text",
     "value": "Financial break course now will bring nation."
   },
-  "releaseDate": {
+  "issued": {
     "type": "DateTime",
     "value": "2023-04-08T01:19:50Z"
   },
@@ -126,7 +126,7 @@
       "Social movements"
     ]
   },
-  "modificationDate": {
+  "modified": {
     "type": "DateTime",
     "value": "2023-05-09T04:54:24Z"
   },
