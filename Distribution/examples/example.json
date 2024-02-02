@@ -1,6 +1,9 @@
 {
   "id": "urn:ngsi-ld:Distribution:id:LVVL:16506295",
   "type": "Distribution",
+    "accessURL": [
+    "http://127.0.0.1:1026/ngsi-ld/v1/entities?type=https://smartdatamodels.org/dataModel.SDMX/Observation"
+  ],
   "dateCreated": "2008-02-15T20:13:19Z",
   "dateModified": "2020-05-07T09:44:12Z",
   "source": "",
@@ -35,8 +38,6 @@
     "district": ""
   },
   "areaServed": "",
-  "dataset": "urn:ngsi-ld:Catalogue:dataset:TPAD:93995192",
-  "publisher": "Interstat project",
   "title": [
     "demographic dataset",
     "Dataset demografico"
@@ -48,41 +49,6 @@
   ],
   "license": "Financial break course now will bring nation.",
   "issued": "2023-04-08T01:19:50Z",
-  "themes": [
-    "Demography",
-    "Social movements"
-  ],
   "modified": "2023-05-09T04:54:24Z",
-  "hasPart": "urn:ngsi-ld:Distribution:hasPart:MESA:97735762",
-  "isPartOf": "urn:ngsi-ld:Distribution:isPartOf:JCBS:21034868",
-  "record": "urn:ngsi-ld:Distribution:record:KLPV:86778952",
-  "rights": "open license",
-  "spatial_geographic": [
-    {
-      "type": "Point",
-      "coordinates": [
-        276.5,
-        95.6
-      ],
-      "bbox": [
-        34.9,
-        283.8,
-        861.1,
-        311.7
-      ]
-    },
-    {
-      "type": "Point",
-      "coordinates": [
-        311.1,
-        805.7
-      ],
-      "bbox": [
-        434.9,
-        913.1,
-        618.1,
-        424.5
-      ]
-    }
-  ]
+  "rights": "open license"
 }
