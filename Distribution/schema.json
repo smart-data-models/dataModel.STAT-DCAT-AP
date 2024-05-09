@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.3",
   "modelTags": "INTERSTAT",
   "$id": "https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Distribution/schema.json",
   "title": "Smart Data models STAT-DCAT-AP distribution of a Dataset,",
@@ -56,6 +56,7 @@
           "description": "Property. Model:'https://schema.org/URL'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset",
           "items": {
             "type": "string",
+            "description": "Property. Every item of the url to access the distribution",
             "minItems": 1
           }
         },
@@ -104,7 +105,8 @@
           "type": "array",
           "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages",
           "items": {
-            "type": "string"
+            "type": "string",
+            "description": "Property. Every language identifier"
           }
         },
         "conformsTo": {
@@ -142,7 +144,8 @@
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description",
           "items": {
-            "type": "string"
+            "type": "string",
+            "description": "Property. Every instance of the title in different languages"
           }
         },
         "modified": {
