@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 全体的な説明**これはSTAT-DCAT-AP標準1.0.1**に従ったデータセットに属するディストリビューションである。  
-バージョン: 0.0.2  
+バージョン: 0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `Type[string]`: このプロパティは、ディストリビューションのタイプにリンクしています。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `accessUrl[array]`: このプロパティには、データセットの配布にアクセスするための URL が含まれます。アクセスURLのリソースには、データセットの取得方法に関する情報が含まれている場合があります。  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `Type[string]`: このプロパティは、ディストリビューションのタイプにリンクしています。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `accessURL[array]`: このプロパティには、データセットの配布にアクセスするための URL が含まれます。アクセスURLのリソースには、データセットの取得方法に関する情報が含まれている場合があります。  . Model: [https://schema.org/URL](https://schema.org/URL)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
@@ -46,11 +46,14 @@ Distribution:
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
-    accessUrl:    
+    accessURL:    
       description: This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset    
       items:    
+        description: Every item of the url to access the distribution    
         minItems: 1    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: https://schema.org/URL    
@@ -215,7 +218,10 @@ Distribution:
     language:    
       description: This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages    
       items:    
+        description: Every language identifier    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
@@ -479,7 +485,10 @@ Distribution:
     title:    
       description: This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description    
       items:    
+        description: Every instance of the title in different languages    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
@@ -496,11 +505,11 @@ Distribution:
     - type    
   type: object    
   x-derived-from: https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-05/0812e528-c428-4832-b674-d5b9c68d1b42/StatDCAT-AP_1.0.1.pdf    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.STAT-DCAT-AP/blob/master/Distribution/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.STAT-DCAT-AP/Distribution/schema.json    
   x-model-tags: INTERSTAT    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
