@@ -9,7 +9,7 @@
         "Distribution": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/Distribution",
         "Type": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/Type",
         "accessRights": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accessRights",
-        "accessUrl": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accessUrl",
+        "accessURL": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accessURL",
         "accrualPeriodicity": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/accrualPeriodicity",
         "address": "https://smartdatamodels.org/address",
         "addressCountry": "https://smartdatamodels.org/addressCountry",
