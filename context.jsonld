@@ -20,7 +20,7 @@
         "attribute": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/attribute",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "byteSize": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/byteSize",
         "checksum": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/checksum",
@@ -30,13 +30,13 @@
         "contactPoint": "https://smartdatamodels.org/contactPoint",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "created": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/created",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dataset": {
             "@container": "@index",
-            "@id": "ngsi-ld:hasDataset"
+            "@id": "https://uri.etsi.org/ngsi-ld/hasDataset"
         },
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
@@ -48,7 +48,7 @@
         "downloadURL": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/downloadURL",
         "en": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/en",
         "es": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/es",
-        "format": "ngsi-ld:format",
+        "format": "https://uri.etsi.org/ngsi-ld/format",
         "fr": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/fr",
         "hasPart": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/hasPart",
         "hasQualityAnnotation": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/hasQualityAnnotation",
@@ -69,7 +69,7 @@
         "landingPage": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/landingPage",
         "language": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/language",
         "license": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/license",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "mediaType": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/mediaType",
         "modified": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/modified",
         "name": "https://smartdatamodels.org/name",
@@ -93,7 +93,7 @@
         "source": "https://smartdatamodels.org/source",
         "spatial": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/spatial",
         "statUnitMeasure": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/statUnitMeasure",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "temporal": "https://smartdatamodels.org/dataModel.STAT-DCAT-AP/temporal",
