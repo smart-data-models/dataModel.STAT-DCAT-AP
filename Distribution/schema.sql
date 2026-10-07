@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Distribution of the subject dataModel.STAT-DCAT-AP for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('Completed', 'Deprecated', 'Under Development', 'Withdrawn');
+CREATE TYPE Distribution_status_type AS ENUM ('Completed', 'Deprecated', 'Under Development', 'Withdrawn');
 CREATE TYPE Distribution_type AS ENUM ('Distribution');
 CREATE TABLE Distribution (
   "Type" TEXT,
@@ -29,7 +29,7 @@ CREATE TABLE Distribution (
   "rights" TEXT,
   "seeAlso" JSON,
   "source" TEXT,
-  "status" status_type,
+  "status" Distribution_status_type,
   "title" JSON,
   "type" Distribution_type
 );
