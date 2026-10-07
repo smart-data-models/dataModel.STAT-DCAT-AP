@@ -1,9 +1,9 @@
 /* (Beta) Export of data model Dataset of the subject dataModel.STAT-DCAT-AP for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE accessRights_type AS ENUM ('public', 'restricted', 'non-public');
+CREATE TYPE Dataset_accessRights_type AS ENUM ('public', 'restricted', 'non-public');
 CREATE TYPE Dataset_type AS ENUM ('Dataset');
 CREATE TABLE Dataset (
   "Type" TEXT,
-  "accessRights" accessRights_type,
+  "accessRights" Dataset_accessRights_type,
   "accrualPeriodicity" TEXT,
   "attribute" JSON,
   "conformsTo" JSON,
